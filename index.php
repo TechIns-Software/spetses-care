@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
-    <title>PetHund - Animals Shop & Veterinary HTML Template</title>
+    <title>Spetses Care Four Animals</title>
     <meta name="author" content="Mannat Studio">
     <meta name="description" content="PetHund is a Responsive HTML5 Template for Animals Shop & Veterinary related services.">
     <meta name="keywords" content="PetHund, animal care, cats, Dog grooming, dogs, pet, pet care, pet center, pet services, pet shelter, pet shop, shelter, vet clinic, vet store, veterinarian, veterinary">
@@ -27,10 +27,7 @@
     <link rel="stylesheet" type="text/css" href="assets/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
     <link rel="stylesheet" type="text/css" href="assets/revolution/fonts/font-awesome/css/font-awesome.css">
 
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
 </head>
 <body>
 
@@ -49,13 +46,13 @@
             <div class="row align-items-center">
                 <div class="col d-flex align-items-center contact-info">
                     <div>
-                        <i data-feather="map-pin"></i> Pet Street 123 - New York
+                        <i data-feather="map-pin"></i> Πλατεία Ρολογιού ΤΚ 18050 Σπέτσες
                     </div>
                     <div>
-                        <i data-feather="mail"></i> <a href="#">info@info.com</a>
+                        <i data-feather="mail"></i> <a href="#">spetsescareforanimals@gmail.com</a>
                     </div>
                     <div>
-                        <i data-feather="smartphone"></i> <a href="tel:(123)456789">(123) 456-789</a>
+                        <i data-feather="smartphone"></i> <a href="tel:(123)456789">2298 0 72652</a>
                     </div>
                 </div>
                 <div class="col-md-auto">
@@ -74,13 +71,12 @@
         <div class="container text-nowrap">
             <div class="d-flex align-items-center w-100 col p-0 logo-brand">
                 <a class="navbar-brand rounded-bottom light-bg" href="index.html">
-                    <img src="assets/images/logo_white.svg" alt>
+                    <img src="assets/images/scfa_logo.png" alt>
                 </a>
             </div>
 
             <div class="d-inline-flex order-lg-last col-auto p-0 align-items-center">
-                <a href="#" class="btn-theme bg-green btn-shadow ms-3 d-none d-sm-block">Donate</a>
-                <a class="nav-link ms-auto" href="#" id="shopping-bag" data-trigger="#card_mobile"><i data-feather="shopping-bag"></i> <span class="badge badge-success">0</span></a>
+                <a href="#" class="btn-theme bg-green btn-shadow ms-3 d-none d-sm-block">Κάνε Δωρεά</a>
 
                 <button class="navbar-toggler x collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar"></span>
@@ -93,7 +89,7 @@
             <div class="navbar-collapse">
 
                 <div class="offcanvas-header">
-                    <a href="index.html" class="logo-small">
+                    <a href="#" class="logo-small">
                         <img src="assets/images/logo_white.svg" alt>
                     </a>
                 </div>
@@ -101,68 +97,52 @@
 
                 <div class="offcanvas-body">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle-mob" href="index.html" id="dropdown03" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home <i class="icofont-thin-down"></i></a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                                <li><a class="dropdown-item" href="index.html">Home Main</a></li>
-                                <li><a class="dropdown-item" href="home-shop.html">Home Shop</a></li>
-                                <li><a class="dropdown-item" href="home-vet.html">Home Vet</a></li>
-                                <li><a class="dropdown-item" href="home-intro.html">Home Intro</a></li>
-                                <li><a class="dropdown-item" href="home-classic.html">Home Classic</a></li>
-                                <li><a class="dropdown-item" href="index-onepage.html">Home One Page</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown megamenu">
-                            <a href="#" class="nav-link dropdown-toggle-mob" id="dropdown04" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages <i class="icofont-thin-down"></i></a>
-                            <div class="menu-back-div dropdown-menu megamenu-content" role="menu" aria-labelledby="dropdown04">
-                                <div class="megamenu-content-wrap">
-                                    <ul class="list-unstyled">
-                                        <li><a class="dropdown-item" href="about.html">About Us</a></li>
-                                        <li><a class="dropdown-item" href="our-team.html">Our Team</a></li>
-                                        <li><a class="dropdown-item" href="team-single.html">Team Single</a></li>
-                                        <li><a class="dropdown-item" href="our-faqs.html">Our Faq's</a></li>
-                                        <li><a class="dropdown-item" href="404.html">Error 404</a></li>
-                                    </ul>
-                                    <ul class="list-unstyled">
-                                        <li><a class="dropdown-item" href="our-services.html">Services</a></li>
-                                        <li><a class="dropdown-item" href="services-single.html">Services Single</a></li>
-                                        <li><a class="dropdown-item" href="shortcodes-element.html">Elements Page 1</a></li>
-                                        <li><a class="dropdown-item" href="shortcodes-element-alt.html">Elements Page 2</a></li>
-                                        <li><a class="dropdown-item" href="typography.html">Typography</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle-mob" href="index.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery <i class="icofont-thin-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="gallery-2-col.html">Galley 2 Col</a></li>
-                                <li><a class="dropdown-item" href="gallery-3-col.html">Galley 3 Col</a></li>
-                                <li><a class="dropdown-item" href="gallery-4-col.html">Galley 4 Col</a></li>
-                                <li><a class="dropdown-item" href="gallery-single.html">Galley Single</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle-mob" href="index.html" id="blog-menu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog <i class="icofont-thin-down"></i></a>
-                            <ul class="dropdown-menu" aria-labelledby="blog-menu">
-                                <li><a class="dropdown-item" href="blog-classic.html">Blog Classic</a></li>
-                                <li><a class="dropdown-item" href="blog-modern.html">Blog Modern</a></li>
-                                <li><a class="dropdown-item" href="blog-grid.html">Blog Grid</a></li>
-                                <li><a class="dropdown-item" href="blog-single.html">Blog Single</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle-mob" href="index.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop <i class="icofont-thin-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="shop-sidebar.html">Shop Sidebar</a></li>
-                                <li><a class="dropdown-item" href="shop-wide.html">Shop Wide</a></li>
-                                <li><a class="dropdown-item" href="shop-single.html">Shop Single</a></li>
-                                <li><a class="dropdown-item" href="shop-cart.html">Shopping Cart</a></li>
-                                <li><a class="dropdown-item" href="shop-checkout.html">Checkout</a></li>
-                            </ul>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact-us.html">Contact</a>
+                            <a class="nav-link" href="#">Σχετικά με εμάς</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Όραμα</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cats Hotel</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle-mob" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Δράσεις <i class="icofont-thin-down"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                                <li><a class="dropdown-item" href="#">Οι Δράσεις μας</a></li>
+                                <li><a class="dropdown-item" href="#">Υιοθέτησε με</a></li>
+                                <li><a class="dropdown-item" href="#">Αναδοχή</a></li>
+                                <li><a class="dropdown-item" href="#">Γίνε εθελοντής</a></li>
+
+                            </ul>
+                        </li>
+<!--                        <li class="nav-item dropdown megamenu">-->
+<!--                            <a href="#" class="nav-link dropdown-toggle-mob" id="dropdown04" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages <i class="icofont-thin-down"></i></a>-->
+<!--                            <div class="menu-back-div dropdown-menu megamenu-content" role="menu" aria-labelledby="dropdown04">-->
+<!--                                <div class="megamenu-content-wrap">-->
+<!--                                    <ul class="list-unstyled">-->
+<!--                                        <li><a class="dropdown-item" href="about.html">About Us</a></li>-->
+<!--                                        <li><a class="dropdown-item" href="our-team.html">Our Team</a></li>-->
+<!--                                        <li><a class="dropdown-item" href="team-single.html">Team Single</a></li>-->
+<!--                                        <li><a class="dropdown-item" href="our-faqs.html">Our Faq's</a></li>-->
+<!--                                        <li><a class="dropdown-item" href="404.html">Error 404</a></li>-->
+<!--                                    </ul>-->
+<!--                                    <ul class="list-unstyled">-->
+<!--                                        <li><a class="dropdown-item" href="our-services.html">Services</a></li>-->
+<!--                                        <li><a class="dropdown-item" href="services-single.html">Services Single</a></li>-->
+<!--                                        <li><a class="dropdown-item" href="shortcodes-element.html">Elements Page 1</a></li>-->
+<!--                                        <li><a class="dropdown-item" href="shortcodes-element-alt.html">Elements Page 2</a></li>-->
+<!--                                        <li><a class="dropdown-item" href="typography.html">Typography</a></li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </li>-->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Επικοινωνία</a>
                         </li>
                     </ul>
                 </div>
@@ -224,7 +204,7 @@
 
                 <li data-index="rs-73" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="http://works.themepunch.com/revolution_5_3/wp-content/" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1 data-param2 data-param3 data-param4 data-param5 data-param6 data-param7 data-param8 data-param9 data-param10 data-description>
 
-                    <img src="assets/images/slider/h5_slider_1.jpg" data-kenburns="on" data-duration="5000" data-ease="Power3.easeInOut" data-scalestart="110" data-scaleend="100" data-rotatestart="0" style="background:linear-gradient(90deg, rgba(134,143,150,1) 0%, rgba(89,97,100,1) 100%)" alt data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+                    <img src="assets/images/slider/slider1.JPG" data-kenburns="on" data-duration="5000" data-ease="Power3.easeInOut" data-scalestart="110" data-scaleend="100" data-rotatestart="0" style="background:linear-gradient(90deg, rgba(134,143,150,1) 0%, rgba(89,97,100,1) 100%)" alt data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
 
 
                     <div class="tp-caption btn-theme bg-orange btn-shadow" id="slide-73-layer-4" data-x="['left','left','left','left']" data-hoffset="['65','120','70','40']" data-y="['middle','middle','middle','middle']" data-voffset="['150','150','150','10']" data-width="['180','180','180','180']" data-height="none" data-whitespace="normal" data-type="button" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:500,&quot;speed&quot;:1000,&quot;sfxcolor&quot;:&quot;#98cb46&quot;,&quot;sfx_effect&quot;:&quot;blockfromleft&quot;,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;z:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:500,&quot;sfxcolor&quot;:&quot;#ffffff&quot;,&quot;sfx_effect&quot;:&quot;blocktoleft&quot;,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;z:0;&quot;,&quot;ease&quot;:&quot;Power4.easeOut&quot;},{&quot;frame&quot;:&quot;hover&quot;,&quot;speed&quot;:&quot;0&quot;,&quot;ease&quot;:&quot;Linear.easeNone&quot;,&quot;to&quot;:&quot;o:1;rX:0;rY:0;rZ:0;z:0;&quot;,&quot;style&quot;:&quot;c:rgb(0,0,0);bg:rgb(255,255,255);&quot;}]" data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[30,30,30,30]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[30,30,30,30]" style="z-index: 5; white-space: normal; font-size: 18px; line-height: 50px; font-weight: 400; color: rgba(255,255,255,1); font-family:'Karla', sans-serif;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; font-weight: 600; text-transform: uppercase;">
@@ -273,16 +253,23 @@
                 </div>
                 <div class="col-lg-5">
                     <h1 class="heading-main">
-                        <small>Quality & Experience <i class="pethund_repeat_grid"></i></small>
-                        <span>Welcome to</span> Pethund
+                        <small>Σχετικά με εμάς <i class="pethund_repeat_grid"></i></small>
+                        <span>Καλως ήρθατε στο</span>  SCFA
                     </h1>
-                    <p>At Pethund, the ambition is that you should always feel welcome both as an advertiser and a visitor. A modern and easy-to-manage page makes it easier for Users to maneuver forward. or then randomised words which don't look even slightly believable you need to be sure there isn't anything embarrassing vestibu lum at eros.</p>
+                    <p>
+                        Το κτηνιατρείο SCFA Α.Μ.Κ.Ε είναι ένας φορέας που ιδρύθηκε το 2021 στο νησί των Σπετσών με έναν
+                        ξεχωριστό σκοπό και απόλυτη αφοσίωση στην προστασία και τη φροντίδα των ζώων.<br> Με σεβασμό προς
+                        την ζωή και τη φύση, με συνέπεια στο έργο μας και ενσυναίσθηση απέναντι στα αδέσποτα ζώα του
+                        νησιού, δημιουργήσαμε ένα κτηνιατρείο που αποτελεί τον ασφαλή και αγκαλιάστηκε χώρο για την
+                        ανακούφιση και την πρόληψη του πόνου των ζώων που βρίσκονται στην ανάγκη.
+                        Ορισμένες από τα αποτελέσματα μας:
+                    </p>
                     <ul class="list-unstyled icons-listing theme-green paws fw-7 mt-5 txt-blue">
-                        <li>Abore et dolore magna aliqua ut enim veniam</li>
-                        <li>Quis nostrud exercitation ullamco laboris nisi aliquip</li>
-                        <li>Eiusmod tempor incididunt labore.</li>
+                        <li>Πραγματοποίηση στειρώσεων για περίπου 700 αδέσποτες γάτες στο νησί.</li>
+                        <li>Νοσηλεία και φροντίδα περίπου 300 αδέσποτων γατών.</li>
+                        <li>Δημιουργία 12 σταθμών σίτισης και ξεκούρασης για αδέσποτες γάτες (Cats Hotel and Restaurant)</li>
                     </ul>
-                    <a href="about.html" class="btn-theme bg-navy-blue capusle mt-4 wow fadeInDown">Discover More</a>
+                    <a href="about.html" class="btn-theme bg-navy-blue capusle mt-4 wow fadeInDown">Μάθε Περισσότερα</a>
                 </div>
             </div>
         </div>
@@ -298,7 +285,7 @@
                         <img src="assets/images/gdr_img_1.jpg" alt class="ms-auto d-flex">
                         <div class="info-text">
                             <i class="icofont-paw"></i>
-                            <h3>We Heal</h3>
+                            <h3>Θεραπεύουμε</h3>
                             <div>Quick Veterinary Services</div>
                         </div>
                     </div>
@@ -310,8 +297,8 @@
                         <img src="assets/images/gdr_img_2.jpg" alt class="ms-auto d-flex">
                         <div class="info-text">
                             <i class="icofont-paw"></i>
-                            <h3>Our Mission</h3>
-                            <div>Offer quick & easy services</div>
+                            <h3>Το Όραμά μας</h3>
+                            <div>Έλα μαζί μας σε αυτό το όμορφο ταξίδι </div>
                         </div>
                     </div>
 
@@ -322,8 +309,8 @@
                         <img src="assets/images/gdr_img_3.jpg" alt class="ms-auto d-flex">
                         <div class="info-text">
                             <i class="icofont-paw"></i>
-                            <h3>Adopt Anyone</h3>
-                            <div>Join Our Club to help them</div>
+                            <h3>Υιοθέτησε σήμερα</h3>
+                            <div>Γίνε εθελοντής</div>
                         </div>
                     </div>
 
@@ -337,8 +324,8 @@
                         aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum.
                     </p>
                     <div class="text-center mt-4">
-                        <a href="contact-us.html" class="btn-theme bg-orange capusle bordered me-4"><span class="txt-white">Contact us</span></a>
-                        (+44) 123 456 789
+                        <a href="contact-us.html" class="btn-theme bg-orange capusle bordered me-4"><span class="txt-white">Επικοινώνησε μαζί μας</span></a>
+
                     </div>
                 </div>
             </div>
@@ -349,8 +336,8 @@
     <section class="wide-tb-150">
         <div class="container">
             <h1 class="heading-main center wow fadeInDown" data-wow-duration="0" data-wow-delay="0s">
-                <small>What we offer for you <i class="pethund_repeat_grid"></i></small>
-                <span>Our Providing </span> Services
+
+                <span>Οι </span> Δράσεις μας
             </h1>
             <div class="row">
 
@@ -360,11 +347,11 @@
                             <i class="pethund_petsitting"></i>
                         </div>
                         <div class="text">
-                            <h3>Pet Sitting</h3>
+                            <h3>Στειρώσεις αδέσποτων ζωών</h3>
                             <p>Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecenas at arcu
                                 risus. </p>
-                            <a href="services-single.html" class="read-more-arrow">
-                                Read More <span> <i class="icofont-simple-right"></i></span>
+                            <a href="#" class="read-more-arrow">
+                               Λεπτομέρειες <span> <i class="icofont-simple-right"></i></span>
                             </a>
                         </div>
                     </div>
@@ -377,11 +364,11 @@
                             <i class="pethund_pet_grooming"></i>
                         </div>
                         <div class="text">
-                            <h3>Pet Grooming</h3>
+                            <h3>Νοσηλεία και φροντίδα</h3>
                             <p>Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecenas at arcu
                                 risus. </p>
-                            <a href="services-single.html" class="read-more-arrow">
-                                Read More <span> <i class="icofont-simple-right"></i></span>
+                            <a href="#" class="read-more-arrow">
+                                Λεπτομέρειες <span> <i class="icofont-simple-right"></i></span>
                             </a>
                         </div>
                     </div>
@@ -394,11 +381,11 @@
                             <i class="pethund_adoption"></i>
                         </div>
                         <div class="text">
-                            <h3>Pet Adoption</h3>
+                            <h3>Εκπαιδευτικές ενημερώσεις προς μαθητές </h3>
                             <p>Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecenas at arcu
                                 risus. </p>
-                            <a href="services-single.html" class="read-more-arrow">
-                                Read More <span> <i class="icofont-simple-right"></i></span>
+                            <a href="#" class="read-more-arrow">
+                                Λεπτομέρειες <span> <i class="icofont-simple-right"></i></span>
                             </a>
                         </div>
                     </div>
@@ -411,142 +398,34 @@
                             <i class="pethund_natural_product"></i>
                         </div>
                         <div class="text">
-                            <h3>Natural Products</h3>
+                            <h3>Δημιουργία καλλιτεχνικών δραστηριοτήτων</h3>
                             <p>Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecenas at arcu
                                 risus. </p>
-                            <a href="services-single.html" class="read-more-arrow">
-                                Read More <span> <i class="icofont-simple-right"></i></span>
+                            <a href="#" class="read-more-arrow">
+                                Λεπτομέρειες <span> <i class="icofont-simple-right"></i></span>
                             </a>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="col-md-6 col-lg-6">
-                    <div class="icon-box-1 d-flex">
-                        <div class="icon-font">
-                            <i class="pethund_vaccinated"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Pet Vaccination</h3>
-                            <p>Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecenas at arcu
-                                risus. </p>
-                            <a href="services-single.html" class="read-more-arrow">
-                                Read More <span> <i class="icofont-simple-right"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6 col-lg-6">
-                    <div class="icon-box-1 d-flex">
-                        <div class="icon-font">
-                            <i class="pethund_pet_food"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Pet Foods</h3>
-                            <p>Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecenas at arcu
-                                risus. </p>
-                            <a href="services-single.html" class="read-more-arrow">
-                                Read More <span> <i class="icofont-simple-right"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="text-center wow fadeInUp col-md-12" data-wow-duration="0" data-wow-delay="0s">
-                    <a href="our-services.html" class="btn-theme bordered capusle bg-navy-blue">View All Services</a>
+                    <a href="our-services.html" class="btn-theme bordered capusle bg-navy-blue">Δείτε όλες τις δράσεις μας</a>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <section class="bg-green">
-        <div class="container-fluid p-0">
-            <div class="row g-0">
-                <div class="col-lg-6">
-                    <div class="about-home-one-img h-100">
-                        <img src="assets/images/counter_bg.jpg" class="d-lg-none d-block" alt>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about-home-one">
-                        <h1 class="heading-main light-mode">
-                            <small>Get to know us <i class="pethund_repeat_grid"></i></small>
-                            About Us <span class="txt-blue">Few words</span>
-                        </h1>
-                        <p class="mb-4">
-                            Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.
-                        </p>
-                        <div class="accordion accordion-flush theme-accordian" id="accordionFlushExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        Our Philosophy
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <div class="content">
-                                            Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna
-                                            nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum
-                                            convall.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                        Our Organization
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <div class="content">
-                                            Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna
-                                            nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum
-                                            convall.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                        Know More About Adoption
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <div class="content">
-                                            Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna
-                                            nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum
-                                            convall.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about-video">
-                            <a href="https://player.vimeo.com/video/7449107" class="popup-video">
-                                <i class="pethund_videoPlay"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
 
     <section class="wide-tb-100">
         <div class="container">
             <h1 class="heading-main center wow fadeInDown" data-wow-duration="0" data-wow-delay="0s">
-                <small>Our perfect staff <i class="pethund_repeat_grid"></i></small>
-                <span>Meet Our</span> Groomers
+                <small>Η Ομάδα μας<i class="pethund_repeat_grid"></i></small>
+                <span>Γνωρίστε την</span> ομάδα μας
             </h1>
             <div class="owl-carousel owl-theme" id="team-slider-about">
 
@@ -561,11 +440,11 @@
                             <img src="assets/images/team/team-1.jpg" alt>
                         </div>
                         <div class="team-name">
-                            <h4><a href="team-single.html">Meghan Smith</a></h4>
-                            <div><strong>Pet Trainer</strong></div>
+                            <h4><a href="#">Κωνσταντίνος Κουτσόπουλος</a></h4>
+                            <div><strong>Κτηνίατρος , επιστημονικά υπεύθυνος</strong></div>
                         </div>
-                        <a href="team-single.html" class="read-more-arrow">
-                            Read More <span> <i class="icofont-simple-right"></i></span>
+                        <a href="#" class="read-more-arrow">
+                            Περισσότερα<span> <i class="icofont-simple-right"></i></span>
                         </a>
                     </div>
                 </div>
@@ -582,11 +461,11 @@
                             <img src="assets/images/team/team-2.jpg" alt>
                         </div>
                         <div class="team-name">
-                            <h4><a href="team-single.html">Alissa Silva</a></h4>
-                            <div><strong>Pet Trainer</strong></div>
+                            <h4><a href="#">Μιράντα Γιαμαλή</a></h4>
+                            <div><strong>Βοηθός Κτηνιάτρου</strong></div>
                         </div>
-                        <a href="team-single.html" class="read-more-arrow">
-                            Read More <span> <i class="icofont-simple-right"></i></span>
+                        <a href="#" class="read-more-arrow">
+                            Περισσότερα<span> <i class="icofont-simple-right"></i></span>
                         </a>
                     </div>
                 </div>
@@ -603,15 +482,14 @@
                             <img src="assets/images/team/team-3.jpg" alt>
                         </div>
                         <div class="team-name">
-                            <h4><a href="team-single.html">Lucas Manson</a></h4>
-                            <div><strong>Pet Trainer</strong></div>
+                            <h4><a href="#">Αντώνης Τερζάκης</a></h4>
+                            <div><strong>Υπεύθυνος Γραμματείας και συντονισμού</strong></div>
                         </div>
-                        <a href="team-single.html" class="read-more-arrow">
-                            Read More <span> <i class="icofont-simple-right"></i></span>
+                        <a href="#" class="read-more-arrow">
+                            Περισσότερα<span> <i class="icofont-simple-right"></i></span>
                         </a>
                     </div>
                 </div>
-
 
                 <div class="item">
                     <div class="team-section-wrap">
@@ -624,67 +502,20 @@
                             <img src="assets/images/team/team-4.jpg" alt>
                         </div>
                         <div class="team-name">
-                            <h4><a href="team-single.html">Cindey Harris</a></h4>
-                            <div><strong>Veterinarian</strong></div>
+                            <h4><a href="#">Κατερίνα Βογιατζή</a></h4>
+                            <div><strong>Ιδρυτικό μέλος και co κτηνιατρείου SCFA</strong></div>
                         </div>
-                        <a href="team-single.html" class="read-more-arrow">
-                            Read More <span> <i class="icofont-simple-right"></i></span>
+                        <a href="#" class="read-more-arrow">
+                            Περισσότερα<span> <i class="icofont-simple-right"></i></span>
                         </a>
                     </div>
                 </div>
 
 
-                <div class="item">
-                    <div class="team-section-wrap">
-                        <div class="img">
-                            <div class="social-icons">
-                                <a href="#"><i data-feather="twitter"></i></a>
-                                <a href="#"><i data-feather="facebook"></i></a>
-                                <a href="#"><i data-feather="instagram"></i></a>
-                            </div>
-                            <img src="assets/images/team/team-5.jpg" alt>
-                        </div>
-                        <div class="team-name">
-                            <h4><a href="team-single.html">Alissa Silva</a></h4>
-                            <div><strong>Veterinarian</strong></div>
-                        </div>
-                        <a href="team-single.html" class="read-more-arrow">
-                            Read More <span> <i class="icofont-simple-right"></i></span>
-                        </a>
-                    </div>
-                </div>
 
-
-                <div class="item">
-                    <div class="team-section-wrap">
-                        <div class="img">
-                            <div class="social-icons">
-                                <a href="#"><i data-feather="twitter"></i></a>
-                                <a href="#"><i data-feather="facebook"></i></a>
-                                <a href="#"><i data-feather="instagram"></i></a>
-                            </div>
-                            <img src="assets/images/team/team-6.jpg" alt>
-                        </div>
-                        <div class="team-name">
-                            <h4><a href="team-single.html">Lucas Manson</a></h4>
-                            <div><strong>Veterinarian</strong></div>
-                        </div>
-                        <a href="team-single.html" class="read-more-arrow">
-                            Read More <span> <i class="icofont-simple-right"></i></span>
-                        </a>
-                    </div>
-                </div>
 
             </div>
-            <div class="row">
-                <div class="col-md-12 mt-4 wow fadeInUp" data-wow-duration="0" data-wow-delay="0s">
-                    <div class="text-center">
-                        <strong>Meet our professionals</strong>
-                        <p>We have an experienced qualified team to take care of your best friend</p>
-                        <a href="our-team.html" class="btn-theme bg-orange capusle bordered me-4">View All Team</a>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </section>
 
@@ -700,7 +531,7 @@
                         </div>
                         <div class="text">
                             <div class="counter-txt"><span class="counter">325</span>+</div>
-                            <div>Adopted Pets</div>
+                            <div>Υιοθετημένα κατοικίδια</div>
                         </div>
                     </div>
                 </div>
@@ -712,8 +543,8 @@
                             <i class="pethund_pet_professional"></i>
                         </div>
                         <div class="text">
-                            <div class="counter-txt"><span class="counter">20</span>+</div>
-                            <div>Professionals</div>
+                            <div class="counter-txt"><span class="counter">4</span>+</div>
+                            <div>Επαγγελματίες Κτηνίατροι </div>
                         </div>
                     </div>
                 </div>
@@ -766,7 +597,7 @@
                     <div class="captured-gallery-item mb-4">
                         <div class="gallery-content">
                             <span href="assets/images/gallery/home/img_gallery1.jpg" title="Simba Jake"><i class="icofont-plus"></i></span>
-                            <h3><a href="gallery-single.html">Simba Jake</a></h3>
+                            <h3><a href="#">Simba Jake</a></h3>
                             <h5>Kitten</h5>
                         </div>
                         <img src="assets/images/gallery/home/img_gallery1.jpg" class="rounded" alt>
@@ -774,7 +605,7 @@
                     <div class="captured-gallery-item mb-4">
                         <div class="gallery-content">
                             <span href="assets/images/gallery/home/img_gallery5.jpg" title="Molly Cat"><i class="icofont-plus"></i></span>
-                            <h3><a href="gallery-single.html">Molly Cat</a></h3>
+                            <h3><a href="#">Molly Cat</a></h3>
                             <h5>Kitten</h5>
                         </div>
                         <img src="assets/images/gallery/home/img_gallery5.jpg" class="rounded" alt>
@@ -784,7 +615,7 @@
                     <div class="captured-gallery-item mb-4">
                         <div class="gallery-content">
                             <span href="assets/images/gallery/home/img_gallery2.jpg" title="Tiger Wood"><i class="icofont-plus"></i></span>
-                            <h3><a href="gallery-single.html">Tiger Wood</a></h3>
+                            <h3><a href="#">Tiger Wood</a></h3>
                             <h5>Kitten</h5>
                         </div>
                         <img src="assets/images/gallery/home/img_gallery2.jpg" class="rounded" alt>
@@ -792,7 +623,7 @@
                     <div class="captured-gallery-item mb-4">
                         <div class="gallery-content">
                             <span href="assets/images/gallery/home/img_gallery6.jpg" title="Gizmo Moody"><i class="icofont-plus"></i></span>
-                            <h3><a href="gallery-single.html">Gizmo Moody</a></h3>
+                            <h3><a href="#">Gizmo Moody</a></h3>
                             <h5>Kitten</h5>
                         </div>
                         <img src="assets/images/gallery/home/img_gallery6.jpg" class="rounded" alt>
@@ -802,7 +633,7 @@
                     <div class="captured-gallery-item mb-4">
                         <div class="gallery-content">
                             <span href="assets/images/gallery/home/img_gallery3.jpg" title="Charlie Taz"><i class="icofont-plus"></i></span>
-                            <h3><a href="gallery-single.html">Charlie Taz</a></h3>
+                            <h3><a href="#">Charlie Taz</a></h3>
                             <h5>Kitten</h5>
                         </div>
                         <img src="assets/images/gallery/home/img_gallery3.jpg" class="rounded" alt>
@@ -810,15 +641,13 @@
                     <div class="captured-gallery-item mb-4">
                         <div class="gallery-content">
                             <span href="assets/images/gallery/home/img_gallery7.jpg" title="Sophie Cute"><i class="icofont-plus"></i></span>
-                            <h3><a href="gallery-single.html">Sophie Cute</a></h3>
+                            <h3><a href="#">Sophie Cute</a></h3>
                             <h5>Kitten</h5>
                         </div>
                         <img src="assets/images/gallery/home/img_gallery7.jpg" class="rounded" alt>
                     </div>
                 </div>
-                <div class="text-center wow fadeInUp col-md-12" data-wow-duration="0" data-wow-delay="0s">
-                    <a href="gallery-4-col.html" class="btn-theme bg-orange btn-shadow">View Full Gallery</a>
-                </div>
+
             </div>
         </div>
     </section>
@@ -899,151 +728,7 @@
     </section>
 
 
-    <section class="wide-tb-100">
-        <div class="container">
-            <h1 class="heading-main center">
-                <small>Recent Blog Post <i class="pethund_repeat_grid"></i></small>
-                <span>Latest News </span> & Articles
-            </h1>
-            <div class="owl-carousel owl-theme" id="blog-slider-home-one">
 
-                <div class="item">
-                    <div class="blog-wrap">
-                        <div class="img">
-                            <a href="blog-single.html"><img src="assets/images/blog/blog_img_1.jpg" alt></a>
-                        </div>
-                        <div class="meta-wrap">
-                            <div class="date">08 <span>APR</span></div>
-                            <a href="#" class="link-green">2 Comments</a>
-                        </div>
-                        <h3 class="title">
-                            <a href="blog-single.html">How to Create a Cat’s Patio, or Outdoor Space</a>
-                        </h3>
-                        <div class="description">
-                            <p>Proin viverra nisi at nisl imperdiet auctor. Donec ornare, est sed tincidunt placerat, sem mi suscipit mi.</p>
-                        </div>
-                        <a href="blog-single.html" class="read-more-arrow">
-                            Read More <span> <i class="icofont-simple-right"></i></span>
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="item">
-                    <div class="blog-wrap">
-                        <div class="img">
-                            <a href="blog-single.html"><img src="assets/images/blog/blog_img_2.jpg" alt></a>
-                        </div>
-                        <div class="meta-wrap">
-                            <div class="date">08 <span>APR</span></div>
-                            <a href="#" class="link-green">2 Comments</a>
-                        </div>
-                        <h3 class="title">
-                            <a href="blog-single.html">Fun Overload Is When A Girl Is Exhausted From Fun</a>
-                        </h3>
-                        <div class="description">
-                            <p>Proin viverra nisi at nisl imperdiet auctor. Donec ornare, est sed tincidunt placerat, sem mi suscipit mi.</p>
-                        </div>
-                        <a href="blog-single.html" class="read-more-arrow">
-                            Read More <span> <i class="icofont-simple-right"></i></span>
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="item">
-                    <div class="blog-wrap">
-                        <div class="img">
-                            <a href="blog-single.html"><img src="assets/images/blog/blog_img_3.jpg" alt></a>
-                        </div>
-                        <div class="meta-wrap">
-                            <div class="date">08 <span>APR</span></div>
-                            <a href="#" class="link-green">2 Comments</a>
-                        </div>
-                        <h3 class="title">
-                            <a href="blog-single.html">Dog Flu – Does Your Dog Need Protecting?</a>
-                        </h3>
-                        <div class="description">
-                            <p>Proin viverra nisi at nisl imperdiet auctor. Donec ornare, est sed tincidunt placerat, sem mi suscipit mi.</p>
-                        </div>
-                        <a href="blog-single.html" class="read-more-arrow">
-                            Read More <span> <i class="icofont-simple-right"></i></span>
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="item">
-                    <div class="blog-wrap">
-                        <div class="img">
-                            <a href="blog-single.html"><img src="assets/images/blog/blog_img_4.jpg" alt></a>
-                        </div>
-                        <div class="meta-wrap">
-                            <div class="date">08 <span>APR</span></div>
-                            <a href="#" class="link-green">2 Comments</a>
-                        </div>
-                        <h3 class="title">
-                            <a href="blog-single.html">Watch Your Step When You Have a Cat</a>
-                        </h3>
-                        <div class="description">
-                            <p>Proin viverra nisi at nisl imperdiet auctor. Donec ornare, est sed tincidunt placerat, sem mi suscipit mi.</p>
-                        </div>
-                        <a href="blog-single.html" class="read-more-arrow">
-                            Read More <span> <i class="icofont-simple-right"></i></span>
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="item">
-                    <div class="blog-wrap">
-                        <div class="img">
-                            <a href="blog-single.html"><img src="assets/images/blog/blog_img_5.jpg" alt></a>
-                        </div>
-                        <div class="meta-wrap">
-                            <div class="date">08 <span>APR</span></div>
-                            <a href="#" class="link-green">2 Comments</a>
-                        </div>
-                        <h3 class="title">
-                            <a href="blog-single.html">5 Tips to Help with Dog Separation Anxiety</a>
-                        </h3>
-                        <div class="description">
-                            <p>Proin viverra nisi at nisl imperdiet auctor. Donec ornare, est sed tincidunt placerat, sem mi suscipit mi.</p>
-                        </div>
-                        <a href="blog-single.html" class="read-more-arrow">
-                            Read More <span> <i class="icofont-simple-right"></i></span>
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="item">
-                    <div class="blog-wrap">
-                        <div class="img">
-                            <a href="blog-single.html"><img src="assets/images/blog/blog_img_6.jpg" alt></a>
-                        </div>
-                        <div class="meta-wrap">
-                            <div class="date">08 <span>APR</span></div>
-                            <a href="#" class="link-green">2 Comments</a>
-                        </div>
-                        <h3 class="title">
-                            <a href="blog-single.html">How To Train Your Canine Running Partner</a>
-                        </h3>
-                        <div class="description">
-                            <p>Proin viverra nisi at nisl imperdiet auctor. Donec ornare, est sed tincidunt placerat, sem mi suscipit mi.</p>
-                        </div>
-                        <a href="blog-single.html" class="read-more-arrow">
-                            Read More <span> <i class="icofont-simple-right"></i></span>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="text-center mt-4 wow fadeInUp" data-wow-duration="0" data-wow-delay="0s">
-                <a href="blog-classic.html" class="btn-theme bordered bg-orange capusle">View All Blog</a>
-            </div>
-        </div>
-    </section>
 
 </main>
 
@@ -1061,8 +746,9 @@
                             <i data-feather="headphones"></i>
                         </div>
                         <div class="heading">
-                            <h3>Have Questions? Call Us <span class="txt-green">+1 (800) 123 456 789</span>
-                            </h3>
+                            <h3>Έχεις κάποια απορία; </h3>
+                            <h3>Κάλεσε μας <span class="txt-green">2298 0 72652</span>  </h3>
+
                             <div>In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat,
                                 nec elementum ipsum convall.</div>
                         </div>
