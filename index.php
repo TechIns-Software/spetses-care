@@ -52,7 +52,7 @@
                         <i data-feather="map-pin"></i> Pet Street 123 - New York
                     </div>
                     <div>
-                        <i data-feather="mail"></i> <a href="/cdn-cgi/l/email-protection#82e7efe3ebeec2fbedf7f0f1ebf6e7ace1edef"><span class="__cf_email__" data-cfemail="95f0f8f4fcf9d5ecfae0e7e6fce1f0bbf6faf8">[email&#160;protected]</span></a>
+                        <i data-feather="mail"></i> <a href="#">info@info.com</a>
                     </div>
                     <div>
                         <i data-feather="smartphone"></i> <a href="tel:(123)456789">(123) 456-789</a>
@@ -1190,7 +1190,9 @@
 <a id="mkdf-back-to-top" href="#" class="off"><i class="icofont-rounded-up"></i></a>
 
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js"></script>
+
+
+</script><script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/theme-plugins.min.js"></script>
 
 <script src="assets/js/site-custom.js"></script>
@@ -1307,6 +1309,6 @@
         }
     });	/*ready*/
 </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"816f0fe07a3fee77","version":"2023.8.0","r":1,"token":"64224fc8786846928480d180dfc466bd","si":100}' crossorigin="anonymous"></script>
+
 </body>
 </html>
