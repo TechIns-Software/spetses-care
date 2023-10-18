@@ -764,7 +764,7 @@
         <div class="row wide-tb-50 pt-0 align-items-center">
             <div class="col-md-6 mb-0">
                 <div class="logo-footer">
-                    <img src="assets/images/logo_white.svg" alt>
+                    <img src="assets/images/scfa_logo.png" alt>
                 </div>
             </div>
             <div class="col-md-6">
@@ -781,7 +781,7 @@
         <div class="row">
 
             <div class="col-lg-4 col-md-6 me-auto">
-                <h3 class="footer-heading">About PetHund</h3>
+                <h3 class="footer-heading">About SCFA</h3>
                 <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                     scrambled it to make a type specimen book.</p>
@@ -789,28 +789,26 @@
 
 
             <div class="col-lg-2 col-md-6">
-                <h3 class="footer-heading">Explore</h3>
+                <h3 class="footer-heading">Μενού</h3>
                 <div class="footer-widget-menu">
                     <ul class="list-unstyled">
-                        <li><a href="about.html"><i class="icofont-simple-right"></i> <span>About Us</span></a></li>
-                        <li><a href="our-services.html"><i class="icofont-simple-right"></i> <span>Services</span></a></li>
-                        <li><a href="our-team.html"><i class="icofont-simple-right"></i> <span>Our Team</span></a></li>
-                        <li><a href="javascript:"><i class="icofont-simple-right"></i> <span>Adopt Pet</span></a></li>
-                        <li><a href="gallery-4-col.html"><i class="icofont-simple-right"></i> <span>Gallery</span></a></li>
+                        <li><a href="#"><i class="icofont-simple-right"></i> <span>Σχετικά με εμάς</span></a></li>
+                        <li><a href="#l"><i class="icofont-simple-right"></i> <span>Το όραμα μας</span></a></li>
+                        <li><a href="#"><i class="icofont-simple-right"></i> <span>Cats Hotel</span></a></li>
+                        <li><a href="#"><i class="icofont-simple-right"></i> <span>Οι Δράσεις μας</span></a></li>
+                        <li><a href="#"><i class="icofont-simple-right"></i> <span>Επικοινωνία</span></a></li>
                     </ul>
                 </div>
             </div>
 
 
             <div class="col-lg-2 col-md-6">
-                <h3 class="footer-heading">Useful links</h3>
+                <h3 class="footer-heading">Χρήσιμα links</h3>
                 <div class="footer-widget-menu">
                     <ul class="list-unstyled">
-                        <li><a href="our-faqs.html"><i class="icofont-simple-right"></i> <span>FAQs</span></a></li>
-                        <li><a href="javascript:"><i class="icofont-simple-right"></i> <span>Help</span></a></li>
-                        <li><a href="javascript:"><i class="icofont-simple-right"></i> <span>Privacy Policy</span></a></li>
-                        <li><a href="javascript:"><i class="icofont-simple-right"></i> <span>Terms of Use</span></a></li>
-                        <li><a href="javascript:"><i class="icofont-simple-right"></i> <span>Site Map</span></a></li>
+                        <li><a href="#"><i class="icofont-simple-right"></i> <span>FAQs</span></a></li>
+                        <li><a href="#"><i class="icofont-simple-right"></i> <span>Γίνε Εθελοντής</span></a></li>
+                        <li><a href="#"><i class="icofont-simple-right"></i> <span>Κάνε Δωρεά</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -841,14 +839,14 @@
     </div>
     <div class="copyright-wrap">
         <div class="container pos-rel">
-            <div class="copyright-text">
-                <div>Copyrights <span id="yearText"></span> <span class="txt-green">PetHund</span> All Rights Reserved.</div>
-                <div>Designed by <a href="https://themeforest.net/user/mannatstudio" rel="nofollow">MannatStudio</a>
+            <div class="copyright-text ">
+                <div>Copyrights <span id="yearText"></span> <span class="txt-green">SCFA</span> All Rights Reserved.</div>
+                <div>Designed by <a href="https://techins.gr/" target="_blank">TechIns</a>
                 </div>
             </div>
-            <div class="footer-dog">
-                <img src="assets/images/dog_footer.png" alt>
-            </div>
+<!--            <div class="footer-dog">-->
+<!--                <img src="assets/images/dog_footer.png" alt>-->
+<!--            </div>-->
         </div>
     </div>
 </footer>
