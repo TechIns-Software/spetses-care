@@ -4896,6 +4896,10 @@ label.error {
 
 
 /* Contact Pages Start  */
+.map-wrap{
+    padding: 3em 0;
+}
+
 .contact-map-img {
     position: absolute;
     left: 50%;
@@ -6732,3 +6736,7 @@ label.error {
 /*------------------------------------------*/
 /*   Pages Styles
 /*------------------------------------------*/
+
+.minHeightClass{
+    min-height: 50px;
+}

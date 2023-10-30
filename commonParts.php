@@ -105,7 +105,7 @@ function navbar($title,$str= '../'){
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle-mob" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Σχετικά με εμάς <i class="icofont-thin-down"></i></a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdown02">
-                                    <li><a class="dropdown-item" href="#">Κτηνιατρείο</a></li>
+                                    <li><a class="dropdown-item" href="<?= $str ?>clinic">Κτηνιατρείο</a></li>
                                     <li><a class="dropdown-item" href="<?= $str ?>scfa">SCFA</a></li>
                                 </ul>
                             </li>
@@ -149,7 +149,7 @@ function navbar($title,$str= '../'){
                             <!--                        </li>-->
 
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= $str ?>">Επικοινωνία</a>
+                                <a class="nav-link" href="<?= $str ?>contact">Επικοινωνία</a>
                             </li>
                         </ul>
                     </div>
