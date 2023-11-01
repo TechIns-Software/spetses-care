@@ -71,7 +71,7 @@ navbar($titlePage,$str);
                         <li>Νοσηλεία και φροντίδα περίπου 300 αδέσποτων γατών.</li>
                         <li>Δημιουργία 12 σταθμών σίτισης και ξεκούρασης για αδέσποτες γάτες (Cats Hotel and Restaurant)</li>
                     </ul>
-                    <a href="#" class="btn-theme bg-navy-blue capusle mt-4 wow fadeInDown">Μάθε Περισσότερα</a>
+                    <a href="scfa" class="btn-theme bg-navy-blue capusle mt-4 wow fadeInDown">Μάθε Περισσότερα</a>
                 </div>
             </div>
         </div>
@@ -126,7 +126,7 @@ navbar($titlePage,$str);
                         ανησυχίες, μην διστάσετε να επικοινωνήσετε μαζί μας.
                     </p>
                     <div class="text-center mt-4">
-                        <a href="#" class="btn-theme bg-orange capusle bordered me-4"><span class="txt-white">Επικοινώνησε μαζί μας</span></a>
+                        <a href="contact" class="btn-theme bg-orange capusle bordered me-4"><span class="txt-white">Επικοινώνησε μαζί μας</span></a>
 
                     </div>
                 </div>
@@ -226,11 +226,6 @@ navbar($titlePage,$str);
                     </div>
                 </div>
 
-
-
-                <div class="text-center wow fadeInUp col-md-12" data-wow-duration="0" data-wow-delay="0s">
-                    <a href="#" class="btn-theme bordered capusle bg-navy-blue">Δείτε όλες τις δράσεις μας</a>
-                </div>
             </div>
         </div>
     </section>

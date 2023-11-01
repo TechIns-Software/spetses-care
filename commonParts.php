@@ -113,7 +113,7 @@ function navbar($title,$str= '../'){
 
 
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= $str ?>">Cats Hotel & Restaurant</a>
+                                <a class="nav-link" href="<?= $str ?>cats_hotel">Cats Hotel & Restaurant</a>
                             </li>
 
                             <li class="nav-item dropdown">
