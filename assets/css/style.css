@@ -6740,3 +6740,10 @@ label.error {
 .minHeightClass{
     min-height: 50px;
 }
+
+.about-img{
+    width: 80%;
+    border-radius: 10%;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.75);
+}

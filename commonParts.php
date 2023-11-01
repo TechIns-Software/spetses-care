@@ -208,24 +208,24 @@ function footer($str){
 
 
                 <div class="col-lg-3 ms-auto col-md-6">
-                    <h3 class="footer-heading">Working Hours</h3>
-                    <p>Our support available to help you 24 hours a day. We provide our best.</p>
-                    <div class="working-hours">
-                        <ul class="list-unstyled">
-                            <li>
-                                <span class="txt-green">Mon – Fri :</span>
-                                <span class="underline">08.00 am – 20.00 PM</span>
-                            </li>
-                            <li>
-                                <span class="txt-green">Saturday :</span>
-                                <span class="underline">09.00 am – 20.00 PM</span>
-                            </li>
-                            <li>
-                                <span class="txt-green">Sunday :</span>
-                                <span class="underline">We Are Closed</span>
-                            </li>
-                        </ul>
-                    </div>
+<!--                    <h3 class="footer-heading">Working Hours</h3>-->
+<!--                    <p>Our support available to help you 24 hours a day. We provide our best.</p>-->
+<!--                    <div class="working-hours">-->
+<!--                        <ul class="list-unstyled">-->
+<!--                            <li>-->
+<!--                                <span class="txt-green">Mon – Fri :</span>-->
+<!--                                <span class="underline">08.00 am – 20.00 PM</span>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <span class="txt-green">Saturday :</span>-->
+<!--                                <span class="underline">09.00 am – 20.00 PM</span>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <span class="txt-green">Sunday :</span>-->
+<!--                                <span class="underline">We Are Closed</span>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
                 </div>
 
             </div>

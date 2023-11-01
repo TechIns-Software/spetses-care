@@ -51,7 +51,7 @@ navbar($titlePage,$str);
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
-                    <img src="assets/images/home_welcom_one.png" alt>
+                    <img class="about-img" src="assets/images/about.JPG" alt>
                 </div>
                 <div class="col-lg-5">
                     <h1 class="heading-main">
@@ -405,7 +405,7 @@ navbar($titlePage,$str);
     </section>
 
     <section class="wide-tb-150">
-        <div class="container">
+        <div class="container ">
             <h1 class="heading-main center wow fadeInDown" data-wow-duration="0" data-wow-delay="0s">
                 <small>Image Tour <i class="pethund_repeat_grid"></i></small>
                 <span>Our</span> Gallery
@@ -468,10 +468,12 @@ navbar($titlePage,$str);
 
             </div>
         </div>
+        <div class="container">
+
+        </div>
     </section>
 
-
-    <section class="wide-tb-150 bg-snow pos-rel bg-navy-blue">
+    <section class="wide-tb-150 bg-snow pos-rel bg-navy-blue ">
         <div class="container">
             <div class="row">
 
@@ -485,58 +487,9 @@ navbar($titlePage,$str);
             </div>
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <div class="testimonial-rounded">
-                        <div class="owl-carousel owl-theme" id="testimonial-rounded">
-
-                            <div class="item">
-                                <div class="client-testimonial">
-                                    <div class="quote-icon">
-                                        <i class="pethund_quotes"></i>
-                                    </div>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts. Aliquam gravida, urna quis ornare
-                                        imperdiet, </p>
-                                    <div class="client-testimonial-icon justify-content-center d-flex align-items-center">
-                                        <img src="assets/images/testimonial_thumb_1.jpg" alt class="rounded-circle">
-                                        <h3>Tina Cambell <span>Pet Owner</span></h3>
-                                    </div>
-                                </div>
-                            </div>
+                    <iframe src='https://widgets.sociablekit.com/google-reviews/iframe/218639' frameborder='0' width='100%' height='400'></iframe>
 
 
-                            <div class="item">
-                                <div class="client-testimonial">
-                                    <div class="quote-icon">
-                                        <i class="pethund_quotes"></i>
-                                    </div>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts. Aliquam gravida, urna quis ornare
-                                        imperdiet, </p>
-                                    <div class="client-testimonial-icon justify-content-center d-flex align-items-center">
-                                        <img src="assets/images/team_2.jpg" alt class="rounded-circle">
-                                        <h3>Tina Cambell <span>Pet Owner</span></h3>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="item">
-                                <div class="client-testimonial">
-                                    <div class="quote-icon">
-                                        <i class="pethund_quotes"></i>
-                                    </div>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts. Aliquam gravida, urna quis ornare
-                                        imperdiet, </p>
-                                    <div class="client-testimonial-icon justify-content-center d-flex align-items-center">
-                                        <img src="assets/images/team_3.jpg" alt class="rounded-circle">
-                                        <h3>Tina Cambell <span>Pet Owner</span></h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
                 </div>
                 <div class="col-md-6 order-md-first wow fadeInLeft" data-wow-duration="0" data-wow-delay="0s">
                     <img src="assets/images/dog_sitting.png" alt>
