@@ -35,15 +35,15 @@ function navbar($title,$str= '../'){
     </head>
     <body>
 
-    <div id="pageloader">
-        <div class="loader-item">
-            <div class="loader-item-content">
-                <i class="icofont-paw"></i>
-            </div>
-        </div>
-    </div>
-
-    <b class="screen-overlay"></b>
+<!--    <div id="pageloader">-->
+<!--        <div class="loader-item">-->
+<!--            <div class="loader-item-content">-->
+<!--                <i class="icofont-paw"></i>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!---->
+<!--    <b class="screen-overlay"></b>-->
     <header class="wow fadeInDown header-blue header-top header-anim">
         <div class="top-bar-right d-flex align-items-center text-md-left d-none">
             <div class="container">

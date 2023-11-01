@@ -132,6 +132,104 @@ navbar($titlePage,$str);
             </div>
         </section>
 
+        <section class="wide-tb-100">
+            <div class="container">
+                <h1 class="heading-main center wow fadeInDown" data-wow-duration="0" data-wow-delay="0s">
+                    <small>Η Ομάδα μας<i class="pethund_repeat_grid"></i></small>
+                    <span>Γνωρίστε την</span> ομάδα μας
+                </h1>
+                <div class="owl-carousel owl-theme" id="team-slider-about">
+
+                    <div class="item">
+                        <div class="team-section-wrap">
+                            <div class="img">
+                                <div class="social-icons">
+                                    <a href="#"><i data-feather="twitter"></i></a>
+                                    <a href="#"><i data-feather="facebook"></i></a>
+                                    <a href="#"><i data-feather="instagram"></i></a>
+                                </div>
+                                <img src="../assets/images/team/team-1.jpg" alt>
+                            </div>
+                            <div class="team-name">
+                                <h4><a href="#">Κωνσταντίνος Κουτσόπουλος</a></h4>
+                                <div><strong>Κτηνίατρος , επιστημονικά υπεύθυνος</strong></div>
+                            </div>
+                            <a href="#" class="read-more-arrow">
+                                Περισσότερα<span> <i class="icofont-simple-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="team-section-wrap">
+                            <div class="img">
+                                <div class="social-icons">
+                                    <a href="#"><i data-feather="twitter"></i></a>
+                                    <a href="#"><i data-feather="facebook"></i></a>
+                                    <a href="#"><i data-feather="instagram"></i></a>
+                                </div>
+                                <img src="../assets/images/team/team-2.jpg" alt>
+                            </div>
+                            <div class="team-name">
+                                <h4><a href="#">Μιράντα Γιαμαλή</a></h4>
+                                <div><strong>Βοηθός Κτηνιάτρου</strong></div>
+                            </div>
+                            <a href="#" class="read-more-arrow">
+                                Περισσότερα<span> <i class="icofont-simple-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="team-section-wrap">
+                            <div class="img">
+                                <div class="social-icons">
+                                    <a href="#"><i data-feather="twitter"></i></a>
+                                    <a href="#"><i data-feather="facebook"></i></a>
+                                    <a href="#"><i data-feather="instagram"></i></a>
+                                </div>
+                                <img src="../assets/images/team/team-3.jpg" alt>
+                            </div>
+                            <div class="team-name">
+                                <h4><a href="#">Αντώνης Τερζάκης</a></h4>
+                                <div><strong>Υπεύθυνος Γραμματείας και συντονισμού</strong></div>
+                            </div>
+                            <a href="#" class="read-more-arrow">
+                                Περισσότερα<span> <i class="icofont-simple-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="team-section-wrap">
+                            <div class="img">
+                                <div class="social-icons">
+                                    <a href="#"><i data-feather="twitter"></i></a>
+                                    <a href="#"><i data-feather="facebook"></i></a>
+                                    <a href="#"><i data-feather="instagram"></i></a>
+                                </div>
+                                <img src="../assets/images/team/team-4.jpg" alt>
+                            </div>
+                            <div class="team-name">
+                                <h4><a href="#">Κατερίνα Βογιατζή</a></h4>
+                                <div><strong>Ιδρυτικό μέλος και co κτηνιατρείου SCFA</strong></div>
+                            </div>
+                            <a href="#" class="read-more-arrow">
+                                Περισσότερα<span> <i class="icofont-simple-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
 

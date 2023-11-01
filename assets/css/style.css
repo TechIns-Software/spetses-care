@@ -549,9 +549,11 @@ h2.h2-xl { font-size: 1.5rem; }     /* 24px */
     background-size: cover;
 }
 .callout_bg{
-	background-image: url(../images/callout_bg.jpg);
+	background-image: url(../images/gallery/home/img_gallery3.jpg);
     background-repeat: no-repeat;
     background-position: center center;
+    background-blend-mode: soft-light;
+    background-color: rgba(255, 255, 255, 0.31);
 }
 .bg-img-1{
 	background-image: url(../images/bg_1.jpg);
