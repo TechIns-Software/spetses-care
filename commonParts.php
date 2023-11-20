@@ -26,6 +26,7 @@ function navbar($title,$str= '../'){
         <link href="<?= $str ?>assets/css/responsive.css" rel="stylesheet">
 
         <link rel="stylesheet" type="text/css" href="<?= $str ?>assets/revolution/css/layers.css">
+        <link rel="stylesheet" type="text/css" href="<?= $str ?>assets/css/fontawesome6.4/css/all.css">
         <link rel="stylesheet" type="text/css" href="<?= $str ?>assets/revolution/css/navigation.css">
         <link rel="stylesheet" type="text/css" href="<?= $str ?>assets/revolution/css/settings.css">
         <link rel="stylesheet" type="text/css" href="<?= $str ?>assets/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
@@ -35,54 +36,25 @@ function navbar($title,$str= '../'){
     </head>
     <body>
 
-<!--    <div id="pageloader">-->
-<!--        <div class="loader-item">-->
-<!--            <div class="loader-item-content">-->
-<!--                <i class="icofont-paw"></i>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!---->
-<!--    <b class="screen-overlay"></b>-->
-    <header class="wow fadeInDown header-blue header-top header-anim">
-        <div class="top-bar-right d-flex align-items-center text-md-left d-none">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col d-flex align-items-center contact-info">
-                        <div>
-                            <i data-feather="map-pin"></i> Πλατεία Ρολογιού ΤΚ 18050 Σπέτσες
-                        </div>
-                        <div>
-                            <i data-feather="mail"></i> <a href="#">spetsescareforanimals@gmail.com</a>
-                        </div>
-                        <div>
-                            <i data-feather="smartphone"></i> <a href="tel:(123)456789">2298 0 72652</a>
-                        </div>
-                    </div>
-                    <div class="col-md-auto">
-                        <div class="social-icons">
+    <header class="wow fadeInDown header-blue  header-anim">
 
-                            <a href="#"><i data-feather="facebook"></i></a>
-                            <a href="#"><i data-feather="twitter"></i></a>
-                            <a href="#"><i data-feather="instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <nav class="navbar navbar-expand-lg header-fullpage nav-light">
-            <div class="container text-nowrap">
+        <nav class="navbar navbar-expand-lg header-fullpage nav-light ">
+            <div class="container-fluid text-nowrap">
                 <div class="d-flex align-items-center w-100 col p-0 logo-brand">
-                    <a class="navbar-brand rounded-bottom light-bg" href="<?= $str ?>">
+                    <a class="navbar-brand rounded-bottom light-bg " href="<?= $str ?>">
                         <img src="<?= $str ?>assets/images/scfa_logo.png" alt>
                     </a>
                 </div>
 
                 <div class="d-inline-flex order-lg-last col-auto p-0 align-items-center">
-                    <a href="<?= $str ?>" class="btn-theme bg-green btn-shadow ms-3 d-none d-sm-block">Κάνε Δωρεά</a>
+<!--                    <a  class="btn-theme bg-green btn-shadow ms-3 d-none d-sm-block"-->
+<!---->
+<!--                       data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" >Κάνε Δωρεά</a>-->
 
-                    <button class="navbar-toggler x collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler x collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -90,7 +62,7 @@ function navbar($title,$str= '../'){
 
                 </div>
 
-                <div class="navbar-collapse">
+                <div class="navbar-collapse ">
 
                     <div class="offcanvas-header">
                         <a href="#" class="logo-small">
@@ -99,68 +71,83 @@ function navbar($title,$str= '../'){
                     </div>
 
 
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav ms-auto">
+                    <div class="offcanvas-body ">
+                        <ul class="navbar-nav  ">
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle-mob" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Σχετικά με εμάς <i class="icofont-thin-down"></i></a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdown02">
-                                    <li><a class="dropdown-item" href="<?= $str ?>clinic">Κτηνιατρείο</a></li>
-                                    <li><a class="dropdown-item" href="<?= $str ?>scfa">SCFA</a></li>
-                                </ul>
+                            <li class="nav-item newLayout">
+                                <a class="nav-link" href="#">Κάνε Δωρεά</a>
+                            </li>
+                            <li class="nav-item newLayout">
+                                <a class="nav-link" href="#">Γίνε Εθελοντής</a>
+                            </li>
+                            <li class="nav-item newLayout">
+                                <a class="nav-link" href="#">Υιοθεσία/Αναδοχή</a>
+                            </li>
+                            <li class="nav-item newLayout">
+                                <a class="nav-link"  data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"> <i class="fa-solid fa-bars fs-1"></i>  </a>
                             </li>
 
-
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="<?= $str ?>cats_hotel">Cats Hotel & Restaurant</a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle-mob" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Δράσεις <i class="icofont-thin-down"></i></a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                                    <li><a class="dropdown-item" href="#">Οι Δράσεις μας</a></li>
-                                    <li><a class="dropdown-item" href="#">Υιοθέτησε με</a></li>
-                                    <li><a class="dropdown-item" href="#">Αναδοχή</a></li>
-                                    <li><a class="dropdown-item" href="#">Γίνε εθελοντής</a></li>
-
-                                </ul>
-                            </li>
-                            <!--                        <li class="nav-item dropdown megamenu">-->
-                            <!--                            <a href="#" class="nav-link dropdown-toggle-mob" id="dropdown04" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages <i class="icofont-thin-down"></i></a>-->
-                            <!--                            <div class="menu-back-div dropdown-menu megamenu-content" role="menu" aria-labelledby="dropdown04">-->
-                            <!--                                <div class="megamenu-content-wrap">-->
-                            <!--                                    <ul class="list-unstyled">-->
-                            <!--                                        <li><a class="dropdown-item" href="about.html">About Us</a></li>-->
-                            <!--                                        <li><a class="dropdown-item" href="our-team.html">Our Team</a></li>-->
-                            <!--                                        <li><a class="dropdown-item" href="team-single.html">Team Single</a></li>-->
-                            <!--                                        <li><a class="dropdown-item" href="our-faqs.html">Our Faq's</a></li>-->
-                            <!--                                        <li><a class="dropdown-item" href="404.html">Error 404</a></li>-->
-                            <!--                                    </ul>-->
-                            <!--                                    <ul class="list-unstyled">-->
-                            <!--                                        <li><a class="dropdown-item" href="our-services.html">Services</a></li>-->
-                            <!--                                        <li><a class="dropdown-item" href="services-single.html">Services Single</a></li>-->
-                            <!--                                        <li><a class="dropdown-item" href="shortcodes-element.html">Elements Page 1</a></li>-->
-                            <!--                                        <li><a class="dropdown-item" href="shortcodes-element-alt.html">Elements Page 2</a></li>-->
-                            <!--                                        <li><a class="dropdown-item" href="typography.html">Typography</a></li>-->
-                            <!--                                    </ul>-->
-                            <!--                                </div>-->
-                            <!--                            </div>-->
-                            <!--                        </li>-->
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="<?= $str ?>contact">Επικοινωνία</a>
-                            </li>
+<!--                            <li class="nav-item dropdown">-->
+<!--                                <a class="nav-link dropdown-toggle-mob" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Σχετικά με εμάς <i class="icofont-thin-down"></i></a>-->
+<!--                                <ul class="dropdown-menu" aria-labelledby="dropdown02">-->
+<!--                                    <li><a class="dropdown-item" href="--><?php //= $str ?><!--clinic">Κτηνιατρείο</a></li>-->
+<!--                                    <li><a class="dropdown-item" href="--><?php //= $str ?><!--scfa">SCFA</a></li>-->
+<!--                                </ul>-->
+<!--                            </li>-->
+<!---->
+<!---->
+<!---->
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="--><?php //= $str ?><!--cats_hotel">Cats Hotel & Restaurant</a>-->
+<!--                            </li>-->
+<!---->
+<!--                            <li class="nav-item dropdown">-->
+<!--                                <a class="nav-link dropdown-toggle-mob" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Δράσεις <i class="icofont-thin-down"></i></a>-->
+<!--                                <ul class="dropdown-menu" aria-labelledby="dropdown03">-->
+<!--                                    <li><a class="dropdown-item" href="#">Οι Δράσεις μας</a></li>-->
+<!--                                    <li><a class="dropdown-item" href="#">Υιοθέτησε με</a></li>-->
+<!--                                    <li><a class="dropdown-item" href="#">Αναδοχή</a></li>-->
+<!--                                    <li><a class="dropdown-item" href="#">Γίνε εθελοντής</a></li>-->
+<!---->
+<!--                                </ul>-->
+<!--                            </li>-->
+<!--                            -->
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="--><?php //= $str ?><!--contact">Επικοινωνία</a>-->
+<!--                            </li>-->
                         </ul>
                     </div>
 
-                    <div class="close-nav"></div>
+                    <div class="close-nav "></div>
 
                 </div>
             </div>
         </nav>
 
     </header>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+                  <div class="offcanvas-body ">
+                        <ul class="navbar-nav  ">
+
+                            <li class="nav-item newLayout">
+                                <a class="nav-link" href="#">Κάνε Δωρεά</a>
+                            </li>
+                            <li class="nav-item newLayout">
+                                <a class="nav-link" href="#">Γίνε Εθελοντής</a>
+                            </li>
+                            <li class="nav-item newLayout">
+                                <a class="nav-link" href="#">Υιοθεσία/Αναδοχή</a>
+                            </li>
+                            </ul>
+                  </div>
+        </div>
+    </div>
 
 <?php
 }
@@ -243,23 +230,6 @@ function footer($str){
     </footer>
 
 
-    <div class="overlay overlay-hugeinc">
-        <form class="form-inline mt-2 mt-md-0">
-            <div class="form-inner">
-                <div class="form-inner-div d-inline-flex align-items-center g-0">
-                    <div class="col-md-1">
-                        <i class="icofont-search"></i>
-                    </div>
-                    <div class="col-10">
-                        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-                    </div>
-                    <div class="col-md-1">
-                        <a href="#" class="overlay-close link-oragne"><i class="icofont-close-line"></i></a>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
 
 
     <a id="mkdf-back-to-top" href="#" class="off"><i class="icofont-rounded-up"></i></a>
