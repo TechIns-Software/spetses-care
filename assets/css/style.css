@@ -183,6 +183,124 @@ video {
 .nav-item.newLayout a{
     color: white!important;
 }
+
+.newLayout{
+    padding: .2em;
+    min-width: 180px;
+    min-height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2DB2D2;
+    border-right: 2px solid white;
+}
+.newLayout a{
+    color: white!important;
+}
+.newLayout.hamburger i{
+    display: none;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+@media (max-width: 920px) {
+    .newLayout{
+        min-width: 160px;
+    }
+    .newLayout a{
+        font-size:18px ;
+        color: white!important;
+    }
+    .newLayout.hamburger {
+        min-width: 50px;
+    }
+    .newLayout.hamburger a{
+        display: none;
+    }
+    .newLayout.hamburger i{
+        display: block;
+    }
+}
+
+@media (max-width: 718px) {
+    .newLayout{
+        min-width: 130px;
+    }
+    .newLayout a{
+        font-size:14px ;
+        color: white!important;
+    }
+}
+
+@media (max-width: 625px) {
+    .newLayout{
+        min-width: 100px;
+        min-height: 50px;
+    }
+    .navbar-brand {
+        height: 50px;!important;
+        width: 60px!important;
+    }
+
+    .newLayout a{
+        font-size:12px ;
+        color: white!important;
+    }
+}
+
+@media (max-width: 530px) {
+    .newLayout{
+        min-width: 90px;
+
+    }
+
+    .newLayout a{
+        font-size:10px ;
+        color: white!important;
+    }
+}
+
+@media (max-width: 420px) {
+    .newLayout{
+        min-width: 80px;
+
+    }
+
+}
+
+@media (max-width: 390px) {
+    .newLayout{
+        min-width: unset;
+
+    }
+
+}
+
+@media (max-width: 360px) {
+    .allMenu,.logo-brand{
+      width: 100%;!important;
+        margin: .5em auto;
+    }
+
+    .navbar-brand  {
+        height: 70px;!important;
+        width: 80px!important;
+        text-align: center!important;
+        margin: auto!important;
+
+    }
+
+    .navbar-brand img  {
+        height: 50px;!important;
+        width: 60px!important;
+        text-align: center!important;
+        margin: auto!important;
+    }
+
+}
+
+
+
 .navbar-toggler {
     outline: none !important;
 }

@@ -40,47 +40,102 @@ function navbar($title,$str= '../'){
 
 
         <nav class="navbar navbar-expand-lg header-fullpage nav-light ">
-            <div class="container-fluid d-flex justify-content-between">
+            <div class="container-fluid text-nowrap">
                 <div class="d-flex align-items-center w-100 col p-0 logo-brand">
-                    <a class="navbar-brand  " href="<?= $str ?>">
+                    <a class="navbar-brand rounded-bottom light-bg " href="<?= $str ?>">
                         <img src="<?= $str ?>assets/images/scfa_logo.png" alt>
                     </a>
                 </div>
-                <div class="d-flex justify-content-end allMenu">
-                    <div class="newLayout">
-                            <a class="nav-link" href="#">Κάνε Δωρεά</a>
+                <div class="d-inline-flex order-lg-last col-auto p-0 align-items-center">
+                    <button class="navbar-toggler x collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse ">
+                    <div class="offcanvas-header">
+                        <a href="#" class="logo-small">
+                            <img src="<?= $str ?>assets/images/scfa_logo.png" alt>
+                        </a>
                     </div>
+                    <div class="offcanvas-body ">
+                        <ul class="navbar-nav  ">
 
-                    <div class="newLayout">
-                        <a class="nav-link" href="#">Γίνε Εθελοντής</a>
+                            <li class="nav-item newLayout">
+                                <a class="nav-link" href="#">Κάνε Δωρεά</a>
+                            </li>
+                            <li class="nav-item newLayout">
+                                <a class="nav-link" href="#">Γίνε Εθελοντής</a>
+                            </li>
+                            <li class="nav-item newLayout">
+                                <a class="nav-link" href="#">Υιοθεσία/Αναδοχή</a>
+                            </li>
+                            <li class="nav-item newLayout">
+                                <a class="nav-link"  data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"> <i class="fa-solid fa-bars fs-1"></i>  </a>
+                            </li>
+
+<!--                            <li class="nav-item dropdown">-->
+<!--                                <a class="nav-link dropdown-toggle-mob" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Σχετικά με εμάς <i class="icofont-thin-down"></i></a>-->
+<!--                                <ul class="dropdown-menu" aria-labelledby="dropdown02">-->
+<!--                                    <li><a class="dropdown-item" href="--><?php //= $str ?><!--clinic">Κτηνιατρείο</a></li>-->
+<!--                                    <li><a class="dropdown-item" href="--><?php //= $str ?><!--scfa">SCFA</a></li>-->
+<!--                                </ul>-->
+<!--                            </li>-->
+<!---->
+<!---->
+<!---->
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="--><?php //= $str ?><!--cats_hotel">Cats Hotel & Restaurant</a>-->
+<!--                            </li>-->
+<!---->
+<!--                            <li class="nav-item dropdown">-->
+<!--                                <a class="nav-link dropdown-toggle-mob" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Δράσεις <i class="icofont-thin-down"></i></a>-->
+<!--                                <ul class="dropdown-menu" aria-labelledby="dropdown03">-->
+<!--                                    <li><a class="dropdown-item" href="#">Οι Δράσεις μας</a></li>-->
+<!--                                    <li><a class="dropdown-item" href="#">Υιοθέτησε με</a></li>-->
+<!--                                    <li><a class="dropdown-item" href="#">Αναδοχή</a></li>-->
+<!--                                    <li><a class="dropdown-item" href="#">Γίνε εθελοντής</a></li>-->
+<!---->
+<!--                                </ul>-->
+<!--                            </li>-->
+<!--                            -->
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="--><?php //= $str ?><!--contact">Επικοινωνία</a>-->
+<!--                            </li>-->
+                        </ul>
                     </div>
-
-                    <div class="newLayout">
-                        <a class="nav-link" href="#">Υιοθεσία/Αναδοχή</a>
-                    </div>
-
-                    <div class="newLayout hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                        <a class="nav-link" >Menu </a>
-                        <i class="fa-solid fa-bars "></i>
-                    </div>
-
-
-
+                    <div class="close-nav "></div>
                 </div>
             </div>
         </nav>
 
     </header>
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
+                  <div class="offcanvas-body ">
+                        <ul class="navbar-nav  ">
 
+                            <li class="nav-item newLayout">
+                                <a class="nav-link" href="#">Κάνε Δωρεά</a>
+                            </li>
+                            <li class="nav-item newLayout">
+                                <a class="nav-link" href="#">Γίνε Εθελοντής</a>
+                            </li>
+                            <li class="nav-item newLayout">
+                                <a class="nav-link" href="#">Υιοθεσία/Αναδοχή</a>
+                            </li>
+                            </ul>
+                  </div>
         </div>
     </div>
-
 
 <?php
 }
