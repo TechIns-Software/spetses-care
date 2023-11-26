@@ -77,7 +77,7 @@ function navbar($title,$str= '../'){
         <div class="offcanvas-body">
             <div class="offCanvasLinks">
                 <a class="active" href="#">Αρχική</a>
-                <a href="#">Δράσεις</a>
+                <a href="<?= $str ?>actions">Δράσεις</a>
                 <a href="#">Gallery</a>
                 <a href="#">Forum</a>
                 <a href="#">Cats Hotel & Restaurant</a>
