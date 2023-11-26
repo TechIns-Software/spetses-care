@@ -9,6 +9,9 @@ Tags:   animal care, cats, Dog grooming, dogs, pet, pet care, pet center, pet se
 
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700;800&family=Karla:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    transition: all 0.3s ease-in-out 0s;
+}
 
 html {
     -webkit-font-smoothing: antialiased;
@@ -164,6 +167,8 @@ video {
     padding: 0;
     width: 140px;
 }
+
+
 .navbar{
     padding: 1rem 0;
 }
@@ -223,6 +228,9 @@ video {
 }
 
 @media (max-width: 718px) {
+    .heroBg{
+        display: none;
+    }
     .newLayout{
         min-width: 130px;
     }
@@ -233,6 +241,7 @@ video {
 }
 
 @media (max-width: 625px) {
+
     .newLayout{
         min-width: 100px;
         min-height: 50px;
@@ -6895,11 +6904,14 @@ label.error {
 }
 
 #new-hero{
-    min-height: 100vh;
+    min-height: auto;
+
 }
 
 .heroBg{
-    min-height: 80vh;
+    margin: 0;
+    padding: 0;
+
     background-image: url("../images/home/hero-1.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -6908,7 +6920,6 @@ label.error {
 
 .heroInformation{
     font-family: var(--main-font);
-
 
     background: #2DB2D1;
     color: #F7F7FF;
@@ -6947,6 +6958,8 @@ label.error {
     height:80px;
 }
 #custom-carousel{
+    background-color: red!important;
+    padding: 2em 0;
     margin-bottom: 2em;
 }
 
@@ -6961,8 +6974,16 @@ label.error {
 
 #about-section{
     padding: 4em 0;
-    background: #2DB2D2;
-    box-shadow: 0px 4px 4px 0px #00000040 inset;
+
+
+    min-height: 550px;
+    background-image: url("../images/home/about.png");
+    background-attachment: fixed;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.27);
 
 }
 
@@ -7006,4 +7027,32 @@ label.error {
     font-size: 18px;
     font-weight: 700;
     line-height: 27px;
+}
+
+#offCanvasMenu{
+    background:var(--second-blue-color);
+}
+
+.offCanvasLinks{
+    text-align: start;
+    padding: 1em 0;
+}
+
+.offCanvasLinks a{
+    width: 100%!important;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    padding: .5em ;
+    display: inline-block!important;
+    margin: .5em 0;
+    border-bottom:1px solid whitesmoke;
+
+}
+
+.offCanvasLinks a:hover, .offCanvasLinks a.active{
+    background-color: whitesmoke;
+    color: var(--second-blue-color);
+    border-radius: 10px;
 }

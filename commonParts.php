@@ -36,12 +36,10 @@ function navbar($title,$str= '../'){
     </head>
     <body>
 
-    <header class="wow fadeInDown header-blue  header-anim">
-
-
-        <nav class="navbar navbar-expand-lg header-fullpage nav-light ">
-            <div class="container-fluid d-flex justify-content-between">
-                <div class="d-flex align-items-center w-100 col p-0 logo-brand">
+    <header class="wow fadeInDown header-blue  header-anim  ">
+        <nav class=" navbar-expand-lg ">
+            <div class="container-fluid d-flex justify-content-between p-0  ">
+                <div class="d-flex align-items-center w-100 col  logo-brand">
                     <a class="navbar-brand  " href="<?= $str ?>">
                         <img src="<?= $str ?>assets/images/scfa_logo.png" alt>
                     </a>
@@ -59,7 +57,7 @@ function navbar($title,$str= '../'){
                         <a class="nav-link" href="#">Υιοθεσία/Αναδοχή</a>
                     </div>
 
-                    <div class="newLayout hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <div class="newLayout hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvasMenu" aria-controls="offCanvasMenu">
                         <a class="nav-link" >Menu </a>
                         <i class="fa-solid fa-bars "></i>
                     </div>
@@ -72,11 +70,21 @@ function navbar($title,$str= '../'){
 
     </header>
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offCanvasMenu" aria-labelledby="offCanvasMenuLabel">
         <div class="offcanvas-header">
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
+            <div class="offCanvasLinks">
+                <a class="active" href="#">Αρχική</a>
+                <a href="#">Δράσεις</a>
+                <a href="#">Gallery</a>
+                <a href="#">Forum</a>
+                <a href="#">Cats Hotel & Restaurant</a>
+                <a href="#">Επικοινωνία</a>
+                <a href="#">Sponsors</a>
+            </div>
+
 
         </div>
     </div>

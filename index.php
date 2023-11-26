@@ -8,15 +8,15 @@ navbar($titlePage, $str);
 ?>
     <main id="body-content">
         <section id="new-hero">
-            <div class="container-fluid ">
-                <div class="row">
+            <div class="container-fluid  ">
+                <div class="row ">
 
 
                     <div class="col-lg-8 col-md-12 heroBg">
 
                     </div>
 
-                    <div class="col-lg-4 col-md-12 heroInformation">
+                    <div class="col-lg-4 col-md-12 heroInformation ">
                         <h3>Κάτι αλλάζει στο νησί...</h3>
                         <p>Ζούμε στις Σπέτσες και πιστεύουμε ότι μπορούμε να γίνουμε ένα νησί παράδειγμα προς μίμηση
                             στην
@@ -37,9 +37,7 @@ navbar($titlePage, $str);
             </div>
         </section>
 
-        <section id="custom-carousel ">
-            <div class="container">
-
+        <section class="container  " id="custom-carousel  ">
                 <div class="owl-carousel owl-theme owl-loaded owl-drag" id="home-shop-slider">
                     <div class="item">
                         <div class="product-grid">
@@ -83,13 +81,12 @@ navbar($titlePage, $str);
 
 
                 </div>
-            </div>
         </section>
 
         <section id="about-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                         <div class="d-flex justify-content-start align-items-center titleAbout">
                             <div><img src="assets/images/home/footIcon.png"></div>
                             <div><h5> Σχετικά με εμάς </h5></div>
@@ -109,14 +106,14 @@ navbar($titlePage, $str);
                         <p class="aboutPar">
                             Ο σκοπός της δημιουργλιας είναι να προσφέρει υπηρεσίες και παροχές υψηλού επιπέδου σε όλα τα
                             ζώα του νησιού δεσποζόμενα και αδέσποτα.
+                            Τα έσοδα από τις υπηρεσίες μας διοχετεύονται στη στήριξη των αδέσποτων ζώων.
                             Βασικός πυλώνας του έργου μας είναι η καταμέτρηση, η στείρωση και η φροντίδα των αδέσποτων
                             γατών που υπάρχουν στο νησί των Σπετσών.
                         </p>
 
                     </div>
-                    <div class="col-lg-6 ">
-                        <img class="about-img " src="assets/images/home/aboutImg.png" alt="cartoon Image">
-                    </div>
+
+
 
                 </div>
             </div>
@@ -130,14 +127,14 @@ navbar($titlePage, $str);
 
                 <div class="col-lg-6 col-md-12">
                     <div class="teamCard">
-                        <img src="assets/images/home/team1.png">
+                        <img src="assets/images/home/fokion-potamianos.png" alt="Ποταμιανός Φωκίων Φίλων">
                         <h4>Φωκίων Φίλων<br> Ποταμιανός</h4>
                         <p>Ιδρυτικό μέλος και χορηγός<br> του SCFA Α.Μ.Κ.Ε.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
                     <div class="teamCard">
-                        <img src="assets/images/home/team2.png">
+                        <img src="assets/images/home/katerina-bogiatzi.png" alt="Κατερίνα Βογιατζή">
                         <h4>Κατερίνα <br>Βογιατζή</h4>
                         <p>Ιδρυτικό μέλος και υπεύθυνη του<br> κτηνιατρείου SCFA Α.Μ.Κ.Ε.</p>
                     </div>
@@ -145,7 +142,7 @@ navbar($titlePage, $str);
 
                 <div class="col-lg-4 col-md-12">
                     <div class="teamCard">
-                        <img src="assets/images/home/team3.png">
+                        <img src="assets/images/home/kotsopoulos.png" alt="Κουτσόπουλος Κωνσταντίνος">
                         <h4> Κουτσόπουλος<br> Κωνσταντίνος</h4>
                         <p>Κτηνίατρος και<br> υπεύθυνος</p>
                     </div>
@@ -154,7 +151,7 @@ navbar($titlePage, $str);
 
                 <div class="col-lg-4 col-md-12">
                     <div class="teamCard">
-                        <img src="assets/images/home/team4.png">
+                        <img src="assets/images/home/miranta-giammali.png" alt="Μιράντα Γιάμμαλη">
                         <h4>Μιράντα<br> Γιάμμαλη </h4>
                         <p>Βοηθός κτηνιάτρου</p>
                     </div>
@@ -163,7 +160,7 @@ navbar($titlePage, $str);
 
                 <div class="col-lg-4 col-md-12">
                     <div class="teamCard">
-                        <img src="assets/images/home/team5.png">
+                        <img src="assets/images/home/antonis-terzakis.png" alt="Αντώνης Τερζάκης">
                         <h4>Αντώνης <br> Τερζάκης </h4>
                         <p>Υπεύθυνος γραματείας</p>
                     </div>

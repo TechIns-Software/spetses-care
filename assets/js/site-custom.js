@@ -797,10 +797,9 @@ Custom Javascript
                     loop: true,
                     nav: false,
                     slideBy: 1,
-                    dots: true,
+                    dots: false,
                     center: false,
                     autoplay: true,
-                    autoheight: true,
                     navText: ['<i class="icofont-thin-left"></i>', '<i class="icofont-thin-right"></i>'],
                     responsive: {
                         320: {
