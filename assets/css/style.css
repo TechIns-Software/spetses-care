@@ -7095,7 +7095,7 @@ label.error {
     background-attachment: fixed;
 }
 #actionsHeader[page="hotel"] {
-    min-height: 600px;
+    min-height: 70vh;
     background-blend-mode: unset;
     background-color: unset;
 }
