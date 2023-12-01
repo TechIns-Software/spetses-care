@@ -80,7 +80,7 @@ function navbar($title,$str= '../'){
                 <a href="<?= $str ?>actions">Δράσεις</a>
                 <a href="#">Gallery</a>
                 <a href="#">Forum</a>
-                <a href="#">Cats Hotel & Restaurant</a>
+                <a href="<?= $str ?>hotel-restaurant">Cats Hotel & Restaurant</a>
                 <a href="#">Επικοινωνία</a>
                 <a href="#">Sponsors</a>
             </div>
