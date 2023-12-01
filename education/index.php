@@ -88,9 +88,6 @@ navbar($titlePage,$str);
                         <img class="img-fluid" src="../assets/images/gdr_img_2.jpg" alt="education1">
                     </div>
 
-
-
-
                 </div>
             </div>
         </section>
