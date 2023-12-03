@@ -35,7 +35,7 @@ navbar($titlePage,$str);
 
                         <div class="twoBoxesHotel ">
                             <div class="box1">
-                                <img alt="hotel scfa" src="../assets/images/hotel/cat.jpg">
+                                <img class="boxImg"  alt="hotel scfa" src="../assets/images/hotel/cat.jpg">
                                 <p>Έως τώρα έχουμε τοποθετήσει 13 τέτοιους σταθμούς και εξιγιασμένες αποικίες, οι
                                     οποίες
                                     συντηρούνται από εθελοντές.</p>
@@ -43,7 +43,7 @@ navbar($titlePage,$str);
 
 
                             <div class="box1">
-                                <img alt="hotel scfa bird" src="../assets/images/hotel/bird.jpg">
+                                <img class="boxImg"  alt="hotel scfa bird" src="../assets/images/hotel/bird.jpg">
                                 <p>Τοποθετούμε τους καλοκαιρινούς μήνες 18 ποτίστρες περιμετρικά αλλά και στην
                                     κορυφογραμμή του νησιού μας για τα ζώα του δάσους και των πουλιών.</p>
                             </div>

@@ -946,3 +946,7 @@ Custom Javascript
     
 
 })(jQuery);
+
+function closeAllCollapses() {
+    $('.collapse').collapse('hide');
+}

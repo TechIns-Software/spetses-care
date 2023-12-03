@@ -1,141 +1,124 @@
 <?php
 include_once '../commonParts.php';
 $str = '../';
-$titlePage = "Clinic";
+$titlePage = "Το Κτηνιατρείο Μας";
 navbar($titlePage,$str);
 
-
 ?>
-
-
     <main id="body-content">
-
-        <section class="wide-tb-150 about-us-gap about-left-wrap">
-            <div class="container">
+        <section id="actionsHeader" page="clinic">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="about-us-wrap">
-                            <h1 class="heading-main light-mode">
-                                <small>Σχετικά με εμάς   <i class="pethund_repeat_grid"></i></small>
-                              Το Κτηνιατρείο
-                            </h1>
-                            <p>At Pethund, the ambition is that you should always feel welcome both as an advertiser and a visitor. A modern and easy-to-manage page makes it easier for Users to maneuver forward. or then randomised words which don't look even slightly believable </p>
-                            <p>At Pethund, the ambition is that you should always feel welcome both as an advertiser and a visitor. A modern and easy-to-manage page makes it easier for Users to maneuver forward. or then randomised words which don't look even slightly believable </p>
-                            <p>At Pethund, the ambition is that you should always feel welcome both as an advertiser and a visitor. A modern and easy-to-manage page makes it easier for Users to maneuver forward. or then randomised words which don't look even slightly believable </p>
+                    <div class="col-md-12">
 
-                        </div>
                     </div>
-                    <div class="col-lg-6 mb-0">
-                        <div class="about-left">
-                            <img src="../assets/images/about_left.jpg" alt="">
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
+        <div class="sectionDivider"></div>
 
-
-        <section class="wide-tb-100 pt-0">
+        <section id="clinic">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="vision-mission">
-                            <img src="../assets/images/vision_img.jpg" alt="" class="img-vision">
-                            <h2 class="txt-blue fw-7">Το όραμα μας</h2>
-                            <p>Everage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-                        </div>
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-7 col-md-12">
+                        <h3 class="clinicHeader">Το Κτηνιατρείο Μας</h3>
+                        <p class="clinicPar"> Το κτηνιατρείο SCFA Α.Μ.Κ.Ε. στεγάζεται σε ένα χώρο 97 τ.μ. σε κεντρικό σημείο του νησιού
+                            των Σπετσών.
+                        </p>
+                        <p class="clinicPar"> Στις εγκαταστάσεις μας παρέχουμε τις ακόλουθες υπηρεσίες:</p>
+                        <div class="clinicList">
+                            <div class="d-flex justify-content-start align-items-center clinicDot ">
+                                <div><img src="../assets/images/clinic/blue-foot.png"> </div>
+                                <div><h4>Ακτινολογικό Τμήμα</h4></div>
+                            </div>
 
+                            <div class="d-flex justify-content-start align-items-center clinicDot ">
+                                <div><img src="../assets/images/clinic/blue-foot.png"> </div>
+                                <div><h4>Αιματολογικό Βιοχημικό Τμήμα</h4></div>
+                            </div>
+
+                            <div class="d-flex justify-content-start align-items-center clinicDot ">
+                                <div><img src="../assets/images/clinic/blue-foot.png"> </div>
+                                <div><h4>Υπερηχογραφικό Τμήμα</h4></div>
+                            </div>
+
+                            <div class="d-flex justify-content-start align-items-center clinicDot ">
+                                <div><img src="../assets/images/clinic/blue-foot.png"> </div>
+                                <div><h4>Χειρουργικό Τμήμα</h4></div>
+                            </div>
+
+                            <div class="d-flex justify-content-start align-items-center clinicDot ">
+                                <div><img src="../assets/images/clinic/blue-foot.png"> </div>
+                                <div><h4>Οδοντιατρικό Τμήμα</h4></div>
+                            </div>
+
+                            <div class="d-flex justify-content-start align-items-center clinicDot ">
+                                <div><img src="../assets/images/clinic/blue-foot.png"> </div>
+                                <div><h4>Νοσηλεία</h4></div>
+                            </div>
+
+                            <div class="d-flex justify-content-start align-items-center clinicDot ">
+                                <div><img src="../assets/images/clinic/blue-foot.png"> </div>
+                                <div><h4>Φάρμακα / Κτηνιατρικά Προϊόντα</h4></div>
+                            </div>
+
+                            <div class="d-flex justify-content-start align-items-center clinicDot ">
+                                <div><img src="../assets/images/clinic/blue-foot.png"> </div>
+                                <div><h4>Pet Shop/Τροφές/Καλλωπισμός</h4></div>
+                            </div>
+
+
+
+                        </div>
                     </div>
-                    <div class="col-lg-6 flex-lg-column-reverse d-lg-flex">
-                        <div class="vision-mission">
-                            <img src="../assets/images/mission_img.jpg" alt="" class="img-vision">
-                            <h2 class="txt-orange fw-7">Η Αποστολή μας</h2>
-                            <p>Everage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-                        </div>
 
+                    <div class="col-lg-5 col-md-12">
+                        <img class="img-fluid " src="../assets/images/clinic/cat.png">
+                    </div>
+
+                    <div class="col-12 text-center">
+                      <a class="goGallery" href="#educationPhotos">  <i class="fa-solid fa-chevron-down "></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
-
-        <section class="wide-tb-100 pb-5">
+        <div class="sectionDivider"></div>
+        <section id="educationPhotos">
             <div class="container">
-                <div class="row align-items-center">
-
-                    <div class="col-lg-12 mt-5 mt-lg-0">
-                        <h1 class="heading-main">
-                            <span>Συχνές</span> Ερωτήσεις
-                        </h1>
-                        <p>Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.</p>
-                        <div class="accordion accordion-flush theme-accordian" id="accordionFlushExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        How to take care of your pets
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <div class="content">
-                                            Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                        Get bathing in our vet bath
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <div class="content">
-                                            Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                        Your pet is in good hands with us
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <div class="content">
-                                            Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                                        The best care takers of any kind of pets
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <div class="content">
-                                            Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="row my-2">
+                    <div class="col-lg-4 col-md-12 my-2 ">
+                        <img class="img-fluid" src="../assets/images/clinic/clinic1.png" alt="Clinic Photos">
                     </div>
+
+                    <div class="col-lg-4 col-md-12 my-2 ">
+                        <img class="img-fluid" src="../assets/images/clinic/clinic2.png" alt="Clinic Photos">
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 my-2 ">
+                        <img class="img-fluid" src="../assets/images/clinic/clinic3.png" alt="Clinic Photos">
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 my-2 ">
+                        <img class="img-fluid" src="../assets/images/clinic/clinic4.png" alt="Clinic Photos">
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 my-2 ">
+                        <img class="img-fluid" src="../assets/images/clinic/clinic5.png" alt="Clinic Photos">
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-12 my-2 ">
+                        <img class="img-fluid" src="../assets/images/clinic/clinic6.png" alt="Clinic Photos">
+                    </div>
+
+
                 </div>
             </div>
         </section>
+
 
     </main>
-
-
-
 <?php
 footer($str);
 ?>

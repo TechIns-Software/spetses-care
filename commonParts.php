@@ -79,7 +79,7 @@ function navbar($title,$str= '../'){
                 <a class="active" href="#">Αρχική</a>
                 <a href="<?= $str ?>actions">Δράσεις</a>
                 <a href="#">Gallery</a>
-                <a href="#">Forum</a>
+                <a href="<?= $str ?>forum">Forum</a>
                 <a href="<?= $str ?>hotel-restaurant">Cats Hotel & Restaurant</a>
                 <a href="#">Επικοινωνία</a>
                 <a href="#">Sponsors</a>
@@ -97,68 +97,53 @@ function footer($str){
     ?>
 
 
-    <footer class="wide-tb-150 bg-navy-blue pb-0">
-        <div class="container">
 
-            <div class="row">
+        <div class="custom-footer">
+            <div class="row footerContainer">
+                <div class="col-12">
+                    <h5>Επικοινωνήστε μαζί μας</h5>
+                    <div class="d-flex  justify-content-start align-items-center flex-wrap">
+                        <div class="footerBox">
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="footerBoxTitle">Τηλέφωνο</div>
+                            <div class="footerBoxSubtitle">(+30) 697 000 0000</div>
+                        </div>
 
-                <div class="col-lg-4 col-md-6 me-auto">
-                    <div class="logo-footer">
-                        <img src="<?=$str?>assets/images/scfa_logo.png" alt>
+                        <div class="footerBox">
+                            <div>
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="footerBoxTitle">E-mail</div>
+
+
+                            <div class="footerBoxSubtitle">info@info.gr</div>
+
+                        </div>
+
+                        <div class="footerBox">
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="footerBoxTitle">Διεύθυνση</div>
+                            <div class="footerBoxSubtitle"> Σπέτσες 18</div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center flex-wrap">
+                        <div class="footerBox2">
+                            Θέλετε να μας στείλετε μήνυμα;
+                        </div>
+
+                        <div class="footerBox2">
+                            <a href="#" class="ctaContact">Επικοινωνία</a>
+                        </div>
+
                     </div>
                 </div>
-
-
-                <div class="col-lg-2 col-md-6">
-                    <h3 class="footer-heading">Μενού</h3>
-                    <div class="footer-widget-menu">
-                        <ul class="list-unstyled">
-                            <li><a href="#"><i class="icofont-simple-right"></i> <span>Σχετικά με εμάς</span></a></li>
-                            <li><a href="#l"><i class="icofont-simple-right"></i> <span>Το όραμα μας</span></a></li>
-                            <li><a href="#"><i class="icofont-simple-right"></i> <span>Cats Hotel</span></a></li>
-                            <li><a href="#"><i class="icofont-simple-right"></i> <span>Οι Δράσεις μας</span></a></li>
-                            <li><a href="#"><i class="icofont-simple-right"></i> <span>Επικοινωνία</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-2 col-md-6">
-                    <h3 class="footer-heading">Χρήσιμα links</h3>
-                    <div class="footer-widget-menu">
-                        <ul class="list-unstyled">
-                            <li><a href="#"><i class="icofont-simple-right"></i> <span>FAQs</span></a></li>
-                            <li><a href="#"><i class="icofont-simple-right"></i> <span>Γίνε Εθελοντής</span></a></li>
-                            <li><a href="#"><i class="icofont-simple-right"></i> <span>Κάνε Δωρεά</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-3 ms-auto col-md-6">
-<!--                    <h3 class="footer-heading">Working Hours</h3>-->
-<!--                    <p>Our support available to help you 24 hours a day. We provide our best.</p>-->
-<!--                    <div class="working-hours">-->
-<!--                        <ul class="list-unstyled">-->
-<!--                            <li>-->
-<!--                                <span class="txt-green">Mon – Fri :</span>-->
-<!--                                <span class="underline">08.00 am – 20.00 PM</span>-->
-<!--                            </li>-->
-<!--                            <li>-->
-<!--                                <span class="txt-green">Saturday :</span>-->
-<!--                                <span class="underline">09.00 am – 20.00 PM</span>-->
-<!--                            </li>-->
-<!--                            <li>-->
-<!--                                <span class="txt-green">Sunday :</span>-->
-<!--                                <span class="underline">We Are Closed</span>-->
-<!--                            </li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-                </div>
-
             </div>
         </div>
-        <div class="copyright-wrap">
+        <div class="copyright-wrap d-none">
             <div class="container pos-rel">
                 <div class="copyright-text ">
                     <div>Copyrights <span id="yearText"></span> <span class="txt-green">SCFA</span> All Rights Reserved.</div>
@@ -168,7 +153,7 @@ function footer($str){
 
             </div>
         </div>
-    </footer>
+
 
 
 

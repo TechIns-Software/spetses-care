@@ -699,7 +699,7 @@ h2.h2-xl { font-size: 1.5rem; }     /* 24px */
 .bg-shadow-white{ background-color: rgb(255, 255, 255); box-shadow: 0px 0px 16px 0px rgba(39, 48, 75, 0.14); }
 .bg-white{ background: #FFF; }
 .bg-light-gray{ background: #fafafa; }
-.bg-navy-blue{ background: var(--primary-color); }
+.bg-navy-blue{ background: var(--main-blue-color); }
 .bg-orange{ background: var(--main-red-color); }
 .bg-blue{ background: #4bb3e6; }
 .bg-blue-light{background: #ecf2f5;}
@@ -7099,6 +7099,22 @@ label.error {
     background-blend-mode: unset;
     background-color: unset;
 }
+
+#actionsHeader[page="forum"] {
+    min-height: 70vh;
+    background-blend-mode: unset;
+    background-color: unset;
+    background-image: url("../images/forum/forumBg.png");
+    background-attachment: unset;
+}
+
+#actionsHeader[page="clinic"] {
+    min-height: 80vh;
+    background-blend-mode: unset;
+    background-color: unset;
+    background-image: url("../images/clinic/clinicBg.png");
+    background-attachment: unset;
+}
 .sectionDivider{
     padding: 0;
     margin: 0;
@@ -7348,11 +7364,14 @@ font-size: 25px;
 
 }
 
-.box1 img{
-
+.boxImg{
     height: 180px;
     margin-top: 1em;
     aspect-ratio: 16/9;
+}
+.two-foots-hotel{
+
+    height:50px;
 }
 
 .box1 p{
@@ -7397,13 +7416,12 @@ font-size: 25px;
 }
 .fluid-layout{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 0.5rem;
 }
 
 .educationContainer{
-    flex: 1 0 10rem;
-    margin: .5em 0;
+    margin: .5em auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7411,6 +7429,12 @@ font-size: 25px;
     width: 308px;
     min-height: 250px;
     background-color: var(--second-blue-color);
+}
+
+.educationContainer:hover{
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.52);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.4);
 }
 
 .educationContainer i{
@@ -7430,8 +7454,11 @@ color: var(--main-blue-color);
     cursor: pointer;
 
 }
+.educationContainer[aria-expanded="true"] i,.educationContainer[aria-expanded="true"] h4 {
+    color: var(--main-blue-color);
+}
 
-.educationContainer .fa-chevron-down[aria-expanded="true"]{
+.educationContainer[aria-expanded="true"] .fa-chevron-down{
     transform: rotateZ(180deg);
 }
 
@@ -7439,15 +7466,136 @@ color: var(--main-blue-color);
     color: white;
     font-size: 18px;
     text-align: start;
+    margin: .5em auto;
     padding: .5em;
     background-color: var(--second-blue-color);
-}
-.educationCollapse:before{
 
-    content: 'fsdfasd';
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.44);
+}
+
+.two-foots-education{
+    width: 40px;
+}
+.educationCollapse p{
+
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+#educationPhotos{
+    padding: 3em 0;
+}
+
+#educationPhotos img{
     display: block;
+    border-radius: 15px;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.36);
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.36);
+}
 
-    width: 50px;
-    height: 50px;
+
+#clinic{
+    padding: 3em 0;
+}
+.clinicHeader{
+    color: var(--main-blue-color);
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.clinicPar{
+    color: var(--main-blue-color);
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.clinicDot{
+    margin: .5em auto;
+}
+
+.clinicDot img{
+    height: 35px;
+    aspect-ratio: 1/1;
+}
+
+.clinicDot h4{
+    color: var(--main-blue-color);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 31px;
 
 }
+
+.goGallery{
+    color: var(--second-blue-color);
+    font-size: 32px;
+}
+
+.custom-footer{
+    padding: 3em 0;
+
+    background-color: var(--main-blue-color);
+}
+
+.footerContainer{
+    width: 80%;
+    margin: auto;
+}
+
+.footerContainer h5{
+    color: white;
+    font-size: 33px;
+    font-weight: 800;
+    line-height: 52px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.footerBox{
+    padding: .5em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid var(--second-blue-color);
+    min-height: 60px;
+    margin: .5em ;
+    min-width: 300px;
+    color: white;
+}
+.footerBox i{
+    color:var(--second-blue-color);
+    margin-right:.5em ;
+}
+.footerBox2{
+    padding: .5em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    min-height: 60px;
+    margin: .5em ;
+    min-width: 300px;
+    color: white;
+}
+
+.ctaContact{
+    font-weight: 700;
+    text-align: center;
+    min-width: 200px;
+    font-size: 18px;
+    padding: .5em;
+    color: white;
+    background-color:var(--second-blue-color);
+}
+
+
