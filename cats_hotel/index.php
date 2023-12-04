@@ -2,9 +2,8 @@
 include_once '../commonParts.php';
 $str = '../';
 $titlePage = "Cats Hotel & Restaurant";
+$_SESSION['page'] = 7 ;
 navbar($titlePage,$str);
-
-
 ?>
 
 

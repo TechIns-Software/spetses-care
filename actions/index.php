@@ -2,6 +2,7 @@
 include_once '../commonParts.php';
 $str = '../';
 $titlePage = "Δράσεις";
+$_SESSION['page'] = 2 ;
 navbar($titlePage,$str);
 
 ?>
@@ -156,7 +157,7 @@ navbar($titlePage,$str);
                     <div class="col-lg-6 col-md-12 order-xl-1  order-lg-1 order-md-2 order-sm-2 order-2">
                         <h4 class="actionDetailTitle"> Εκπαιδευτικές <br> Ενημερώσεις Σε Μαθητές</h4>
                         <p class="actionDetailPar">Έχουμε πραγματοποιήσει ενημερώσεις ομιλίες και δράσεις σχεδόν σε όλες τις σχολικές βαθμίδες του νησιού μας, με σκοπό να προβάλλουμε στα παιδιά την αληλεπίδραση και το σεβασμό απέναντι σε όλα τα ζώα.</p>
-                        <a href="#" class="actionCta">Μάθε Περισσότερα</a>
+                        <a href="../education" class="actionCta">Μάθε Περισσότερα</a>
                     </div>
 
                     <div class="col-lg-6 col-md-12 order-xl-2  order-lg-2 order-md-1 order-sm-1 order-1 ">
@@ -177,7 +178,7 @@ navbar($titlePage,$str);
                         <h4 class="actionDetailTitle">Cats Hotel &
                             <br> Cats Restaurant</h4>
                         <p class="actionDetailPar">Στην προσπάθειά μας να βελτιώσουμε τις συνθήκες διαβίωσης των αδέσποτων γατών του νησιού μας, έχουμε δημιουργήσει σταθμούς σίτισης και ξεκούρασης, τα γνωστά πλέον Cats Restaurants and Hotels. </p>
-                        <a href="#" class="actionCta">Μάθε Περισσότερα</a>
+                        <a href="../hotel-restaurant" class="actionCta">Μάθε Περισσότερα</a>
 
                     </div>
 

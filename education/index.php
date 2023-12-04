@@ -2,6 +2,7 @@
 include_once '../commonParts.php';
 $str = '../';
 $titlePage = "Εκπαιδευτικά Προγράμματα";
+$_SESSION['page'] = 5 ;
 navbar($titlePage, $str);
 
 ?>
@@ -30,6 +31,20 @@ navbar($titlePage, $str);
                                 <h4> Περίπατος </h4>
                                 <i class="fa-solid fa-chevron-down" ></i>
                             </div>
+                            <div class="mobileCollapse">
+                            <div class="collapse  " id="collapseWalk">
+                                <div class="d-flex justify-content-start">
+                                    <img class="two-foots-education" src="../assets/images/home/two-foots.png" alt="education1">
+                                </div>
+                                <p>
+                                    Πραγματοποιήσαμε περίπατο με παιδιά του Δημοτικού Σχολείου Σπετσών με σκοπό την σίτιση
+                                    αδέσποτων γατών.
+                                </p>
+                                <!--                            <div class="d-flex justify-content-end">-->
+                                <!--                                <img class="two-foots-education" src="../assets/images/home/two-foots.png" alt="education1">-->
+                                <!--                            </div>-->
+                            </div>
+                            </div>
 
                             <div class="educationContainer" onclick="closeAllCollapses()" data-bs-toggle="collapse" href="#collapsePaint"
                                  role="button"
@@ -38,8 +53,19 @@ navbar($titlePage, $str);
                                 <h4> Διαγωνισμός<br> Ζωγραφικής </h4>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
-
-
+                            <div class="mobileCollapse">
+                            <div class="collapse  " id="collapsePaint">
+                                <div class="d-flex justify-content-start">
+                                    <img class="two-foots-education" src="../assets/images/home/two-foots.png" alt="education1">
+                                </div>
+                                <p>
+                                    Δοργανώσαμε διαγωνισμό ζωγραφικής με θέμα: Η ΑΔΕΣΠΟΤΗ ΖΩΗ ΜΕΣΑ ΑΠΟ ΤΑ ΜΑΤΙΑ ΤΩΝ ΠΑΙΔΙΩΝ για τους μαθητές Νηπιαγωγείων, Δημοτικού και Γυμνασίου Σπετσών με επιβράβευση όλων των συμμετεχόντων.
+                                </p>
+                                <div class="d-flex justify-content-end">
+                                    <img class="two-foots-education" src="../assets/images/home/two-foots.png" alt="education1">
+                                </div>
+                            </div>
+                            </div>
                             <div class="educationContainer" onclick="closeAllCollapses()" data-bs-toggle="collapse" href="#collapseRead"
                                  role="button"
                                  aria-expanded="false" aria-controls="collapseRead">
@@ -47,8 +73,20 @@ navbar($titlePage, $str);
                                 <h4> Δημιουργία<br> Επιμορφωτικού<br> Παραμυθιού </h4>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
-
-
+                            <div class="mobileCollapse">
+                            <div class="collapse   " id="collapseRead">
+                                <div class="d-flex justify-content-start">
+                                    <img class="two-foots-education" src="../assets/images/home/two-foots.png" alt="education1">
+                                </div>
+                                <p>
+                                    Έχουμε δημιουργήσει το πρώτο μέρος της σειράς παιδικού επιμορφωτικού παραμυθιού, το γνωστό:
+                                    ΟΙ ΠΕΡΙΠΕΤΕΙΕΣ ΤΟΥ ΞΟΥΤ ΚΑΙ ΤΗΣ ΟΥΣΤ, το οποίο διαθέσαμε δωρεάν στα νηπιαγωγεία και το Δημοτικό Σχολείο Σπετσών.
+                                </p>
+                                <div class="d-flex justify-content-end">
+                                    <img class="two-foots-education" src="../assets/images/home/two-foots.png" alt="education1">
+                                </div>
+                            </div>
+                            </div>
                             <div class="educationContainer" onclick="closeAllCollapses()"  data-bs-toggle="collapse" href="#collapseHospital"
                                  role="button"
                                  aria-expanded="false" aria-controls="collapseHospital">
@@ -56,11 +94,22 @@ navbar($titlePage, $str);
                                 <h4> Εκπαιδευτικές<br> Επισκέψεις </h4>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
-
+                            <div class="mobileCollapse">
+                            <div class="collapse  " id="collapseHospital">
+                                <div class="d-flex justify-content-start">
+                                    <img class="two-foots-education" src="../assets/images/home/two-foots.png" alt="education1">
+                                </div>
+                                <p>
+                                    Πραγματοποιούμε εκπαιδευτικές επισκέψεις στην δομή μας με σκοπό να γνωρίσουν από κοντά τα παιδιά όλες τις υπηρεσίες που υλοποιούμε.
+                                </p>
+                                <div class="d-flex justify-content-end">
+                                    <img class="two-foots-education" src="../assets/images/home/two-foots.png" alt="education1">
+                                </div>
+                            </div>
+                            </div>
                         </div>
 
-
-                        <div class="collapse educationCollapse" id="collapseWalk">
+                        <div class="collapse educationCollapse " id="collapseWalk">
                             <div class="d-flex justify-content-start">
                                 <img class="two-foots-education" src="../assets/images/home/two-foots.png" alt="education1">
                             </div>
@@ -68,9 +117,9 @@ navbar($titlePage, $str);
                                 Πραγματοποιήσαμε περίπατο με παιδιά του Δημοτικού Σχολείου Σπετσών με σκοπό την σίτιση
                                 αδέσποτων γατών.
                             </p>
-                            <div class="d-flex justify-content-end">
-                                <img class="two-foots-education" src="../assets/images/home/two-foots.png" alt="education1">
-                            </div>
+                            <!--                            <div class="d-flex justify-content-end">-->
+                            <!--                                <img class="two-foots-education" src="../assets/images/home/two-foots.png" alt="education1">-->
+                            <!--                            </div>-->
                         </div>
 
                         <div class="collapse educationCollapse" id="collapsePaint">
@@ -110,8 +159,9 @@ navbar($titlePage, $str);
                             </div>
                         </div>
 
-
                     </div>
+
+
                 </div>
             </div>
         </section>

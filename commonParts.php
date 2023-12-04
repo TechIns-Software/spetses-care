@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 function navbar($title,$str= '../'){
     ?>
 
@@ -45,8 +45,8 @@ function navbar($title,$str= '../'){
                     </a>
                 </div>
                 <div class="d-flex justify-content-end allMenu">
-                    <div class="newLayout">
-                            <a class="nav-link" href="#">Κάνε Δωρεά</a>
+                    <div class="newLayout <?php  echo $_SESSION['page'] == 5 ? 'active' :'' ?>">
+                      <a class="nav-link" href="#">Κάνε Δωρεά</a>
                     </div>
 
                     <div class="newLayout">
@@ -69,6 +69,7 @@ function navbar($title,$str= '../'){
         </nav>
 
     </header>
+    <div class="headerMinHeight"></div>
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offCanvasMenu" aria-labelledby="offCanvasMenuLabel">
         <div class="offcanvas-header">
@@ -76,13 +77,15 @@ function navbar($title,$str= '../'){
         </div>
         <div class="offcanvas-body">
             <div class="offCanvasLinks">
-                <a class="active" href="#">Αρχική</a>
-                <a href="<?= $str ?>actions">Δράσεις</a>
-                <a href="#">Gallery</a>
-                <a href="<?= $str ?>forum">Forum</a>
-                <a href="<?= $str ?>hotel-restaurant">Cats Hotel & Restaurant</a>
-                <a href="#">Επικοινωνία</a>
-                <a href="#">Sponsors</a>
+                <a class="<?php echo $_SESSION['page'] == 1 ? 'active' :'' ?>" href="#">Αρχική</a>
+                <a class="<?php echo $_SESSION['page'] == 2 ? 'active' :'' ?>" href="<?= $str ?>actions">Δράσεις</a>
+                <a class="<?php echo $_SESSION['page'] == 3 ? 'active' :'' ?>" href="#">Gallery</a>
+                <a class="<?php echo $_SESSION['page'] == 4 ? 'active' :'' ?>" href="<?= $str ?>forum">Forum</a>
+                <a class="<?php echo $_SESSION['page'] == 5 ? 'active' :'' ?>" href="<?= $str ?>education">Εκπαιδευτικά Προγράμματα</a>
+                <a class="<?php echo $_SESSION['page'] == 6 ? 'active' :'' ?>" href="<?= $str ?>clinic">Το κτηνιατρείο μας</a>
+                <a class="<?php echo $_SESSION['page'] == 7 ? 'active' :'' ?>" href="<?= $str ?>hotel-restaurant">Cats Hotel & Restaurant</a>
+                <a class="<?php echo $_SESSION['page'] == 8 ? 'active' :'' ?>" href="#">Επικοινωνία</a>
+                <a class="<?php echo $_SESSION['page'] == 9 ? 'active' :'' ?>" href="#">Sponsors</a>
             </div>
 
 

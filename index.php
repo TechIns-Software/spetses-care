@@ -2,6 +2,7 @@
 include_once 'commonParts.php';
 $str = '';
 $titlePage = "Αρχική";
+$_SESSION['page'] = 1 ;
 navbar($titlePage, $str);
 
 
@@ -11,12 +12,23 @@ navbar($titlePage, $str);
             <div class="container-fluid  ">
                 <div class="row ">
 
-
-                    <div class="col-lg-8 col-md-12 heroBg">
-
+                    <div class="col-lg-8 col-md-12 p-0  slide-in-left ">
+                        <div id="carouselHero" class="carousel  slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/slider/slider1.JPG" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/slider/slider2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/slider/slider3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-12 heroInformation ">
+                    <div class="col-lg-4 col-md-12 heroInformation slide-in-right ">
                         <h3>Κάτι αλλάζει στο νησί...</h3>
                         <p>Ζούμε στις Σπέτσες και πιστεύουμε ότι μπορούμε να γίνουμε ένα νησί παράδειγμα προς μίμηση
                             στην
@@ -37,7 +49,7 @@ navbar($titlePage, $str);
             </div>
         </section>
 
-        <section class="container  " id="custom-carousel  ">
+        <section class="container  " id="custom-carousel">
                 <div class="owl-carousel owl-theme owl-loaded owl-drag" id="home-shop-slider">
                     <div class="item">
                         <div class="product-grid">
@@ -85,8 +97,8 @@ navbar($titlePage, $str);
 
         <section id="about-section">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
+                <div class="row aboutContainer">
+                    <div class="col-lg-12 ">
                         <div class="d-flex justify-content-start align-items-center titleAbout">
                             <div><img src="assets/images/home/footIcon.png"></div>
                             <div><h5> Σχετικά με εμάς </h5></div>
@@ -106,7 +118,10 @@ navbar($titlePage, $str);
                             Τα έσοδα από τις υπηρεσίες μας διοχετεύονται στη στήριξη των αδέσποτων ζώων.
                             Βασικός πυλώνας του έργου μας είναι η καταμέτρηση, η στείρωση και η φροντίδα των αδέσποτων γατών που υπάρχουν στο νησί των Σπετσών.
                         </p>
+                    </div>
 
+                    <div class="col-12 mobileAbout">
+                        <img class="img-fluid" alt="ksout kai oust photo" src="assets/images/home/aboutImg.png">
                     </div>
 
 
@@ -140,7 +155,7 @@ navbar($titlePage, $str);
                     <div class="teamCard">
                         <img src="assets/images/home/kotsopoulos.png" alt="Κουτσόπουλος Κωνσταντίνος">
                         <h4> Κουτσόπουλος<br> Κωνσταντίνος</h4>
-                        <p>Κτηνίατρος και<br> υπεύθυνος</p>
+                        <p>Κτηνίατρος <br> υγειονομικά υπεύθυνος.</p>
                     </div>
                 </div>
 
