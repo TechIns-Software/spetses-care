@@ -26,7 +26,8 @@ navbar($titlePage,$str);
                         <div>
                             <p class="sectionText">
                                 Πραγματοποιήσαμε στις 17/09/2023 με μεγάλη επιτυχία το 1ο Forum του κτηνιατρείου SCFA Α.Μ.Κ.Ε. στην Καποδιστριακή Στήγη Σπετσών με θέμα:
-
+                            </p>
+                            <p class="sectionText">
                                 Η ΕΥΖΩΙΑ ΤΩΝ ΖΩΩΝ ΚΑΙ Η ΑΛΛΗΛΕΠΙΔΡΑΣΗ ΤΟΥΣ ΜΕ ΤΟΥΣ ΑΝΘΡΩΠΟΥΣ
                             </p>
                             <p class="sectionText">Η διεξαγωγή των ετησίων συνεδριών μας ευελπιστούμε να γίνει θεσμός στα πολιτιστικά δρόμενα του τόπου μας.
@@ -79,7 +80,9 @@ navbar($titlePage,$str);
                         <img class="img-fluid" src="../assets/images/forum/forum6.png" alt="education1">
                     </div>
 
-
+                    <div class="col-12 text-center">
+                        <a href="../gallery" class="custom-hyperlink">Περισσότερα στο Gallery</a>
+                    </div>
                 </div>
             </div>
         </section>

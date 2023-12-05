@@ -2,6 +2,7 @@
 include_once '../commonParts.php';
 $str = '../';
 $titlePage = "Cats Hotel & Cats Restaurant";
+$_SESSION['page'] = 7 ;
 navbar($titlePage,$str);
 
 ?>
@@ -36,9 +37,7 @@ navbar($titlePage,$str);
                         <div class="twoBoxesHotel ">
                             <div class="box1">
                                 <img class="boxImg"  alt="hotel scfa" src="../assets/images/hotel/cat.jpg">
-                                <p>Έως τώρα έχουμε τοποθετήσει 13 τέτοιους σταθμούς και εξιγιασμένες αποικίες, οι
-                                    οποίες
-                                    συντηρούνται από εθελοντές.</p>
+                                <p>Έως τώρα έχουμε τοποθετήσει 13 τέτοιους σταθμούς και εξιγιασμένες αποικίες, οι οποίες συντηρούνται από εθελοντές.</p>
                             </div>
 
 
@@ -47,7 +46,10 @@ navbar($titlePage,$str);
                                 <p>Τοποθετούμε τους καλοκαιρινούς μήνες 18 ποτίστρες περιμετρικά αλλά και στην
                                     κορυφογραμμή του νησιού μας για τα ζώα του δάσους και των πουλιών.</p>
                             </div>
+                        </div>
 
+                        <div class="moreFoots d-flex justify-content-end">
+                            <img src="../assets/images/hotel/moreFoots.png">
                         </div>
                     </div>
                 </div>

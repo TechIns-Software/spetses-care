@@ -25,24 +25,24 @@ navbar($titlePage,$str);
                         <div id="mobileLayout" class="d-flex justify-content-between align-items-center">
                             <div class=""> <img src="../assets/images/actions/dog.png"> </div>
                             <div>
-                                <div class="actionCard">
+                                <div class="actionCard" onclick="window.location.href='#stiroseis'">
                                     <div class="actionTitle">Στειρώσεις <br>Αδέσποτων Ζώων</div>
                                     <div class="actionIcon"> <a href="#stiroseis"><i class="fa-solid fa-chevron-down"></i></a></div>
                                 </div>
 
-                                <div class="actionCard">
+                                <div class="actionCard" onclick="window.location.href='#nosileia'">
                                     <div class="actionTitle">Νοσηλεία Και  <br>Φροντίδα</div>
                                     <div class="actionIcon"> <a href="#nosileia"><i class="fa-solid fa-chevron-down"></i></a></div>
                                 </div>
 
 
 
-                                <div class="actionCard">
+                                <div class="actionCard" onclick="window.location.href='#enimerosi'">
                                     <div class="actionTitle">Εκπαιδευτικές Ενημερώσεις <br>Σε Μαθητές </div>
                                     <div class="actionIcon"> <a href="#enimerosi"><i class="fa-solid fa-chevron-down"></i></a></div>
                                 </div>
 
-                                <div class="actionCard">
+                                <div class="actionCard" onclick="window.location.href='#hotel'">
                                     <div class="actionTitle">Cats Hotel &  <br>Cats Restaurant</div>
                                     <div class="actionIcon"> <a href="#hotel"><i class="fa-solid fa-chevron-down"></i></a></div>
                                 </div>
@@ -52,12 +52,12 @@ navbar($titlePage,$str);
                         </div>
                         <div id="desktopLayout" >
                             <div>
-                                <div class="actionCard">
+                                <div class="actionCard" onclick="window.location.href='#stiroseis'" >
                                     <div class="actionTitle">Στειρώσεις <br>Αδέσποτων Ζώων</div>
                                     <div class="actionIcon"> <a href="#stiroseis"><i class="fa-solid fa-chevron-down"></i></a></div>
                                 </div>
 
-                                <div class="actionCard">
+                                <div class="actionCard" onclick="window.location.href='#nosileia'">
                                     <div class="actionTitle">Νοσηλεία Και  <br>Φροντίδα</div>
                                     <div class="actionIcon"> <a href="#nosileia"><i class="fa-solid fa-chevron-down"></i></a></div>
                                 </div>
@@ -69,12 +69,12 @@ navbar($titlePage,$str);
 
 
 
-                                <div class="actionCard">
+                                <div class="actionCard" onclick="window.location.href='#enimerosi'">
                                     <div class="actionTitle">Εκπαιδευτικές <br> Ενημερώσεις Σε Μαθητές </div>
                                     <div class="actionIcon"> <a href="#enimerosi"><i class="fa-solid fa-chevron-down"></i></a></div>
                                 </div>
 
-                                <div class="actionCard">
+                                <div class="actionCard" onclick="window.location.href='#hotel'">
                                     <div class="actionTitle">Cats Hotel &  <br>Cats Restaurant</div>
                                     <div class="actionIcon"> <a href="#hotel"><i class="fa-solid fa-chevron-down"></i></a></div>
                                 </div>
@@ -111,7 +111,7 @@ navbar($titlePage,$str);
         </section>
 
         <section id="stiroseis" class="actionDetailContainer">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 order-xl-1  order-lg-1 order-md-2 order-sm-2 order-2">
                         <h4 class="actionDetailTitle">Στειρώσεις<br> Αδέσποτων Ζώων</h4>
@@ -128,7 +128,7 @@ navbar($titlePage,$str);
             </div>
         </section>
         <section id="nosileia" class="actionDetailContainer">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12  ">
                         <img class="img-fluid" src="../assets/images/actions/frontida.png">
@@ -152,7 +152,7 @@ navbar($titlePage,$str);
         </section>
 
         <section id="enimerosi" class="actionDetailContainer">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 order-xl-1  order-lg-1 order-md-2 order-sm-2 order-2">
                         <h4 class="actionDetailTitle"> Εκπαιδευτικές <br> Ενημερώσεις Σε Μαθητές</h4>
@@ -168,15 +168,15 @@ navbar($titlePage,$str);
             </div>
         </section>
         <section id="hotel" class="actionDetailContainer">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12  ">
                         <img class="img-fluid" src="../assets/images/actions/hotel.png">
                     </div>
 
-                    <div class="col-lg-6 col-md-12 ">
-                        <h4 class="actionDetailTitle">Cats Hotel &
-                            <br> Cats Restaurant</h4>
+                    <div class="col-lg-6 col-md-12 text-start ">
+                        <h4 class="actionDetailTitle">Cats Hotel &  Cats Restaurant</h4>
+
                         <p class="actionDetailPar">Στην προσπάθειά μας να βελτιώσουμε τις συνθήκες διαβίωσης των αδέσποτων γατών του νησιού μας, έχουμε δημιουργήσει σταθμούς σίτισης και ξεκούρασης, τα γνωστά πλέον Cats Restaurants and Hotels. </p>
                         <a href="../hotel-restaurant" class="actionCta">Μάθε Περισσότερα</a>
 

@@ -196,6 +196,10 @@ navbar($titlePage, $str);
                         <img class="img-fluid" src="../assets/images/education/visit2.jpg" alt="education1">
                     </div>
 
+                    <div class="col-12 text-center">
+                        <a href="../gallery" class="custom-hyperlink">Περισσότερα στο Gallery</a>
+                    </div>
+
                 </div>
             </div>
         </section>

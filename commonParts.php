@@ -21,7 +21,7 @@ function navbar($title,$str= '../'){
 
         <link href="<?= $str ?>assets/css/theme-plugins.min.css" rel="stylesheet">
 
-        <link href="<?= $str ?>assets/css/style.css" rel="stylesheet">
+        <link href="<?= $str ?>assets/css/style.css?v=<?= time();?>" rel="stylesheet">
 
         <link href="<?= $str ?>assets/css/responsive.css" rel="stylesheet">
 
@@ -77,7 +77,7 @@ function navbar($title,$str= '../'){
         </div>
         <div class="offcanvas-body">
             <div class="offCanvasLinks">
-                <a class="<?php echo $_SESSION['page'] == 1 ? 'active' :'' ?>" href="#">Αρχική</a>
+                <a class="<?php echo $_SESSION['page'] == 1 ? 'active' :'' ?>" href="<?= $str ?>">Αρχική</a>
                 <a class="<?php echo $_SESSION['page'] == 2 ? 'active' :'' ?>" href="<?= $str ?>actions">Δράσεις</a>
                 <a class="<?php echo $_SESSION['page'] == 3 ? 'active' :'' ?>" href="#">Gallery</a>
                 <a class="<?php echo $_SESSION['page'] == 4 ? 'active' :'' ?>" href="<?= $str ?>forum">Forum</a>
@@ -100,112 +100,116 @@ function footer($str){
     ?>
 
 
-
-        <div class="custom-footer">
-            <div class="row footerContainer">
-                <div class="col-12">
-                    <h5>Επικοινωνήστε μαζί μας</h5>
-                    <div class="d-flex  justify-content-start align-items-center flex-wrap">
-                        <div class="footerBox">
-                            <div>
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div class="footerBoxTitle">Τηλέφωνο</div>
-                            <div class="footerBoxSubtitle">(+30) 697 000 0000</div>
+    <div class="custom-footer">
+        <div class="row footerContainer">
+            <div class="col-12">
+                <h5>Επικοινωνήστε μαζί μας</h5>
+                <div class="d-flex  justify-content-start align-items-center flex-wrap">
+                    <div class="footerBox">
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
                         </div>
-
-                        <div class="footerBox">
-                            <div>
-                                <i class="fa-regular fa-envelope"></i>
-                            </div>
-                            <div class="footerBoxTitle">E-mail</div>
-
-
-                            <div class="footerBoxSubtitle">info@info.gr</div>
-
-                        </div>
-
-                        <div class="footerBox">
-                            <div>
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div class="footerBoxTitle">Διεύθυνση</div>
-                            <div class="footerBoxSubtitle"> Σπέτσες 18</div>
-                        </div>
+                        <div class="footerBoxTitle">Τηλέφωνο</div>
+                        <div class="footerBoxSubtitle">(+30) 697 000 0000</div>
                     </div>
-                    <div class="d-flex justify-content-start align-items-center flex-wrap">
-                        <div class="footerBox2">
-                            Θέλετε να μας στείλετε μήνυμα;
-                        </div>
 
-                        <div class="footerBox2">
-                            <a href="#" class="ctaContact">Επικοινωνία</a>
+                    <div class="footerBox">
+                        <div>
+                            <i class="fa-regular fa-envelope"></i>
                         </div>
+                        <div class="footerBoxTitle">E-mail</div>
+
+
+                        <div class="footerBoxSubtitle">info@info.gr</div>
 
                     </div>
+
+                    <div class="footerBox">
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="footerBoxTitle">Διεύθυνση</div>
+                        <div class="footerBoxSubtitle"> Σπέτσες 18</div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-start align-items-center flex-wrap">
+                    <div class="footerBox2">
+                        Θέλετε να μας στείλετε μήνυμα;
+                    </div>
+
+                    <div class="footerBox2">
+                        <a href="#" class="ctaContact">Επικοινωνία</a>
+                    </div>
+
                 </div>
             </div>
         </div>
-        <div class="copyright-wrap d-none">
-            <div class="container pos-rel">
-                <div class="copyright-text ">
-                    <div>Copyrights <span id="yearText"></span> <span class="txt-green">SCFA</span> All Rights Reserved.</div>
-                    <div>Designed by <a href="https://techins.gr/" target="_blank">TechIns</a>
-                    </div>
+    </div>
+    <div class="copyright-wrap d-none">
+        <div class="container pos-rel">
+            <div class="copyright-text ">
+                <div>Copyrights <span id="yearText"></span> <span class="txt-green">SCFA</span> All Rights Reserved.
                 </div>
-
+                <div>Designed by <a href="https://techins.gr/" target="_blank">TechIns</a>
+                </div>
             </div>
+
         </div>
-
-
-
-
+    </div>
 
     <a id="mkdf-back-to-top" href="#" class="off"><i class="icofont-rounded-up"></i></a>
 
 
+    </script>
+    <script src="<?= $str ?>assets/js/jquery.min.js"></script>
+    <script src="<?= $str ?>assets/js/theme-plugins.min.js"></script>
 
+    <script src="<?= $str ?>assets/js/site-custom.js"></script>
 
-    </script><script src="<?=$str?>assets/js/jquery.min.js"></script>
-    <script src="<?=$str?>assets/js/theme-plugins.min.js"></script>
+    <script type="text/javascript" src="<?= $str ?>assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="<?= $str ?>assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
 
-    <script src="<?=$str?>assets/js/site-custom.js"></script>
-
-    <script type="text/javascript" src="<?=$str?>assets/revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="<?=$str?>assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
-
-    <script type="text/javascript" src="<?=$str?>assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-    <script type="text/javascript" src="<?=$str?>assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script type="text/javascript" src="<?=$str?>assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script type="text/javascript" src="<?=$str?>assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script type="text/javascript" src="<?=$str?>assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-    <script type="text/javascript" src="<?=$str?>assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script type="text/javascript" src="<?=$str?>assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script type="text/javascript" src="<?=$str?>assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script type="text/javascript" src="<?=$str?>assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script type="text/javascript"
+            src="<?= $str ?>assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript"
+            src="<?= $str ?>assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript"
+            src="<?= $str ?>assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript"
+            src="<?= $str ?>assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript"
+            src="<?= $str ?>assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript"
+            src="<?= $str ?>assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript"
+            src="<?= $str ?>assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript"
+            src="<?= $str ?>assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript"
+            src="<?= $str ?>assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
     <script type="text/javascript">
 
-        var tpj=jQuery;
+        var tpj = jQuery;
         var revapi26;
-        tpj(document).ready(function() {
-            if(tpj("#rev_slider_26_1").revolution == undefined){
+        tpj(document).ready(function () {
+            if (tpj("#rev_slider_26_1").revolution == undefined) {
                 revslider_showDoubleJqueryError("#rev_slider_26_1");
-            }else{
+            } else {
                 revapi26 = tpj("#rev_slider_26_1").show().revolution({
-                    sliderType:"standard",
-                    jsFileLocation:"revolution/js/",
-                    sliderLayout:"fullscreen",
-                    dottedOverlay:"none",
-                    delay:9000,
+                    sliderType: "standard",
+                    jsFileLocation: "revolution/js/",
+                    sliderLayout: "fullscreen",
+                    dottedOverlay: "none",
+                    delay: 9000,
                     navigation: {
-                        keyboardNavigation:"off",
+                        keyboardNavigation: "off",
                         keyboard_direction: "horizontal",
-                        mouseScrollNavigation:"off",
-                        mouseScrollReverse:"default",
-                        onHoverStop:"off",
-                        touch:{
-                            touchenabled:"on",
-                            touchOnDesktop:"off",
+                        mouseScrollNavigation: "off",
+                        mouseScrollReverse: "default",
+                        onHoverStop: "off",
+                        touch: {
+                            touchenabled: "on",
+                            touchOnDesktop: "off",
                             swipe_threshold: 75,
                             swipe_min_touches: 1,
                             swipe_direction: "horizontal",
@@ -213,71 +217,71 @@ function footer($str){
                         }
                         ,
                         arrows: {
-                            style:"metis",
-                            enable:true,
-                            hide_onmobile:true,
-                            hide_under:778,
-                            hide_onleave:false,
-                            tmp:'',
+                            style: "metis",
+                            enable: true,
+                            hide_onmobile: true,
+                            hide_under: 778,
+                            hide_onleave: false,
+                            tmp: '',
                             left: {
-                                h_align:"left",
-                                v_align:"center",
-                                h_offset:15,
-                                v_offset:0
+                                h_align: "left",
+                                v_align: "center",
+                                h_offset: 15,
+                                v_offset: 0
                             },
                             right: {
-                                h_align:"right",
-                                v_align:"center",
-                                h_offset:15,
-                                v_offset:0
+                                h_align: "right",
+                                v_align: "center",
+                                h_offset: 15,
+                                v_offset: 0
                             }
                         }
                         ,
                         bullets: {
-                            enable:true,
-                            hide_onmobile:false,
-                            style:"zeus",
-                            hide_onleave:false,
-                            direction:"horizontal",
-                            h_align:"center",
-                            v_align:"bottom",
-                            h_offset:0,
-                            v_offset:30,
-                            space:5,
-                            tmp:''
+                            enable: true,
+                            hide_onmobile: false,
+                            style: "zeus",
+                            hide_onleave: false,
+                            direction: "horizontal",
+                            h_align: "center",
+                            v_align: "bottom",
+                            h_offset: 0,
+                            v_offset: 30,
+                            space: 5,
+                            tmp: ''
                         }
                     },
-                    responsiveLevels:[1240,1024,778,480],
-                    visibilityLevels:[1240,1024,778,480],
-                    gridwidth:[1240,1024,778,480],
-                    gridheight:[868,768,960,300],
-                    lazyType:"none",
+                    responsiveLevels: [1240, 1024, 778, 480],
+                    visibilityLevels: [1240, 1024, 778, 480],
+                    gridwidth: [1240, 1024, 778, 480],
+                    gridheight: [868, 768, 960, 300],
+                    lazyType: "none",
                     parallax: {
-                        type:"scroll",
-                        origo:"slidercenter",
-                        speed:2000,
-                        levels:[5,10,15,20,25,30,35,40,45,46,47,48,49,50,51,55],
+                        type: "scroll",
+                        origo: "slidercenter",
+                        speed: 2000,
+                        levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 51, 55],
                     },
-                    shadow:0,
-                    spinner:"spinner0",
-                    stopLoop:"off",
-                    stopAfterLoops:-1,
-                    stopAtSlide:-1,
-                    shuffle:"off",
-                    autoHeight:"on",
-                    fullScreenAutoWidth:"off",
-                    fullScreenAlignForce:"off",
+                    shadow: 0,
+                    spinner: "spinner0",
+                    stopLoop: "off",
+                    stopAfterLoops: -1,
+                    stopAtSlide: -1,
+                    shuffle: "off",
+                    autoHeight: "on",
+                    fullScreenAutoWidth: "off",
+                    fullScreenAlignForce: "off",
                     fullScreenOffsetContainer: "",
                     fullScreenOffset: "0px",
-                    hideThumbsOnMobile:"off",
-                    hideSliderAtLimit:0,
-                    hideCaptionAtLimit:0,
-                    hideAllCaptionAtLilmit:0,
-                    debugMode:false,
+                    hideThumbsOnMobile: "off",
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    debugMode: false,
                     fallbacks: {
-                        simplifyAll:"off",
-                        nextSlideOnWindowFocus:"off",
-                        disableFocusListener:false,
+                        simplifyAll: "off",
+                        nextSlideOnWindowFocus: "off",
+                        disableFocusListener: false,
                     }
                 });
             }
