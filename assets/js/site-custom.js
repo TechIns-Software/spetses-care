@@ -971,6 +971,24 @@ function adoptionForm(event){
 
     $('#spinner-border').removeClass('d-none');
 
+    $.ajax({
+        url: `../contact.php`,
+        type: 'POST',
+        data: {
+            whatForm: 'adoptionForm',
+            fullName: fullName,
+            email: email,
+            phone: phone,
+            selectChoice: selectChoice
+        },
+
+        success:function(){
+            alert("Το μήνυμα σου στάλθηκε. Θα επικοινωνήσουμε μαζί σου το συντομότερο δυνατό!");
+            $('#spinner-border').addClass('d-none');
+            window.location.reload();
+
+        }
+    });
 
 }
 
@@ -988,6 +1006,26 @@ function contactForm(event){
     }
     $('#spinner-border').removeClass('d-none');
 
+    $.ajax({
+        url: `../contact.php`,
+        type: 'POST',
+        data: {
+            whatForm: 'contactForm',
+            fullName: fullName,
+            email: email,
+            phone: phone,
+            subject: subject,
+            message: message
+        },
+
+        success:function(){
+            alert("Το μήνυμα σου στάλθηκε. Θα επικοινωνήσουμε μαζί σου το συντομότερο δυνατό!");
+            $('#spinner-border').addClass('d-none');
+            window.location.reload();
+
+        }
+    });
+
 }
 
 function volunteerForm(event){
@@ -1002,6 +1040,25 @@ function volunteerForm(event){
         return;
     }
     $('#spinner-border').removeClass('d-none');
+
+
+    $.ajax({
+        url: `../contact.php`,
+        type: 'POST',
+        data: {
+            whatForm: 'volunteerForm',
+            fullName: fullName,
+            email: email,
+            phone: phone,
+        },
+
+        success:function(){
+            alert("Το μήνυμα σου στάλθηκε. Θα επικοινωνήσουμε μαζί σου το συντομότερο δυνατό!");
+            $('#spinner-border').addClass('d-none');
+            window.location.reload();
+
+        }
+    });
 
 }
 
@@ -1026,10 +1083,10 @@ function toggleCheckbox(checkbox) {
     const value = labelContainer.textContent.trim();
     console.log(value);
 }
-
+ var valuesArray = [];
 function getAllValues() {
     const checkboxes = document.querySelectorAll('.custom-checkbox');
-    const valuesArray = [];
+     valuesArray = [];
 
     checkboxes.forEach((checkbox) => {
         const boxContainer = checkbox.querySelector('.boxContainer');
@@ -1044,4 +1101,59 @@ function getAllValues() {
     });
 
     console.log(valuesArray);
+    const string = valuesArray.join(', ');
+
+    if(valuesArray.length > 0) {
+        $('#currentValue').text(string);
+    }else {
+        $('#currentValue').text('Επιλέξτε κατηγορία');
+
+    }
+
+    return string
 }
+
+const checkboxes = document.querySelectorAll('.custom-checkbox');
+
+
+checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener('click',getAllValues )
+});
+
+function donationForm(event){
+    event.preventDefault();
+    if (valuesArray.length == 0) {
+        alert('Επιλέξτε το αντικείμενο που θέλετε να δωρίσετε');
+        return;
+    }
+    const fullName = document.getElementById('fullName').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const antikeimena = getAllValues();
+
+    if (fullName == '' || email == '' || phone == '') {
+        alert('Ολα τα πεδία είναι υποχρεωτικά');
+        return;
+    }
+    $('#spinner-border').removeClass('d-none');
+
+    $.ajax({
+        url: `../contact.php`,
+        type: 'POST',
+            data: {
+                whatForm: 'donationForm',
+                fullName: fullName,
+                email: email,
+                phone: phone,
+                antikeimena: antikeimena
+            },
+
+        success:function(){
+            alert("Το μήνυμα σου στάλθηκε. Θα επικοινωνήσουμε μαζί σου το συντομότερο δυνατό!");
+            $('#spinner-border').addClass('d-none');
+            window.location.reload();
+
+        }
+    });
+}
+

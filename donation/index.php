@@ -28,16 +28,10 @@ navbar($titlePage,$str);
                         <div class="donationContainer">
                             <div class="donationBox donationForm">
                                 <h4>Επέλεξε κάτι “σημαντικό” το οποίο θα ήθελες να προσφέρεις στο SCFA Α.Μ.Κ.Ε. :</h4>
-<!--                                <select class="custom-select" id="custom-select">-->
-<!--                                    <option class="disabled-option" selected disabled >Θέλω να...</option>-->
-<!--                                    <option value="1">Θέλω να υιοθετήσω!</option>-->
-<!--                                    <option value="2">Θέλω να γίνω ανάδοχος!</option>-->
-<!--                                </select>-->
-
                                 <div>
                                     <div class="custom-multiselect" data-bs-toggle="collapse" href="#multiselect"
                                          role="button" aria-expanded="false" aria-controls="multiselect">
-                                        <div class="currentValue">Επιλογή αντικειμένου</div>
+                                        <div class="currentValue" id="currentValue">Επιλογή αντικειμένου</div>
                                         <div><i class="fa-solid fa-chevron-down"></i></div>
                                     </div>
                                     <div class="collapse" id="multiselect">
@@ -87,7 +81,10 @@ navbar($titlePage,$str);
                                 <input type="text" id="email" placeholder="Email">
                                 <input type="text" id="phone" placeholder="Τηλέφωνο">
 
-                                <button onclick="getAllValues()" class="submit-form-btn">Υποβολή</button>
+                                <button onclick="donationForm(event)" class="submit-form-btn">Υποβολή <div id="spinner-border" class="spinner-border d-none text-light" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                </button>
                             </div>
 
                             <div class="donationBox">
