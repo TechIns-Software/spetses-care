@@ -37,7 +37,10 @@ navbar($titlePage,$str);
                         <div class="volunteerForm">
                         <input type="text" id="subject" placeholder="Τίτλος">
                         <textarea cols="5" rows="3" id="message">Μήνυμα...</textarea>
-                            <button class="submit-form-btn">Υποβολή</button>
+                            <button onclick="contactForm(event)" class="submit-form-btn">Υποβολή <div id="spinner-border" class="spinner-border d-none text-light" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </button>
                         </div>
                     </div>
 

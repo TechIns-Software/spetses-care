@@ -7953,7 +7953,7 @@ color: var(--main-blue-color);
     aspect-ratio: 1/1;
 
 }
-.custom-select{
+.custom-select,.custom-multiselect{
     display: flex;
     justify-content: start;
     align-items: center;
@@ -8197,4 +8197,55 @@ color: var(--second-blue-color);
     line-height: 31px;
     letter-spacing: 0em;
     text-align: center;
+}
+
+.custom-multiselect{
+    padding: .5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    background-color: white;
+}
+
+.custom-multiselect[aria-expanded="true"] .fa-chevron-down{
+    transform: rotateZ(180deg);
+}
+
+.custom-checkbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 60px;
+    background-color: white;
+    border-top: 1px solid var(--second-blue-color);
+    border-bottom: 1px solid var(--second-blue-color);
+    cursor: pointer;
+}
+.custom-checkbox:hover{
+    background-color: var(--second-blue-color);
+
+}
+
+
+.labelContainer h4{
+    font-size: 18px;
+}
+.boxContainer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 40px;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border: 1px solid var(--second-blue-color);
+}
+
+.boxContainer i{
+    display: block;
+    text-align: center;
+
 }

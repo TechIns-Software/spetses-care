@@ -1,7 +1,7 @@
 <?php
 include_once '../commonParts.php';
 $str = '../';
-$titlePage = "Cats Hotel & Cats Restaurant";
+$titlePage = "ΥΙΟΘΕΣΙΑ / ΑΝΑΔΟΧΗ";
 $_SESSION['page'] = 12 ;
 navbar($titlePage,$str);
 
@@ -60,8 +60,8 @@ navbar($titlePage,$str);
                     <div class="col-lg-6 col-md-12  ">
                         <div class="adoptionForm">
                             <h4>Συμπλήρωσε τα στοιχεία σου και θα έρθουμε σε επαφή μαζί σου!</h4>
-                            <select class="custom-select" id="custom-select">
-                                <option class="disabled-option" selected disabled >Θέλω να...</option>
+                            <select class="custom-select" id="selectChoice">
+                                <option value="0" class="disabled-option" selected disabled >Θέλω να...</option>
                                 <option value="1">Θέλω να υιοθετήσω!</option>
                                 <option value="2">Θέλω να γίνω ανάδοχος!</option>
                             </select>
@@ -70,7 +70,10 @@ navbar($titlePage,$str);
                             <input type="text" id="email" placeholder="Email">
                             <input type="text" id="phone" placeholder="Τηλέφωνο">
 
-                            <button class="submit-form-btn">Υποβολή</button>
+                            <button onclick="adoptionForm(event)" class="submit-form-btn">Υποβολή <div id="spinner-border" class="spinner-border d-none text-light" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </button>
                         </div>
                     </div>
 

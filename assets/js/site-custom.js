@@ -950,3 +950,98 @@ Custom Javascript
 function closeAllCollapses() {
     $('.collapse').collapse('hide');
 }
+
+function adoptionForm(event){
+    event.preventDefault();
+
+    const selectChoice = document.getElementById('selectChoice').value;
+    const fullName = document.getElementById('fullName').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+
+    if (fullName == '' || email == '' || phone == '') {
+        alert('Ολα τα πεδία ειναι υποχρεωτικά');
+        return;
+    }
+
+    if (selectChoice == '0' ) {
+        alert('Υποχρεωτική επιλογή κατηγορίας');
+        return;
+    }
+
+    $('#spinner-border').removeClass('d-none');
+
+
+}
+
+function contactForm(event){
+    event.preventDefault();
+    const fullName = document.getElementById('fullName').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    if (fullName == '' || email == '' || phone == '' || subject == '' || message == '') {
+        alert('Ολα τα πεδία ειναι υποχρεωτικά');
+        return;
+    }
+    $('#spinner-border').removeClass('d-none');
+
+}
+
+function volunteerForm(event){
+    event.preventDefault();
+    const fullName = document.getElementById('fullName').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+
+
+    if (fullName == '' || email == '' || phone == '') {
+        alert('Ολα τα πεδία ειναι υποχρεωτικά');
+        return;
+    }
+    $('#spinner-border').removeClass('d-none');
+
+}
+
+function toggleCheckbox(checkbox) {
+    const boxContainer = checkbox.querySelector('.boxContainer');
+    const isChecked = boxContainer.getAttribute('isChecked') === 'true';
+
+    // Toggle the isChecked attribute
+    boxContainer.setAttribute('isChecked', !isChecked);
+
+    // Toggle the check icon
+    if (isChecked) {
+        boxContainer.innerHTML = '';
+    } else {
+        const checkIcon = document.createElement('i');
+        checkIcon.classList.add('fa-solid', 'fa-check');
+        boxContainer.appendChild(checkIcon);
+    }
+
+    // Get the value (text content of the labelContainer)
+    const labelContainer = checkbox.querySelector('.labelContainer');
+    const value = labelContainer.textContent.trim();
+    console.log(value);
+}
+
+function getAllValues() {
+    const checkboxes = document.querySelectorAll('.custom-checkbox');
+    const valuesArray = [];
+
+    checkboxes.forEach((checkbox) => {
+        const boxContainer = checkbox.querySelector('.boxContainer');
+        const isChecked = boxContainer.getAttribute('isChecked') === 'true';
+
+        const labelContainer = checkbox.querySelector('.labelContainer');
+        const value = labelContainer.textContent.trim();
+
+        if (isChecked) {
+            valuesArray.push(value);
+        }
+    });
+
+    console.log(valuesArray);
+}

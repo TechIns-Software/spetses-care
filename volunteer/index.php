@@ -1,7 +1,7 @@
 <?php
 include_once '../commonParts.php';
 $str = '../';
-$titlePage = "Cats Hotel & Cats Restaurant";
+$titlePage = "Γίνε Εθελοντής";
 $_SESSION['page'] = 11 ;
 navbar($titlePage,$str);
 
@@ -31,17 +31,14 @@ navbar($titlePage,$str);
                         <div class="volunteerForm">
                             <h4>Θέλω να γίνω εθελοντής!</h4>
                             <p>Συμπλήρωσε τα στοιχεία σου και θα έρθουμε σε επαφή μαζί σου!</p>
-                            <select class="custom-select" id="custom-select">
-                                <option class="disabled-option" selected disabled >Θέλω να...</option>
-                                <option value="1">Θέλω να υιοθετήσω!</option>
-                                <option value="2">Θέλω να γίνω ανάδοχος!</option>
-                            </select>
-
                             <input type="text" id="fullName" placeholder="Ονοματεπώνυμο">
                             <input type="text" id="email" placeholder="Email">
                             <input type="text" id="phone" placeholder="Τηλέφωνο">
 
-                            <button class="submit-form-btn">Υποβολή</button>
+                            <button onclick="volunteerForm(event)" class="submit-form-btn">Υποβολή <div id="spinner-border" class="spinner-border d-none text-light" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </button>
                         </div>
                     </div>
 
