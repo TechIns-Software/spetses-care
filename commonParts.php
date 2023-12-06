@@ -45,16 +45,16 @@ function navbar($title,$str= '../'){
                     </a>
                 </div>
                 <div class="d-flex justify-content-end allMenu">
-                    <div class="newLayout <?php  echo $_SESSION['page'] == 5 ? 'active' :'' ?>">
-                      <a class="nav-link" href="#">Κάνε Δωρεά</a>
+                    <div class="newLayout <?php echo $_SESSION['page'] == 10 ? 'active' :'' ?>">
+                      <a class="nav-link" href="<?= $str ?>donation">Κάνε Δωρεά</a>
                     </div>
 
-                    <div class="newLayout">
-                        <a class="nav-link" href="#">Γίνε Εθελοντής</a>
+                    <div class="newLayout <?php echo $_SESSION['page'] == 11 ? 'active' :'' ?>">
+                        <a class="nav-link" href="<?= $str ?>volunteer">Γίνε Εθελοντής</a>
                     </div>
 
-                    <div class="newLayout">
-                        <a class="nav-link" href="#">Υιοθεσία/Αναδοχή</a>
+                    <div class="newLayout <?php echo $_SESSION['page'] == 12 ? 'active' :'' ?>">
+                        <a class="nav-link" href="<?= $str ?>adoption">Υιοθεσία/Αναδοχή</a>
                     </div>
 
                     <div class="newLayout hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvasMenu" aria-controls="offCanvasMenu">
@@ -84,7 +84,7 @@ function navbar($title,$str= '../'){
                 <a class="<?php echo $_SESSION['page'] == 5 ? 'active' :'' ?>" href="<?= $str ?>education">Εκπαιδευτικά Προγράμματα</a>
                 <a class="<?php echo $_SESSION['page'] == 6 ? 'active' :'' ?>" href="<?= $str ?>clinic">Το κτηνιατρείο μας</a>
                 <a class="<?php echo $_SESSION['page'] == 7 ? 'active' :'' ?>" href="<?= $str ?>hotel-restaurant">Cats Hotel & Restaurant</a>
-                <a class="<?php echo $_SESSION['page'] == 8 ? 'active' :'' ?>" href="#">Επικοινωνία</a>
+                <a class="<?php echo $_SESSION['page'] == 8 ? 'active' :'' ?>" href="<?= $str ?>contact">Επικοινωνία</a>
                 <a class="<?php echo $_SESSION['page'] == 9 ? 'active' :'' ?>" href="#">Sponsors</a>
             </div>
 
