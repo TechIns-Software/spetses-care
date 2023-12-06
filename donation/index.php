@@ -22,8 +22,8 @@ navbar($titlePage,$str);
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h3>Θέλω να κάνω μια δωρεά!</h3>
-                        <p>Διάλεξε τον τρόπο με τον οποίο θα ήθελες να βοηθήσεις!</p>
+                        <h3 class="donationTitle">Θέλω να κάνω μια δωρεά!</h3>
+                        <p class="donationPar">Διάλεξε τον τρόπο με τον οποίο θα ήθελες να βοηθήσεις!</p>
 
                         <div class="donationContainer">
                             <div class="donationBox donationForm">
