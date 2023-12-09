@@ -34,6 +34,15 @@ function navbar($title,$str= '../'){
 
 
     </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GC0MBHYEMZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-GC0MBHYEMZ');
+    </script>
     <body>
 
     <header class="wow fadeInDown header-blue  header-anim  ">
