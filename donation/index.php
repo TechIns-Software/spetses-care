@@ -3,7 +3,11 @@ include_once '../commonParts.php';
 $str = '../';
 $titlePage = "Κάνε Δωρεά";
 $_SESSION['page'] = 10 ;
-navbar($titlePage,$str);
+$metaArray['title'] = $titlePage.'| scfa.gr';
+$metaArray['description'] =  "Στηρίξτε την αγάπη μας για τα ζώα με μια δωρεά! Στη σελίδα μας, μπορείτε να επιλέξετε πώς θέλετε να στηρίξετε το έργο μας για την προστασία των ζώων. Κάντε την δωρεά σας σήμερα και γίνετε συνεργάτης στην αγώνα μας.";
+$metaArray['image'] = "https://scfa.gr/assets/images/scfa_logo.png";
+$metaArray['url'] =  "donation";
+navbar($titlePage,$str,$metaArray);
 
 ?>
     <main id="body-content">

@@ -3,7 +3,11 @@ include_once '../commonParts.php';
 $str = '../';
 $titlePage = "Εκπαιδευτικά Προγράμματα";
 $_SESSION['page'] = 5 ;
-navbar($titlePage, $str);
+$metaArray['title'] = $titlePage.'| scfa.gr';
+$metaArray['description'] =  "Εκπαιδεύουμε για το μέλλον! Η ομάδα μας προσφέρει εκπαιδευτικά προγράμματα που ενώνουν τα παιδιά και τους ενήλικες με τον κόσμο των ζώων. Εμπλακείτε σε μια περιπέτεια μάθησης που δημιουργεί συναισθηματική σύνδεση με τη φύση.";
+$metaArray['image'] = "https://scfa.gr/assets/images/scfa_logo.png";
+$metaArray['url'] =  "education";
+navbar($titlePage,$str,$metaArray);
 
 ?>
     <main id="body-content">

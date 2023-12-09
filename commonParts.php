@@ -1,6 +1,12 @@
 <?php
 session_start();
-function navbar($title,$str= '../'){
+function navbar($title,$str= '../',$metaProperties = []){
+    if (!isset($metaProperties)) {
+    $metaArray['title'] = $metaArray['title'] ?? 'Spetses Care For Animals | scfa.gr';
+    $metaArray['description'] = $metaArray['description'] ?? "Το κτηνιατρείο SCFA Α.Μ.Κ.Ε. (Αστική Μη Κερδοσκοπική Εταιρεία) είναι μία δομή που ιδρύθηκε 1/11/2021 στο νησί των Σπετσών, με την ευγενική χορηγία της οικογένειας του κ. Φωκίων Φίλων Ποταμιάνος.";
+    $metaArray['image'] = $metaArray['image'] ?? "https://scfa.gr/assets/images/scfa_logo.png";
+    $metaArray['url'] = $metaArray['page'] ?? "index.php";
+    }
     ?>
 
     <!doctype html>
@@ -11,11 +17,15 @@ function navbar($title,$str= '../'){
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
-        <title> <?= $title ?>  | SCFA</title>
+        <meta name="description" content="<?= $metaArray['description'] ?>" />
+        <meta property="og:image" content="<?= $metaArray['image'] ?>" />
+        <meta property="og:title" content="<?= $metaArray['title'] ?>" />
+        <meta property="og:description" content="<?= $metaArray['description'] ?>" />
+        <meta property="og:url" content="https://www.scfa.gr/<?= $metaArray['url'] ?>" />
 
-        <meta name="description" content=" Spetses Care ">
-        <meta name="keywords" content="PetHund, animal care, cats, Dog grooming, dogs, pet, pet care, pet center, pet services, pet shelter, pet shop, shelter, vet clinic, vet store, veterinarian, veterinary">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
+        <title> <?= $title ?> | Spetses Care For Animals </title>
+
 
         <link rel="shortcut icon" type="image/x-icon" href="<?= $str ?>assets/images/favicon.ico">
 

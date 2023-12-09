@@ -3,7 +3,11 @@ include_once '../commonParts.php';
 $str = '../';
 $titlePage = "Επικοινωνία";
 $_SESSION['page'] = 8 ;
-navbar($titlePage,$str);
+$metaArray['title'] = $titlePage.'| scfa.gr';
+$metaArray['description'] =  "Ανακαλύψτε πώς μπορούμε να βοηθήσουμε τα ζώα σας! Στη σελίδα επικοινωνίας μας, μπορείτε να μας στείλετε μηνύματα για εξειδικευμένη συμβουλή και υποστήριξη που αφορούν το καλό των αγαπημένων σας φίλων.";
+$metaArray['image'] = "https://scfa.gr/assets/images/scfa_logo.png";
+$metaArray['url'] =  "contact";
+navbar($titlePage,$str,$metaArray);
 
 ?>
     <main id="body-content">

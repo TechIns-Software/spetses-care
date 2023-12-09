@@ -3,7 +3,11 @@ include_once '../commonParts.php';
 $str = '../';
 $titlePage = "Το Κτηνιατρείο Μας";
 $_SESSION['page'] = 6 ;
-navbar($titlePage,$str);
+$metaArray['title'] = $titlePage.'| scfa.gr';
+$metaArray['description'] =  "Στο κτηνιατρείο μας, κατανοούμε τη σημασία της σωστής φροντίδας για τα ζώα. Με εξειδικευμένους κτηνιάτρους και φιλικό προσωπικό, παρέχουμε ολοκληρωμένες λύσεις για την υγεία και την ευεξία των κατοικίδιων σας.";
+$metaArray['image'] = "https://scfa.gr/assets/images/scfa_logo.png";
+$metaArray['url'] =  "clinic";
+navbar($titlePage,$str,$metaArray);
 
 ?>
     <main id="body-content">

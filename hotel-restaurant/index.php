@@ -3,7 +3,11 @@ include_once '../commonParts.php';
 $str = '../';
 $titlePage = "Cats Hotel & Cats Restaurant";
 $_SESSION['page'] = 7 ;
-navbar($titlePage,$str);
+$metaArray['title'] = $titlePage.'| scfa.gr';
+$metaArray['description'] =  "Στην προσπάθειά μας να βελτιώσουμε τις συνθήκες διαβίωσης των αδέσποτων γατών του νησιού μας, έχουμε δημιουργήσει σταθμούς σίτισης και ξεκούρασης, τα γνωστά πλέον Cats Restaurants and Hotels.";
+$metaArray['image'] = "https://scfa.gr/assets/images/scfa_logo.png";
+$metaArray['url'] =  "hotel-restaurant";
+navbar($titlePage,$str,$metaArray);
 
 ?>
     <main id="body-content">

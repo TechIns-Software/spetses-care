@@ -3,7 +3,11 @@ include_once '../commonParts.php';
 $str = '../';
 $titlePage = "Γίνε Εθελοντής";
 $_SESSION['page'] = 11 ;
-navbar($titlePage,$str);
+$metaArray['title'] = $titlePage.'| scfa.gr';
+$metaArray['description'] =  "Συμμετέχετε στην αγκαλιά της εθελοντικής αγάπης για τα ζώα! Στην ομάδα μας, κάνουμε τη διαφορά με τη βοήθεια εθελοντών που αφιερώνουν τον χρόνο τους για την ευημερία και τη φροντίδα των αδέσποτων φίλων μας. Ενωθείτε μαζί μας για μια κοινότητα που φροντίζει!";
+$metaArray['image'] = "https://scfa.gr/assets/images/scfa_logo.png";
+$metaArray['url'] =  "volunteer";
+navbar($titlePage,$str,$metaArray);
 
 ?>
     <main id="body-content">

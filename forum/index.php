@@ -1,9 +1,13 @@
 <?php
 include_once '../commonParts.php';
 $str = '../';
-$titlePage = "Cats Hotel & Cats Restaurant";
+$titlePage = "SCFA FORUM";
 $_SESSION['page'] = 4 ;
-navbar($titlePage,$str);
+$metaArray['title'] = $titlePage.'| scfa.gr';
+$metaArray['description'] =  "Ανακαλύψτε την κορυφαία συνάντηση της κτηνιατρικής στην Καποδιστριακή Στήγη Σπετσών! Το 1ο Φόρουμ του κτηνιατρείου SCFA Α.Μ.Κ.Ε. φέρνει επιστήμονες, ειδικούς και επαγγελματίες για συζητήσεις και ανταλλαγή ιδεών. Ενημερωθείτε και συμμετάσχετε!";
+$metaArray['image'] = "https://scfa.gr/assets/images/scfa_logo.png";
+$metaArray['url'] =  "forum";
+navbar($titlePage,$str,$metaArray);
 
 ?>
     <main id="body-content">

@@ -3,7 +3,12 @@ include_once '../commonParts.php';
 $str = '../';
 $titlePage = "ΥΙΟΘΕΣΙΑ / ΑΝΑΔΟΧΗ";
 $_SESSION['page'] = 12 ;
-navbar($titlePage,$str);
+$metaArray['title'] = $titlePage.'| scfa.gr';
+$metaArray['description'] =  "Η υιοθεσία αλλάζει ζωές! Στην ομάδα μας, συνδέουμε ανθρώπους με νέα μέλη της οικογένειάς τους, δίνοντας σε ζώα ένα δεύτερο και πιο αγαπημένο σπίτι. Ανακαλύψτε τη χαρά της υιοθεσίας σήμερα!";
+$metaArray['image'] = "https://scfa.gr/assets/images/scfa_logo.png";
+$metaArray['url'] =  "adoption";
+navbar($titlePage,$str,$metaArray);
+
 
 ?>
     <main id="body-content">
