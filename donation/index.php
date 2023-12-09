@@ -93,20 +93,25 @@ navbar($titlePage,$str);
 
                                 <p> Επέλεξε τον τρόπο πληρωμής:</p>
 
-                                <div class="d-flex justify-content-start align-items-center my-2">
-                                    <div class="donationImage"><img src="../assets/images/donation/bank.png"></div>
-                                    <div class="donationPayTitle">Τραπεζικό Λογαριασμό</div>
+                                <div class="d-flex justify-content-center  flex-wrap">
+                                    <a class="paymentBox" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <div class="donationImage"><img src="../assets/images/donation/bank.png"></div>
+                                        <div class="donationPayTitle">Τραπεζικός <br> Λογαριασμός</div>
+                                    </a>
+
+                                    <a target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=6ZM3HUGHGLDMU" class="paymentBox">
+                                        <div class="donationImage"><img src="../assets/images/donation/paypal.png"></div>
+                                        <div class="donationPayTitle">Paypal</div>
+                                    </a>
+
+                                    <a target="_blank" href="https://checkout.stripe.com/c/pay/cs_live_a18KTKrpTChz8V646P9U9KKCVQ3jhgIcxqVRYqsUj8a2VqbWnS0w59pCl4#fidkdWxOYHwnPyd1blppbHNgWjA0SH1wSXRBdERvakk2YnxtajxqaUA8Nmt%2Fb2NQdj1EZHZIbn1Sa11UZlxMckFQa01hYH1zUDZPd1w9QENHMjJiXW5yR2pNSHE9PDNQQ3xgfEdLZmhDdldVNTVMfWZJSTxcNCcpJ3VpbGtuQH11anZgYUxhJz8nMWJyPEF3MDJGYEJVN2BUPEREJ3gl" class="paymentBox">
+                                        <div class="donationImage"><img src="../assets/images/donation/stripe.png"></div>
+                                        <div class="donationPayTitle">Stripe</div>
+                                    </a>
+
                                 </div>
 
-                                <div class="d-flex justify-content-start align-items-center my-2">
-                                    <div class="donationImage"><img src="../assets/images/donation/paypal.png"></div>
-                                    <div class="donationPayTitle">Paypal</div>
-                                </div>
 
-                                <div class="d-flex justify-content-start align-items-center my-2">
-                                    <div class="donationImage"><img src="../assets/images/donation/stripe.png"></div>
-                                    <div class="donationPayTitle">Stripe</div>
-                                </div>
 
                             </div>
 
@@ -119,6 +124,36 @@ navbar($titlePage,$str);
                 </div>
             </div>
         </section>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="bankModalTitle">Τραπεζικός Λογαριασμός</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="bankInfos">
+                            <h3>ΚΑΤΙ ΑΛΛΑΖΕΙ ΣΤΟ ΝΗΣΙ...</h3>
+                            <h4> Γίνε συμμέτοχος σε αυτήν την αλλαγή! </h4>
+                            <p>IBAN :  GR2201721400005140104314583</p>
+                            <p>    BIC SWIFT: PIRBGRAA </p>
+                        </div>
+
+                        <div class="bankForm">
+                            <h3>Συμπλήρωσε το email σου για να λάβεις την απόδειξη πληρωμής:</h3>
+                            <input type="text" id="fullNameBank" placeholder="Ονοματεπώνυμο">
+                            <input type="text" id="emailBank" placeholder="Email">
+                            <button onclick="donationFormBank(event)" class="submit-form-btn">Υποβολή <div id="spinner-border2" class="spinner-border d-none text-light" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
     </main>
 <?php

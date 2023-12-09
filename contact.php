@@ -7,8 +7,11 @@ $message = "Όνομα: ";
 $message .= $_POST['fullName'];
 $message .= "<br>Email: ";
 $message .= $_POST['email'];
-$message .= "<br>Κινητό: ";
-$message .= $_POST['phone'];
+if ($_POST['whatForm'] != 'donationFormBank') {
+    $message .= "<br>Κινητό: ";
+    $message .= $_POST['phone'];
+}
+
 
 if ($_POST['whatForm'] == 'donationForm') {
     $subject .= " Φόρμα Επικοινωνίας Δωρεά ";
@@ -24,6 +27,8 @@ if ($_POST['whatForm'] == 'donationForm') {
     $subject .= " Φόρμα Επικοινωνίας ".$_POST['subject'];
     $message .= "<br>Μήνυμα: ";
     $message .= $_POST['message'];
+}else if ($_POST['whatForm'] == 'donationFormBank') {
+    $subject .= " Δωρεά στον τραπεζικό λογαριασμό";
 }
 
 $to = "nspanos@techins.gr";

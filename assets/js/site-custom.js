@@ -1157,3 +1157,32 @@ function donationForm(event){
     });
 }
 
+function donationFormBank(event){
+    event.preventDefault();
+    const fullName = document.getElementById('fullNameBank').value;
+    const email = document.getElementById('emailBank').value;
+
+    if (fullName == '' || email == '' ) {
+        alert('Ολα τα πεδία είναι υποχρεωτικά');
+        return;
+    }
+    $('#spinner-border2').removeClass('d-none');
+
+    $.ajax({
+        url: `../contact.php`,
+        type: 'POST',
+        data: {
+            whatForm: 'donationFormBank',
+            fullName: fullName,
+            email: email,
+        },
+
+        success:function(){
+            alert("Το μήνυμα σου στάλθηκε. Θα επικοινωνήσουμε μαζί σου το συντομότερο δυνατό!");
+            $('#spinner-border2').addClass('d-none');
+            window.location.reload();
+
+        }
+    });
+}
+

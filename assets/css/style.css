@@ -7987,7 +7987,8 @@ color: var(--main-blue-color);
     line-height: 31px;
     letter-spacing: 0em;
 }
-.adoptionForm input,.donationForm input, .volunteerForm input{
+.adoptionForm input,.donationForm input,
+.volunteerForm input,.bankForm input{
     min-height: 66px;
     width: 100%;
     margin: .5em auto;
@@ -7999,7 +8000,8 @@ color: var(--main-blue-color);
     background-color: white;
 }
 
-.adoptionForm input::placeholder,.donationForm input::placeholder,.volunteerForm input::placeholder{
+.adoptionForm input::placeholder,.donationForm input::placeholder,
+.volunteerForm input::placeholder,.bankForm input::placeholder{
     color: var(--second-blue-color);
     font-size: 20px;
 }
@@ -8020,21 +8022,24 @@ color: var(--main-blue-color);
     margin: auto;
     width: 85%;
 }
+.bankInfos,.bankForm{
+    width: 90%;
+    margin: auto;
+    color: var(--main-blue-color);
+}
+
 
 .volunteerForm h4 {
     color: var(--main-blue-color);
     font-size: 23px;
     font-weight: 700;
-    line-height: 31px;
     letter-spacing: 0em;
 }
 
 .volunteerForm p{
     color: var(--main-blue-color);
-    font-size: 20px;
+    font-size: 18px;
 
-    font-weight: 700;
-    line-height: 31px;
     letter-spacing: 0em;
 }
 #donation{
@@ -8076,8 +8081,10 @@ color: var(--main-blue-color);
 }
 
 .donationPayTitle{
+    color: var(--main-blue-color);
     margin: 0 .5em;
-    font-size: 24px;
+    font-size: 21px;
+    line-height: 25px;
 }
 
 .disclaimerText{
@@ -8248,4 +8255,36 @@ color: var(--second-blue-color);
     display: block;
     text-align: center;
 
+}
+.paymentBox{
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    min-width: 30%;
+}
+.bankInfos h3,.bankForm h3{
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.bankInfos h4{
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.bankInfos p{
+    padding: 0;
+    margin:  0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#bankModalTitle{
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 31px;
+    color: var(--main-blue-color);
 }
