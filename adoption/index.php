@@ -16,8 +16,7 @@ navbar($titlePage,$str,$metaArray);
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <div class="bgTitle">ΥΙΟΘΕΣΙΑ / ΑΝΑΔΟΧΗ</div>
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -60,7 +59,7 @@ navbar($titlePage,$str,$metaArray);
                 <div class="row">
 
                     <div class="col-lg-6 col-md-12 ">
-                        <img src="../assets/images/adoption/sleepyCat.png" class="img-fluid">
+                        <img alt="cartoon sleepy cat" src="../assets/images/adoption/sleepyCat.png" class="img-fluid">
                     </div>
                     <div class="col-lg-6 col-md-12  ">
                         <div class="adoptionForm">
@@ -90,29 +89,31 @@ navbar($titlePage,$str,$metaArray);
             <div class="container">
                 <div class="row my-2">
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/forum/forum1.png" alt="education1">
+                        <img class="img-fluid" src="../assets/images/adoption/adoption1.webp" alt="Adoption photo 1">
                     </div>
 
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/forum/forum2.png" alt="education1">
-                    </div>
-
-                    <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/forum/forum3.png" alt="education1">
-                    </div>
-
-                    <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/forum/forum4.png" alt="education1">
-                    </div>
-
-                    <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/forum/forum5.png" alt="education1">
+                        <img class="img-fluid" src="../assets/images/adoption/adoption2.webp" alt="Adoption photo 2">
                     </div>
 
 
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/forum/forum6.png" alt="education1">
+                        <img class="img-fluid" src="../assets/images/adoption/adoption3.webp" alt="Adoption photo 3">
                     </div>
+
+                    <div class="col-lg-4 col-md-12 my-2 ">
+                        <img class="img-fluid" src="../assets/images/adoption/adoption4.webp" alt="Adoption photo 4">
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 my-2 ">
+                        <img class="img-fluid" src="../assets/images/adoption/adoption5.webp" alt="Adoption photo 5">
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-12 my-2 ">
+                        <img class="img-fluid" src="../assets/images/adoption/adoption6.webp" alt="Adoption photo 6">
+                    </div>
+
 
                     <div class="col-12 text-center">
                         <a href="../gallery" class="custom-hyperlink">Περισσότερα στο Gallery</a>

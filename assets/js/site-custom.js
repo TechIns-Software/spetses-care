@@ -794,7 +794,7 @@ Custom Javascript
                 $("#home-shop-slider").owlCarousel({
                     items: 1,
                     margin: 0,
-                    loop: true,
+                    loop: false,
                     nav: false,
                     slideBy: 1,
                     dots: false,
@@ -877,7 +877,41 @@ Custom Javascript
                 });
             }
 
-        },        
+        },
+        custom_carousel: function () {
+                $(".custom-carousel").owlCarousel({
+                    items: 1,
+                    margin: 15,
+                    loop: true,
+                    nav: false,
+                    slideBy: 1,
+                    dots: true,
+                    center: false,
+                    autoplay: true,
+                    autoheight: true,
+                    navText: ['<i class="icofont-thin-left"></i>', '<i class="icofont-thin-right"></i>'],
+                    responsive: {
+                        320: {
+                            items: 1,
+                        },
+                        600: {
+                            items: 2,
+                        },
+                        767: {
+                            items: 2,
+                        },
+                        1000: {
+                            items: 3,
+                            loop: true,
+                        },
+                        1200: {
+                            items: 3,
+                            loop: true,
+                        }
+                    }
+                });
+
+        },
         // All Slider Script
           
 
@@ -920,6 +954,7 @@ Custom Javascript
             this.home_shop_slider();
             this.services_details();
             this.gallery_single();
+            this.custom_carousel();
             // All Slider Script
         }
 

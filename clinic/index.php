@@ -93,28 +93,43 @@ navbar($titlePage,$str,$metaArray);
             <div class="container">
                 <div class="row my-2">
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/clinic/clinic1.png" alt="Clinic Photos">
+                        <img class="img-fluid" src="../assets/images/clinic/clinic1.webp" alt="Clinic Photos 1">
                     </div>
 
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/clinic/clinic2.png" alt="Clinic Photos">
+                        <img class="img-fluid" src="../assets/images/clinic/clinic2.webp" alt="Clinic Photos 2">
                     </div>
 
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/clinic/clinic3.png" alt="Clinic Photos">
+                        <img class="img-fluid" src="../assets/images/clinic/clinic3.webp" alt="Clinic Photos 3">
                     </div>
 
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/clinic/clinic4.png" alt="Clinic Photos">
+                        <img class="img-fluid" src="../assets/images/clinic/clinic4.webp" alt="Clinic Photos 4">
                     </div>
 
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/clinic/clinic5.png" alt="Clinic Photos">
+                        <img class="img-fluid" src="../assets/images/clinic/clinic5.webp" alt="Clinic Photos 5">
                     </div>
 
-
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/clinic/clinic6.png" alt="Clinic Photos">
+                        <img class="img-fluid" src="../assets/images/clinic/clinic6.webp" alt="Clinic Photos 6">
+                    </div>
+
+                    <div class="col-12 text-center">
+                        <a href="../gallery" class="custom-hyperlink">Περισσότερα στο Gallery</a>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 my-2  ">
+                        <h4 class="openHoursTitle">Χειμερινό Ωράριο Λειτουργίας: </h4>
+                        <p class="openHours">ΔΕΥΤ-ΤΕΤ-ΠΑΡ: <span> 09:00-14:00 και 17:00-20:00 </span></p>
+                        <p class="openHours">  ΤΡΙΤΗ-ΠΕΜ:<span>  09:00-17:00 </span></p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 my-2 ">
+                        <h4 class="openHoursTitle">Θερινό Ωράριο Λειτουργίας:  </h4>
+                        <p class="openHours">ΔΕΥΤΕΡΑ ΕΩΣ ΠΑΡΑΣΚΕΥΗ: <span> 09:00-14:00 18:00-21:00 </span>
+                        </p>
                     </div>
 
 

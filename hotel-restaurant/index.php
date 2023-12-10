@@ -40,13 +40,13 @@ navbar($titlePage,$str,$metaArray);
 
                         <div class="twoBoxesHotel ">
                             <div class="box1">
-                                <img class="boxImg"  alt="hotel scfa" src="../assets/images/hotel/cat.jpg">
+                                <img class="boxImg"  alt="hotel scfa photo" src="../assets/images/hotel/cat.webp">
                                 <p>Έως τώρα έχουμε τοποθετήσει 13 τέτοιους σταθμούς και εξιγιασμένες αποικίες, οι οποίες συντηρούνται από εθελοντές.</p>
                             </div>
 
 
                             <div class="box1">
-                                <img class="boxImg"  alt="hotel scfa bird" src="../assets/images/hotel/bird.jpg">
+                                <img class="boxImg"  alt="potistres image" src="../assets/images/hotel/potistres.webp">
                                 <p>Τοποθετούμε τους καλοκαιρινούς μήνες 18 ποτίστρες περιμετρικά αλλά και στην
                                     κορυφογραμμή του νησιού μας για τα ζώα του δάσους και των πουλιών.</p>
                             </div>
@@ -60,11 +60,11 @@ navbar($titlePage,$str,$metaArray);
             </div>
 
             <section class="container-fluid  " id="custom-carousel  ">
-                <div class="owl-carousel owl-theme owl-loaded owl-drag" id="home-shop-slider">
+                <div class="owl-carousel owl-theme owl-loaded owl-drag custom-carousel" >
                     <div class="item">
                         <div class="product-grid">
                             <div class="product-image">
-                                <img class="pic-1" src="../assets/images/home/hero-1.png">
+                                <img class="pic-1" alt="hotel scfa image" src="../assets/images/hotel/hotel.webp">
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@ navbar($titlePage,$str,$metaArray);
                     <div class="item">
                         <div class="product-grid">
                             <div class="product-image">
-                                <img class="pic-1" src="../assets/images/about.JPG">
+                                <img class="pic-1" alt="cat in hotel scfa image" src="../assets/images/hotel/cat2.webp">
                             </div>
                         </div>
                     </div>
@@ -80,27 +80,10 @@ navbar($titlePage,$str,$metaArray);
                     <div class="item">
                         <div class="product-grid">
                             <div class="product-image">
-                                <img class="pic-1" src="../assets/images/home/slider1.png">
+                                <img class="pic-1" alt="cat in hotel scfa image second" src="../assets/images/hotel/hotel-scfa2.webp">
                             </div>
                         </div>
                     </div>
-
-                    <div class="item">
-                        <div class="product-grid">
-                            <div class="product-image">
-                                <img class="pic-1" src="../assets/images/home/slider2.png">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="product-grid">
-                            <div class="product-image">
-                                <img class="pic-1" src="../assets/images/home/hero-1.png">
-                            </div>
-                        </div>
-                    </div>
-
 
                 </div>
 

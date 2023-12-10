@@ -7151,16 +7151,25 @@ label.error {
     background-attachment: fixed;
 }
 #actionsHeader[page="hotel"] {
+    background-image: url("../images/hotel/hotel-scfa.webp");
     min-height: 70vh;
     background-blend-mode: unset;
     background-color: unset;
+    background-attachment:  unset;
+}
+#actionsHeader[page="education"] {
+    background-image: url("../images/education/educationBg.webp");
+    min-height: 80vh;
+    background-blend-mode: unset;
+    background-color: unset;
+    background-attachment:  unset;
 }
 
 #actionsHeader[page="forum"] {
     min-height: 70vh;
     background-blend-mode: unset;
     background-color: unset;
-    background-image: url("../images/forum/forumBg.png");
+    background-image: url("../images/forum/formbg.webp");
     background-attachment: unset;
 }
 
@@ -7168,15 +7177,15 @@ label.error {
     min-height: 80vh;
     background-blend-mode: unset;
     background-color: unset;
-    background-image: url("../images/clinic/clinicBg.png");
+    background-image: url("../images/clinic/clinicBg.webp");
     background-attachment: unset;
 }
 
 #actionsHeader[page="adoption"] {
-    min-height: 80vh;
+    min-height: 70vh;
     background-blend-mode: soft-light;
-    background-color: rgba(245, 245, 245, 0.53);
-    background-image: url("../images/clinic/clinicBg.png");
+    background-color: rgba(2, 2, 2, 0.06);
+    background-image: url("../images/adoption/adoptionBg.webp");
     background-attachment: unset;
     position: relative;
 }
@@ -7616,9 +7625,8 @@ color: var(--main-blue-color);
 
 #educationPhotos img{
     display: block;
-
     height: 300px;
-    width: 300px;
+    width: 100%;
     margin: auto;
 }
 

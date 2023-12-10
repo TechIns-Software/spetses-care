@@ -11,7 +11,7 @@ navbar($titlePage,$str,$metaArray);
 
 ?>
     <main id="body-content">
-        <section id="actionsHeader" page="hotel">
+        <section id="actionsHeader" page="education">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
@@ -176,29 +176,29 @@ navbar($titlePage,$str,$metaArray);
             <div class="container">
                 <div class="row my-2">
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/education/visit1.jpg" alt="education1">
+                        <img class="img-fluid" src="../assets/images/education/visit1.webp" alt="Image from education Image">
                     </div>
 
-                    <div class="col-lg-4 col-md-12 my-2">
-                        <img class="img-fluid" src="../assets/images/education/visit2.jpg" alt="education1">
+                    <div class="col-lg-4 col-md-12 my-2 ">
+                        <img class="img-fluid" src="../assets/images/education/visit2.webp" alt="Image from education Image 2">
                     </div>
 
-
-                    <div class="col-lg-4 col-md-12 my-2">
-                        <img class="img-fluid" src="../assets/images/education/visit3.jpg" alt="education1">
+                    <div class="col-lg-4 col-md-12 my-2 ">
+                        <img class="img-fluid" src="../assets/images/education/visit3.webp" alt="Image from education Image 3">
                     </div>
 
-                    <div class="col-lg-4 col-md-12 my-2">
-                        <img class="img-fluid" src="../assets/images/education/visit4.jpg" alt="education1">
+                    <div class="col-lg-4 col-md-12 my-2 ">
+                        <img class="img-fluid" src="../assets/images/education/visit4.webp" alt="Image from education Image 4">
                     </div>
 
-                    <div class="col-lg-4 col-md-12 my-2">
-                        <img class="img-fluid" src="../assets/images/education/visit1.jpg" alt="education1">
+                    <div class="col-lg-4 col-md-12 my-2 ">
+                        <img class="img-fluid" src="../assets/images/education/visit5.webp" alt="Image from education Image 5">
                     </div>
 
-                    <div class="col-lg-4 col-md-12 my-2">
-                        <img class="img-fluid" src="../assets/images/education/visit2.jpg" alt="education1">
+                    <div class="col-lg-4 col-md-12 my-2 ">
+                        <img class="img-fluid" src="../assets/images/education/visit6.webp" alt="Image from education Image 6">
                     </div>
+
 
                     <div class="col-12 text-center">
                         <a href="../gallery" class="custom-hyperlink">Περισσότερα στο Gallery</a>

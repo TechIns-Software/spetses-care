@@ -60,29 +60,30 @@ navbar($titlePage,$str,$metaArray);
             <div class="container">
                 <div class="row my-2">
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/forum/forum1.png" alt="education1">
+                        <img class="img-fluid" src="../assets/images/forum/forum1.webp" alt="Image from forum 1">
                     </div>
 
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/forum/forum2.png" alt="education1">
+                        <img class="img-fluid" src="../assets/images/forum/forum2.webp" alt="Image from forum 2">
                     </div>
 
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/forum/forum3.png" alt="education1">
-                    </div>
-
-                    <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/forum/forum4.png" alt="education1">
-                    </div>
-
-                    <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/forum/forum5.png" alt="education1">
+                        <img class="img-fluid" src="../assets/images/forum/forum3.webp" alt="Image from forum 3">
                     </div>
 
 
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/forum/forum6.png" alt="education1">
+                        <img class="img-fluid" src="../assets/images/forum/forum4.webp" alt="Image from forum 4">
                     </div>
+
+                    <div class="col-lg-4 col-md-12 my-2 ">
+                        <img class="img-fluid" src="../assets/images/forum/forum5.webp" alt="Image from forum 5">
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 my-2 ">
+                        <img class="img-fluid" src="../assets/images/forum/forum6.webp" alt="Image from forum 6">
+                    </div>
+
 
                     <div class="col-12 text-center">
                         <a href="../gallery" class="custom-hyperlink">Περισσότερα στο Gallery</a>
