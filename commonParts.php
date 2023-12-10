@@ -41,6 +41,7 @@ function navbar($title,$str= '../',$metaProperties = []){
         <link rel="stylesheet" type="text/css" href="<?= $str ?>assets/revolution/css/settings.css">
         <link rel="stylesheet" type="text/css" href="<?= $str ?>assets/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
         <link rel="stylesheet" type="text/css" href="<?= $str ?>assets/revolution/fonts/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="<?= $str ?>assets/magnific-popup/magnific-popup.css">
 
 
     </head>
@@ -98,7 +99,7 @@ function navbar($title,$str= '../',$metaProperties = []){
             <div class="offCanvasLinks">
                 <a class="<?php echo $_SESSION['page'] == 1 ? 'active' :'' ?>" href="<?= $str ?>">Αρχική</a>
                 <a class="<?php echo $_SESSION['page'] == 2 ? 'active' :'' ?>" href="<?= $str ?>actions">Δράσεις</a>
-                <a class="<?php echo $_SESSION['page'] == 3 ? 'active' :'' ?>" href="#">Gallery</a>
+                <a class="<?php echo $_SESSION['page'] == 3 ? 'active' :'' ?>" href="<?= $str ?>gallery">Gallery</a>
                 <a class="<?php echo $_SESSION['page'] == 4 ? 'active' :'' ?>" href="<?= $str ?>forum">Forum</a>
                 <a class="<?php echo $_SESSION['page'] == 5 ? 'active' :'' ?>" href="<?= $str ?>education">Εκπαιδευτικά Προγράμματα</a>
                 <a class="<?php echo $_SESSION['page'] == 6 ? 'active' :'' ?>" href="<?= $str ?>clinic">Το κτηνιατρείο μας</a>
@@ -206,6 +207,9 @@ function footer($str){
             src="<?= $str ?>assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script type="text/javascript"
             src="<?= $str ?>assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+    <script type="text/javascript"   src="<?= $str ?>assets/magnific-popup/magnific-popup.js"></script>
+
     <script type="text/javascript">
 
         var tpj = jQuery;
@@ -305,6 +309,12 @@ function footer($str){
                 });
             }
         });	/*ready*/
+
+        $(document).ready(function() {
+            $('.image-link').magnificPopup({type:'image',  gallery:{
+                    enabled:true
+                }},);
+        });
     </script>
 
     </body>
