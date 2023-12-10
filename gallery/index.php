@@ -99,6 +99,106 @@ navbar($titlePage,$str,$metaArray);
                     ?>
 
                 </div>
+
+                <div class="row my-2">
+                    <div class="col-12 my-2 ">
+                        <a href="../forum" class="galleryTitleSection">
+                            <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
+                            <div> <h3> Forum</h3></div>
+                        </a>
+                    </div>
+
+                    <?php
+                    for ($i= 1; $i<13;$i++){
+                        ?>
+                        <div class="col-lg-3 col-md-12 my-2 ">
+                            <a href="../assets/images/gallery/forum<?=$i?>.png" class="image-link" data-toggle="lightbox"  >
+                                <img src="../assets/images/gallery/forum<?=$i?>.png" alt="Φωτογραφία απο το forum <?=$i?> ">
+                                <div class="portfolio-overlay">
+                                </div>
+                            </a>
+                        </div>
+
+                        <?php
+                    }
+                    ?>
+
+                </div>
+
+                <div class="row my-2">
+                    <div class="col-12 my-2 ">
+                        <a href="../adoption" class="galleryTitleSection">
+                            <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
+                            <div> <h3> Υιοθεσία/Αναδοχή</h3></div>
+                        </a>
+                    </div>
+
+                    <?php
+                    for ($i= 1; $i<12;$i++){
+                        ?>
+                        <div class="col-lg-3 col-md-12 my-2 ">
+                            <a href="../assets/images/gallery/adoption<?=$i?>.png" class="image-link" data-toggle="lightbox"  >
+                                <img src="../assets/images/gallery/adoption<?=$i?>.png" alt="Φωτογραφία απο το Υιοθεσία / Αναδοχή <?=$i?> ">
+                                <div class="portfolio-overlay">
+                                </div>
+                            </a>
+                        </div>
+
+                        <?php
+                    }
+                    ?>
+
+                </div>
+
+                <div class="row my-2">
+                    <div class="col-12 my-2 ">
+                        <a href="../volunteer" class="galleryTitleSection">
+                            <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
+                            <div> <h3>  Εθελοντές</h3></div>
+                        </a>
+                    </div>
+
+                    <?php
+                    for ($i= 1; $i<7;$i++){
+                        ?>
+                        <div class="col-lg-3 col-md-12 my-2 ">
+                            <a href="../assets/images/gallery/volunteer<?=$i?>.png" class="image-link" data-toggle="lightbox"  >
+                                <img src="../assets/images/gallery/volunteer<?=$i?>.png" alt="Φωτογραφία απο Εθελοντές <?=$i?> ">
+                                <div class="portfolio-overlay">
+                                </div>
+                            </a>
+                        </div>
+
+                        <?php
+                    }
+                    ?>
+
+                </div>
+
+                <div class="row my-2">
+                    <div class="col-12 my-2 ">
+                        <a class="galleryTitleSection">
+                            <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
+                            <div> <h3>  Πρόγραμμα αλόγων</h3></div>
+                        </a>
+                    </div>
+
+                    <?php
+                    for ($i= 1; $i<6;$i++){
+                        ?>
+                        <div class="col-lg-3 col-md-12 my-2 ">
+                            <a href="../assets/images/gallery/hourse<?=$i?>.png" class="image-link" data-toggle="lightbox"  >
+                                <img src="../assets/images/gallery/hourse<?=$i?>.png" alt="Φωτογραφία απο Πρόγραμμα αλόγων <?=$i?> ">
+                                <div class="portfolio-overlay">
+                                </div>
+                            </a>
+                        </div>
+
+                        <?php
+                    }
+                    ?>
+
+                </div>
             </div>
         </section>
 
