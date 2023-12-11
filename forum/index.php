@@ -49,10 +49,7 @@ navbar($titlePage,$str,$metaArray);
 
 
             <div class="ratio ratio-16x9">
-                <iframe src="https://www.youtube.com/watch?v=f8Yjd5psvSU" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen="true"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/f8Yjd5psvSU?si=jRHLyEj5d3CjzJMW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
 
