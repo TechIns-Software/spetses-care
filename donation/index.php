@@ -108,7 +108,7 @@ navbar($titlePage,$str,$metaArray);
                                         <div class="donationPayTitle">Paypal</div>
                                     </a>
 
-                                    <a target="_blank" href="https://checkout.stripe.com/c/pay/cs_live_a18KTKrpTChz8V646P9U9KKCVQ3jhgIcxqVRYqsUj8a2VqbWnS0w59pCl4#fidkdWxOYHwnPyd1blppbHNgWjA0SH1wSXRBdERvakk2YnxtajxqaUA8Nmt%2Fb2NQdj1EZHZIbn1Sa11UZlxMckFQa01hYH1zUDZPd1w9QENHMjJiXW5yR2pNSHE9PDNQQ3xgfEdLZmhDdldVNTVMfWZJSTxcNCcpJ3VpbGtuQH11anZgYUxhJz8nMWJyPEF3MDJGYEJVN2BUPEREJ3gl" class="paymentBox">
+                                    <a target="_blank" href="https://buy.stripe.com/4gw9Dr57CeGP2eQ9AA" class="paymentBox">
                                         <div class="donationImage"><img src="../assets/images/donation/stripe.png"></div>
                                         <div class="donationPayTitle">Stripe</div>
                                     </a>
