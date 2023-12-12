@@ -52,9 +52,7 @@ navbar($titlePage,$str,$metaArray);
                             </div>
                         </div>
 
-                        <div class="moreFoots d-flex justify-content-end">
-                            <img src="../assets/images/hotel/moreFoots.png">
-                        </div>
+
                     </div>
                 </div>
             </div>

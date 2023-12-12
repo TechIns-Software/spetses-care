@@ -11,14 +11,8 @@ navbar($titlePage,$str,$metaArray);
 
 ?>
     <main id="body-content">
-        <section id="actionsHeader" page="adoption">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <div class="bgTitle">ΓΙΝΕ ΕΘΕΛΟΝΤΗΣ</div>
-                    </div>
-                </div>
-            </div>
+        <section id="actionsHeader" page="volunteer">
+
         </section>
         <div class="sectionDivider"></div>
 
@@ -59,29 +53,26 @@ navbar($titlePage,$str,$metaArray);
             <div class="container">
                 <div class="row my-2">
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/forum/forum1.png" alt="education1">
+                        <img class="img-fluid" src="../assets/images/volunteer/volunteer1.png" alt="Image for volunteer 1">
+                    </div>
+                    <div class="col-lg-4 col-md-12 my-2 ">
+                        <img class="img-fluid" src="../assets/images/volunteer/volunteer2.png" alt="Image for volunteer 2">
+                    </div>
+                    <div class="col-lg-4 col-md-12 my-2 ">
+                        <img class="img-fluid" src="../assets/images/volunteer/volunteer3.png" alt="Image for volunteer 3">
                     </div>
 
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/forum/forum2.png" alt="education1">
+                        <img class="img-fluid" src="../assets/images/volunteer/volunteer4.png" alt="Image for volunteer 4">
                     </div>
-
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/forum/forum3.png" alt="education1">
+                        <img class="img-fluid" src="../assets/images/volunteer/volunteer5.png" alt="Image for volunteer 5">
                     </div>
-
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/forum/forum4.png" alt="education1">
-                    </div>
-
-                    <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/forum/forum5.png" alt="education1">
+                        <img class="img-fluid" src="../assets/images/volunteer/volunteer6.png" alt="Image for volunteer 6">
                     </div>
 
 
-                    <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/forum/forum6.png" alt="education1">
-                    </div>
 
                     <div class="col-12 text-center">
                         <a href="../gallery" class="custom-hyperlink">Περισσότερα στο Gallery</a>

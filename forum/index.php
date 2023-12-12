@@ -26,12 +26,12 @@ navbar($titlePage,$str,$metaArray);
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 hotelContainer ">
-                        <div class="sectionTitle">SCFA FORUM</div>
+                        <h2 class="sectionTitle">SCFA FORUM</h2>
                         <div>
                             <p class="sectionText">
                                 Πραγματοποιήσαμε στις 17/09/2023 με μεγάλη επιτυχία το 1ο Forum του κτηνιατρείου SCFA Α.Μ.Κ.Ε. στην Καποδιστριακή Στήγη Σπετσών με θέμα:
                             </p>
-                            <p class="sectionText">
+                            <p class="sectionText forumTitle">
                                 Η ΕΥΖΩΙΑ ΤΩΝ ΖΩΩΝ ΚΑΙ Η ΑΛΛΗΛΕΠΙΔΡΑΣΗ ΤΟΥΣ ΜΕ ΤΟΥΣ ΑΝΘΡΩΠΟΥΣ
                             </p>
                             <p class="sectionText">Η διεξαγωγή των ετησίων συνεδριών μας ευελπιστούμε να γίνει θεσμός στα πολιτιστικά δρόμενα του τόπου μας.
@@ -45,13 +45,28 @@ navbar($titlePage,$str,$metaArray);
         </section>
 
         <div class="sectionDivider"></div>
-        <div class="container-fluid my-3">
-
+        <div class="container my-3">
 
             <div class="ratio ratio-16x9">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/f8Yjd5psvSU?si=jRHLyEj5d3CjzJMW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
+        <section id="forumTalk">
+            <div class="container">
+                <div class="row my-2">
+                    <div class="text-center">
+                        <h2 class="sectionTitle">Οι ομιλητές του πρώτου SCFA FORUM</h2>
+                    </div>
+
+
+
+
+                    <div class="col-12">
+                        <img class="img-fluid" src="../assets/images/forum/forumTalks.png">
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section id="educationPhotos">
             <div class="container">

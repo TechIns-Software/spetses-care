@@ -6942,7 +6942,7 @@ label.error {
 
 .heroInformation{
     font-family: var(--main-font);
-    min-height: 90vh;
+    min-height: 70vh;
     background: #2DB2D1;
     color: #F7F7FF;
 
@@ -7072,7 +7072,7 @@ label.error {
     font-size: 32px;
     font-weight: 800!important;
     line-height: 52px;
-    color: var(--main-blue-color);
+    color: red;
 }
 
 .teamCard{
@@ -7141,21 +7141,26 @@ label.error {
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: soft-light;
-    background-color: rgb(211, 204, 204);
+    background-color: rgba(211, 204, 204, 0.3);
     background-attachment: fixed;
 }
+#actionsHeader[page="actions"] {
+    background-image: url("../images/actions/actionsBg.png");
+    min-height: 80vh;
+    background-color: rgba(56, 56, 56, 0.45);
+    background-attachment:  unset;
+}
+
 #actionsHeader[page="hotel"] {
-    background-image: url("../images/hotel/hotel-scfa.webp");
-    min-height: 70vh;
-    background-blend-mode: unset;
-    background-color: unset;
+    background-image: url("../images/hotel/hotelBg.png");
+    min-height: 80vh;
+    background-color: rgba(56, 56, 56, 0.22);
     background-attachment:  unset;
 }
 #actionsHeader[page="education"] {
-    background-image: url("../images/education/educationBg.webp");
+    background-image: url("../images/education/educationBg.png");
     min-height: 80vh;
-    background-blend-mode: unset;
-    background-color: unset;
+    background-color: rgba(56, 56, 56, 0.22);
     background-attachment:  unset;
 }
 
@@ -7164,6 +7169,14 @@ label.error {
     background-blend-mode: unset;
     background-color: unset;
     background-image: url("../images/forum/formbg.webp");
+    background-attachment: unset;
+}
+
+#actionsHeader[page="volunteer"] {
+    min-height: 80vh;
+    background-blend-mode: unset;
+    background-color: unset;
+    background-image: url("../images/volunteer/volunteerBg.png");
     background-attachment: unset;
 }
 
@@ -7182,6 +7195,14 @@ label.error {
     background-image: url("../images/adoption/adoptionBg.webp");
     background-attachment: unset;
     position: relative;
+}
+#actionsHeader[page="donation"] {
+    min-height: 70vh;
+    background-blend-mode: unset;
+    background-image: url("../images/donation/donationBg.png");
+    background-attachment: unset;
+    background-size: contain;
+
 }
 .sectionDivider{
     padding: 0;
@@ -7318,7 +7339,7 @@ font-size: 25px;
     line-height: 37px;
     letter-spacing: 0em;
     text-align: center;
-    color: var(--main-blue-color);
+    color: red;
 }
 
 
@@ -7349,16 +7370,23 @@ font-size: 25px;
     border-bottom: 8px solid white;
 }
 
+.actionDetailContainer img{
+    max-height:500px;
+    display: block;
+    margin: auto;
+}
+
 
 .actionDetailTitle{
     text-align: start;
-    color: white;
+    color:var(--main-blue-color);
     font-size: 30px;
     font-weight: 800;
     line-height: 41px;
     margin-bottom: 2em;
 }
 .actionDetailPar{
+
     text-align: start;
     color: white;
     font-size: 23px;
@@ -7420,7 +7448,8 @@ font-size: 25px;
     font-weight: 800;
     line-height: 41px;
     margin: .8em auto;
-    color: var(--main-blue-color);
+    color: red;
+    text-shadow: 2px 2px 2px rgba(32, 14, 9, 0.16);
 }
 .sectionText{
     width:90%;
@@ -7521,7 +7550,7 @@ font-size: 25px;
 .galleryLink{
     display: block;
     text-align: center;
-    color: var(--second-blue-color);
+    color: red;
     font-size: 20px;
     font-weight: 800;
     line-height: 27px;
@@ -7618,10 +7647,12 @@ color: var(--main-blue-color);
 }
 
 #educationPhotos img{
+
     display: block;
     height: 300px;
     width: 100%;
     margin: auto;
+    aspect-ratio: 1/1;
 }
 
 
@@ -7629,7 +7660,7 @@ color: var(--main-blue-color);
     padding: 3em 0;
 }
 .clinicHeader{
-    color: var(--main-blue-color);
+    color: red;
     font-size: 30px;
     font-weight: 800;
     line-height: 41px;
@@ -7849,7 +7880,7 @@ color: var(--main-blue-color);
 
 .custom-hyperlink {
     display: block;
-    color: var(--second-blue-color);
+    color: red;
     font-size: 20px;
     font-weight: 700;
     line-height: 27px;
@@ -7914,6 +7945,7 @@ color: var(--main-blue-color);
     line-height: 41px;
     letter-spacing: 0em;
     text-align: left;
+    color: red;
 
 }
 
@@ -8032,13 +8064,14 @@ color: var(--main-blue-color);
 
 
 .volunteerForm h4 {
-    color: var(--main-blue-color);
+    color: red;
     font-size: 23px;
     font-weight: 700;
     letter-spacing: 0em;
 }
 
 .volunteerForm p{
+    font-weight: 700;
     color: var(--main-blue-color);
     font-size: 18px;
 
@@ -8124,7 +8157,8 @@ textarea{
     font-size: 28px;
     font-weight: 800;
     line-height: 52px;
-    color: var(--main-blue-color);
+    color:red;
+    text-shadow: 2px 2px 2px rgba(5, 2, 1, 0.18);
 }
 
 .contactInfoBox{
@@ -8190,7 +8224,7 @@ color: var(--second-blue-color);
 }
 
 .donationTitle{
-    color: var(--main-blue-color);
+    color: red;
     font-size: 30px;
     font-weight: 800;
     line-height: 41px;
@@ -8313,4 +8347,26 @@ color: var(--second-blue-color);
     font-weight: 800;
     padding: 0;
     margin: 0;
+}
+
+.forumTitle{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#forumTalk{
+    margin: 2em 0;
+    min-height: 450px;
+    background: #70BAC7;
+}
+
+#forumTalk .container{
+    width: 80%;
+    margin: auto;
+}
+
+#forumTalk img{
+    width: 100%;
+    margin: auto;
+    min-height: 400px;
 }

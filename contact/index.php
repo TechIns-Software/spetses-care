@@ -89,7 +89,7 @@ navbar($titlePage,$str,$metaArray);
 
                     <div class="col-lg-6 col-md-12 my-2">
                         <h4 class="openHoursTitle">Θερινό Ωράριο Λειτουργίας:  </h4>
-                        <p class="openHours">ΔΕΥΤΕΡΑ ΕΩΣ ΠΑΡΑΣΚΕΥΗ: <span> 09:00-14:00 18:00-21:00 </span>
+                        <p class="openHours">ΔΕΥΤΕΡΑ ΕΩΣ ΠΑΡΑΣΚΕΥΗ: <span> 09:00-14:00 και 18:00-21:00 </span>
                         </p>
                     </div>
 

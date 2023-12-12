@@ -63,7 +63,7 @@ navbar($titlePage,$str,$metaArray);
                                     <img class="two-foots-education" src="../assets/images/home/two-foots.png" alt="education1">
                                 </div>
                                 <p>
-                                    Δοργανώσαμε διαγωνισμό ζωγραφικής με θέμα: Η ΑΔΕΣΠΟΤΗ ΖΩΗ ΜΕΣΑ ΑΠΟ ΤΑ ΜΑΤΙΑ ΤΩΝ ΠΑΙΔΙΩΝ για τους μαθητές Νηπιαγωγείων, Δημοτικού και Γυμνασίου Σπετσών με επιβράβευση όλων των συμμετεχόντων.
+                                    Διοργανώσαμε διαγωνισμό ζωγραφικής με θέμα: Η ΑΔΕΣΠΟΤΗ ΖΩΗ ΜΕΣΑ ΑΠΟ ΤΑ ΜΑΤΙΑ ΤΩΝ ΠΑΙΔΙΩΝ για τους μαθητές Νηπιαγωγείων, Δημοτικού και Γυμνασίου Σπετσών με επιβράβευση όλων των συμμετεχόντων.
                                 </p>
                                 <div class="d-flex justify-content-end">
                                     <img class="two-foots-education" src="../assets/images/home/two-foots.png" alt="education1">
@@ -84,7 +84,7 @@ navbar($titlePage,$str,$metaArray);
                                 </div>
                                 <p>
                                     Έχουμε δημιουργήσει το πρώτο μέρος της σειράς παιδικού επιμορφωτικού παραμυθιού, το γνωστό:
-                                    ΟΙ ΠΕΡΙΠΕΤΕΙΕΣ ΤΟΥ ΞΟΥΤ ΚΑΙ ΤΗΣ ΟΥΣΤ, το οποίο διαθέσαμε δωρεάν στα νηπιαγωγεία και το Δημοτικό Σχολείο Σπετσών.
+                                    ΟΙ ΠΕΡΙΠΕΤΕΙΕΣ ΤΗΣ ΞΟΥΤ ΚΑΙ ΤΟΥ ΟΥΣΤ, το οποίο διαθέσαμε δωρεάν στα νηπιαγωγεία και το Δημοτικό Σχολείο Σπετσών.
                                 </p>
                                 <div class="d-flex justify-content-end">
                                     <img class="two-foots-education" src="../assets/images/home/two-foots.png" alt="education1">
@@ -196,7 +196,7 @@ navbar($titlePage,$str,$metaArray);
                     </div>
 
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/education/visit6.webp" alt="Image from education Image 6">
+                        <img class="img-fluid" src="../assets/images/volunteer/catlove.png" alt="Image from education Image 6">
                     </div>
 
 
