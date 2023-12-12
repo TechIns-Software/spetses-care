@@ -129,7 +129,7 @@ function footer($str){
                         <div>
                             <i class="fa-solid fa-phone"></i>
                         </div>
-                        <div class="footerBoxTitle">Τηλέφωνο</div>
+
                         <div class="footerBoxSubtitle">(+30) 697 000 0000</div>
                     </div>
 
@@ -137,20 +137,29 @@ function footer($str){
                         <div>
                             <i class="fa-regular fa-envelope"></i>
                         </div>
-                        <div class="footerBoxTitle">E-mail</div>
 
-
-                        <div class="footerBoxSubtitle">info@info.gr</div>
+                        <div class="footerBoxSubtitle">spetsescareforanimals@gmail.com</div>
 
                     </div>
-
-                    <div class="footerBox">
+                    <a target="_blank" href="https://maps.google.com/maps?ll=37.266036,23.15531&z=16&t=m&hl=el&gl=GR&mapclient=embed&cid=4460534829233288294" class="footerBox">
                         <div>
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
-                        <div class="footerBoxTitle">Διεύθυνση</div>
-                        <div class="footerBoxSubtitle"> Σπέτσες 18</div>
-                    </div>
+                        <div class="footerBoxSubtitle"> Πλατεία Ρολογιού, Σπέτσες 180 50</div>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/spetsecareforanimals" class="footerBox">
+                        <div>
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </div>
+                        <div class="footerBoxSubtitle"> Spetses Care For Animals ΑΜΚΕ </div>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/spetsescare4animals/" class="footerBox">
+                        <div>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="footerBoxSubtitle">@spetsescare4animals</div>
+                    </a>
+
                 </div>
                 <div class="d-flex justify-content-start align-items-center flex-wrap">
                     <div class="footerBox2">
@@ -164,18 +173,14 @@ function footer($str){
                 </div>
             </div>
         </div>
-    </div>
-    <div class="copyright-wrap d-none">
-        <div class="container pos-rel">
-            <div class="copyright-text ">
-                <div>Copyrights <span id="yearText"></span> <span class="txt-green">SCFA</span> All Rights Reserved.
-                </div>
-                <div>Designed by <a href="https://techins.gr/" target="_blank">TechIns</a>
-                </div>
+        <div class="copyright-text ">
+            <div>Copyrights <span id="yearText"></span> <span class="txt-green">SCFA</span> All Rights Reserved.
             </div>
-
+            <div>Designed by <a href="https://techins.gr/" target="_blank">TechIns</a>
+            </div>
         </div>
     </div>
+
 
     <a id="mkdf-back-to-top" href="#" class="off"><i class="icofont-rounded-up"></i></a>
 

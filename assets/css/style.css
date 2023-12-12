@@ -3885,7 +3885,8 @@ footer .social-icons a:hover{
     color: var(--main-red-color);
 }
 .copyright-wrap{
-    margin-top: 70px;
+    border: 1px solid red;
+    width: 100%;
     color: #FFF;
     font-size: 0.875rem;
     background: var(--main-blue-color);
@@ -3901,6 +3902,7 @@ footer .social-icons a:hover{
     z-index: 11;
 }
 .copyright-text{
+    color: white;
     text-align: center;
 }
 .footer-dog{
@@ -3948,8 +3950,7 @@ footer .social-icons a:hover{
     transform: translateX(-50%);
 }
 .footer-light .copyright-text{
-    padding-left: 0;
-    justify-content: center;
+
 }
 .footer-light .copyright-wrap a, 
 .footer-light .copyright-links a:hover{
@@ -7733,6 +7734,8 @@ color: var(--main-blue-color);
     text-align: left;
 }
 
+
+
 .footerBox{
     padding: .5em;
     display: flex;
@@ -7741,9 +7744,13 @@ color: var(--main-blue-color);
     border: 1px solid var(--second-blue-color);
     min-height: 60px;
     margin: .5em ;
-    min-width: 300px;
+    width: 300px;
     color: white;
 }
+
+
+
+
 .footerBox i{
     color:var(--second-blue-color);
     margin-right:.5em ;
@@ -7759,6 +7766,10 @@ color: var(--main-blue-color);
     color: white;
 }
 
+a.footerBox:hover{
+    color: var(--second-blue-color) !important
+}
+
 .ctaContact{
     font-weight: 700;
     text-align: center;
@@ -7767,6 +7778,23 @@ color: var(--main-blue-color);
     padding: .5em;
     color: white;
     background-color:var(--second-blue-color);
+}
+
+@media screen and (max-width: 812px) {
+    .footerContainer{
+        width: 100%;
+
+    }
+    .footerContainer h5{
+        text-align: center;
+    }
+
+    .footerBox,.footerBox2{
+
+        width: 95%;
+        margin: .5em auto;
+        text-align: center!important;
+    }
 }
 
 .slide-in-right {
@@ -8377,4 +8405,9 @@ color: var(--second-blue-color);
     width: 100%;
     margin: auto;
     min-height: 400px;
+}
+
+.footerSocial a {
+
+    min-width: 80px;
 }
