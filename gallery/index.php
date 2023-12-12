@@ -12,7 +12,7 @@ navbar($titlePage,$str,$metaArray);
 
 ?>
     <main id="body-content">
-        <section id="actionsHeader" page="adoption">
+        <section id="actionsHeader" page="donation">
             <div class="container-fluid">
                 <div class="row">
 
@@ -27,30 +27,31 @@ navbar($titlePage,$str,$metaArray);
 
         <section id="educationPhotos">
             <div class="container">
+                <h3 class="donationTitle">Gallery</h3>
                 <div class="row my-2">
                     <div class="col-12 my-2 ">
-                        <a href="../education" class="galleryTitleSection">
-                        <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
-                            <div> <h3> Εκπαιδευτικά Προγράμματα </h3></div>
+                        <a href="../clinic" class="galleryTitleSection">
+                            <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
+                            <div> <h3> Το κτηνιατρείο μας</h3></div>
                         </a>
                     </div>
+
                     <?php
-                    for ($i= 1; $i<11;$i++){
+                    for ($i= 1; $i<21;$i++){
                         ?>
                         <div class="col-lg-3 col-md-12 my-2 ">
-                            <a href="../assets/images/gallery/education<?=$i?>.png" class="image-link" data-toggle="lightbox"  >
-                                <img src="../assets/images/gallery/education<?=$i?>.png" alt="Φωτογραφία απο Εκπαιδευτικά προγράμματα <?=$i?> ">
+                            <a href="../assets/images/gallery/clinic<?=$i?>.png" class="image-link" data-toggle="lightbox"  >
+                                <img src="../assets/images/gallery/clinic<?=$i?>.png" alt="Φωτογραφία απο το κτηνιατρείο μας <?=$i?> ">
                                 <div class="portfolio-overlay">
                                 </div>
                             </a>
                         </div>
 
-                            <?php
+                        <?php
                     }
                     ?>
 
                 </div>
-
                 <div class="row my-2">
                     <div class="col-12 my-2 ">
                         <a href="../hotel-restaurant" class="galleryTitleSection">
@@ -74,67 +75,40 @@ navbar($titlePage,$str,$metaArray);
                     ?>
 
                 </div>
-
                 <div class="row my-2">
                     <div class="col-12 my-2 ">
-                        <a href="../clinic" class="galleryTitleSection">
-                            <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
-                            <div> <h3> Το κτηνιατρείο μας</h3></div>
+                        <a href="../education" class="galleryTitleSection">
+                        <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
+                            <div> <h3> Εκπαιδευτικά Προγράμματα </h3></div>
                         </a>
                     </div>
-
                     <?php
-                    for ($i= 1; $i<13;$i++){
+                    for ($i= 1; $i<15;$i++){
                         ?>
                         <div class="col-lg-3 col-md-12 my-2 ">
-                            <a href="../assets/images/gallery/clinic<?=$i?>.png" class="image-link" data-toggle="lightbox"  >
-                                <img src="../assets/images/gallery/clinic<?=$i?>.png" alt="Φωτογραφία απο το κτηνιατρείο μας <?=$i?> ">
+                            <a href="../assets/images/gallery/education<?=$i?>.png" class="image-link" data-toggle="lightbox"  >
+                                <img src="../assets/images/gallery/education<?=$i?>.png" alt="Φωτογραφία απο Εκπαιδευτικά προγράμματα <?=$i?> ">
                                 <div class="portfolio-overlay">
                                 </div>
                             </a>
                         </div>
 
-                        <?php
+                            <?php
                     }
                     ?>
 
                 </div>
-
-                <div class="row my-2">
-                    <div class="col-12 my-2 ">
-                        <a href="../forum" class="galleryTitleSection">
-                            <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
-                            <div> <h3> Forum</h3></div>
-                        </a>
-                    </div>
-
-                    <?php
-                    for ($i= 1; $i<13;$i++){
-                        ?>
-                        <div class="col-lg-3 col-md-12 my-2 ">
-                            <a href="../assets/images/gallery/forum<?=$i?>.png" class="image-link" data-toggle="lightbox"  >
-                                <img src="../assets/images/gallery/forum<?=$i?>.png" alt="Φωτογραφία απο το forum <?=$i?> ">
-                                <div class="portfolio-overlay">
-                                </div>
-                            </a>
-                        </div>
-
-                        <?php
-                    }
-                    ?>
-
-                </div>
-
                 <div class="row my-2">
                     <div class="col-12 my-2 ">
                         <a href="../adoption" class="galleryTitleSection">
                             <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
-                            <div> <h3> Υιοθεσία/Αναδοχή</h3></div>
+                            <div> <h3> Υιοθεσία/Αναδοχή</h3> <small>Κάποιες από τις υιοθεσίες...</small>
+                            </div>
                         </a>
                     </div>
 
                     <?php
-                    for ($i= 1; $i<12;$i++){
+                    for ($i= 1; $i<17;$i++){
                         ?>
                         <div class="col-lg-3 col-md-12 my-2 ">
                             <a href="../assets/images/gallery/adoption<?=$i?>.png" class="image-link" data-toggle="lightbox"  >
@@ -149,12 +123,11 @@ navbar($titlePage,$str,$metaArray);
                     ?>
 
                 </div>
-
                 <div class="row my-2">
                     <div class="col-12 my-2 ">
                         <a href="../volunteer" class="galleryTitleSection">
                             <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
-                            <div> <h3>  Εθελοντές</h3></div>
+                            <div> <h3>  Εθελοντές</h3> <small>Κάποιοι από τους εθελοντές...</small></div>
                         </a>
                     </div>
 
@@ -174,7 +147,6 @@ navbar($titlePage,$str,$metaArray);
                     ?>
 
                 </div>
-
                 <div class="row my-2">
                     <div class="col-12 my-2 ">
                         <a class="galleryTitleSection">
@@ -184,11 +156,35 @@ navbar($titlePage,$str,$metaArray);
                     </div>
 
                     <?php
-                    for ($i= 1; $i<6;$i++){
+                    for ($i= 1; $i<7;$i++){
                         ?>
                         <div class="col-lg-3 col-md-12 my-2 ">
                             <a href="../assets/images/gallery/hourse<?=$i?>.png" class="image-link" data-toggle="lightbox"  >
                                 <img src="../assets/images/gallery/hourse<?=$i?>.png" alt="Φωτογραφία απο Πρόγραμμα αλόγων <?=$i?> ">
+                                <div class="portfolio-overlay">
+                                </div>
+                            </a>
+                        </div>
+
+                        <?php
+                    }
+                    ?>
+
+                </div>
+                <div class="row my-2">
+                    <div class="col-12 my-2 ">
+                        <a href="../forum" class="galleryTitleSection">
+                            <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
+                            <div> <h3> Forum</h3></div>
+                        </a>
+                    </div>
+
+                    <?php
+                    for ($i= 1; $i<12;$i++){
+                        ?>
+                        <div class="col-lg-3 col-md-12 my-2 ">
+                            <a href="../assets/images/gallery/forum<?=$i?>.png" class="image-link" data-toggle="lightbox"  >
+                                <img src="../assets/images/gallery/forum<?=$i?>.png" alt="Φωτογραφία απο το forum <?=$i?> ">
                                 <div class="portfolio-overlay">
                                 </div>
                             </a>

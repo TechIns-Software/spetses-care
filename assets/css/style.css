@@ -8349,6 +8349,14 @@ color: var(--second-blue-color);
     margin: 0;
 }
 
+.galleryTitleSection small{
+    color: var(--main-blue-color);
+    font-size: 16px;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+}
+
 .forumTitle{
     font-weight: bold;
     text-decoration: underline;
