@@ -15,13 +15,10 @@ navbar($titlePage, $str);
                         <div id="carouselHero" class="carousel  slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/images/slider/slider1.JPG" class="d-block w-100" alt="...">
+                                    <img src="assets/images/home/hero-slider1.png" class="d-block w-100" alt="cat Photo 2">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/images/slider/slider2.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/images/slider/slider3.jpg" class="d-block w-100" alt="...">
+                                    <img src="assets/images/home/hero-slider2.png" class="d-block w-100" alt="cat Photo 3">
                                 </div>
                             </div>
                         </div>
@@ -49,46 +46,20 @@ navbar($titlePage, $str);
 
         <section class="container  " id="custom-carousel">
             <div class="owl-carousel owl-theme owl-loaded owl-drag" id="home-shop-slider">
-                <div class="item">
-                    <div class="product-grid">
-                        <div class="product-image">
-                            <img class="pic-1" src="assets/images/home/hero-1.png">
+                <?php
+                for ($i= 1; $i < 7; $i++){
+                    ?>
+                    <div class="item">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <img class="pic-1" src="assets/images/home/slider<?= $i ?>.webp"
+                                alt="slider image  <?= $i ?>">
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="item">
-                    <div class="product-grid">
-                        <div class="product-image">
-                            <img class="pic-1" src="assets/images/about.JPG">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="product-grid">
-                        <div class="product-image">
-                            <img class="pic-1" src="assets/images/home/slider1.png">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="product-grid">
-                        <div class="product-image">
-                            <img class="pic-1" src="assets/images/home/slider2.png">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="product-grid">
-                        <div class="product-image">
-                            <img class="pic-1" src="assets/images/home/hero-1.png">
-                        </div>
-                    </div>
-                </div>
-
+                 <?php
+                }
+                ?>
 
             </div>
         </section>
@@ -114,11 +85,9 @@ navbar($titlePage, $str);
                         </div>
 
                         <p class="aboutPar">
-                            Ο σκοπός της δημιουργλιας είναι να προσφέρει υπηρεσίες και παροχές υψηλού επιπέδου σε όλα τα
-                            ζώα του νησιού δεσποζόμενα και αδέσποτα.
+                            Ο σκοπός της δημιουργίας είναι να προσφέρει υπηρεσίες και παροχές υψηλού επιπέδου σε όλα τα ζώα του νησιού δεσποζόμενα και αδέσποτα.
                             Τα έσοδα από τις υπηρεσίες μας διοχετεύονται στη στήριξη των αδέσποτων ζώων.
-                            Βασικός πυλώνας του έργου μας είναι η καταμέτρηση, η στείρωση και η φροντίδα των αδέσποτων
-                            γατών που υπάρχουν στο νησί των Σπετσών.
+                            Βασικός πυλώνας του έργου μας είναι η καταμέτρηση, η στείρωση και η φροντίδα των αδέσποτων γατών που υπάρχουν στο νησί των Σπετσών.
                         </p>
                     </div>
 
