@@ -105,7 +105,6 @@ function navbar($title,$str= '../',$metaProperties = []){
                 <a class="<?php echo $_SESSION['page'] == 6 ? 'active' :'' ?>" href="<?= $str ?>clinic">Το κτηνιατρείο μας</a>
                 <a class="<?php echo $_SESSION['page'] == 7 ? 'active' :'' ?>" href="<?= $str ?>hotel-restaurant">Cats Hotel & Restaurant</a>
                 <a class="<?php echo $_SESSION['page'] == 8 ? 'active' :'' ?>" href="<?= $str ?>contact">Επικοινωνία</a>
-                <a class="<?php echo $_SESSION['page'] == 9 ? 'active' :'' ?>" href="#">Sponsors</a>
             </div>
 
 
