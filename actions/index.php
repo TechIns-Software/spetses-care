@@ -11,7 +11,7 @@ navbar($titlePage,$str,$metaArray);
 
 ?>
     <main id="body-content">
-        <section id="actionsHeader">
+        <section id="actionsHeader" page="actions" >
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
@@ -96,17 +96,17 @@ navbar($titlePage,$str,$metaArray);
             <div class="container-fluid" >
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="sponsorsTitle">Χορηγείες SCFA Α.Μ.Κ.</h3>
+                        <h3 class="sponsorsTitle">Χορηγίες SCFA Α.Μ.Κ.</h3>
                         <div class="sponsorsDetails">
                             <h4>Νέα ρολόγια ύδρευσης για τους τρεις σταθμούς ξεκούρασης των αλόγων εργασίας.</h4>
                         </div>
 
                         <div class="sponsorsDetails">
-                            <h4>Συμμετήχαμε στην αγορά αθλητικής εμφάνησής της ομάδας μπάσκετ του Δημοτικού Σχολείου Σπετσών.</h4>
+                            <h4>Συμμετήχαμε στην αγορά αθλητικής εμφάνισης της ομάδας μπάσκετ του Δημοτικού Σχολείου Σπετσών.</h4>
                         </div>
 
                         <div class="sponsorsDetails">
-                            <h4>Χρυσοί χορηγοί στο 1ο Φεστβάλ παιδικού βιβλίου που διοργανώθηκε στις Σπέτσες.</h4>
+                            <h4>Χρυσοί χορηγοί στο 1ο Φεστιβάλ παιδικού βιβλίου που διοργανώθηκε στις Σπέτσες.</h4>
                         </div>
 
                     </div>
@@ -175,7 +175,7 @@ navbar($titlePage,$str,$metaArray);
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12  ">
-                        <img class="img-fluid" src="../assets/images/actions/hotel.png">
+                        <img class="img-fluid" src="../assets/images/actions/hotels.png">
                     </div>
 
                     <div class="col-lg-6 col-md-12 text-start ">
