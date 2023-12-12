@@ -11,7 +11,7 @@ navbar($titlePage,$str,$metaArray);
 
 ?>
     <main id="body-content">
-        <section id="actionsHeader" page="adoption">
+        <section id="actionsHeader" page="clinic">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 text-center">
