@@ -7,7 +7,44 @@ function navbar($title,$str= '../',$metaProperties = []){
     $metaArray['image'] = $metaArray['image'] ?? "https://scfa.gr/assets/images/scfa_logo.png";
     $metaArray['url'] = $metaArray['page'] ?? "index.php";
     }
+
+    if (!isset($_SESSION["language"])) {
+        $_SESSION['language'] = 'greek';
+    }
+
+    if ($_SESSION["language"] == 'greek') {
+        $makeDonation = 'Κάνε Δωρεά';
+        $becomeVolunteer = 'Γίνε Εθελοντής';
+        $adoption = 'Υιοθεσία/Αναδοχή';
+        $home = 'Αρχική';
+        $actions = 'Δράσεις';
+        $gallery = 'Gallery';
+        $forum = 'Forum';
+        $education = 'Εκπαιδευτικά Προγράμματα';
+        $clinic = 'Το κτηνιατρείο μας';
+        $hotelRestaurant = 'Cats Hotel & Restaurant';
+        $contact = 'Επικοινωνία';
+        $greekLanguage = "Ελληνικά";
+        $englishLanguage = "Αγγλικά";
+
+    }else{
+        $makeDonation = 'Make Donation';
+        $becomeVolunteer = 'Become Volunteer';
+        $adoption = 'Adoption';
+        $home = 'Home';
+        $actions = 'Actions';
+        $gallery = 'Gallery';
+        $forum = 'Forum';
+        $education = 'Education';
+        $clinic = 'Our Clinic';
+        $hotelRestaurant = 'Cats Hotel & Restaurant';
+        $contact = 'Contact';
+        $greekLanguage = "Greek";
+        $englishLanguage = "English";
+
+    }
     ?>
+
 
     <!doctype html>
     <html lang="en">
@@ -42,6 +79,7 @@ function navbar($title,$str= '../',$metaProperties = []){
         <link rel="stylesheet" type="text/css" href="<?= $str ?>assets/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
         <link rel="stylesheet" type="text/css" href="<?= $str ?>assets/revolution/fonts/font-awesome/css/font-awesome.css">
         <link rel="stylesheet" type="text/css" href="<?= $str ?>assets/magnific-popup/magnific-popup.css">
+        <link rel="stylesheet" type="text/css" href="<?= $str ?>assets/flags/css/flag-icon.css">
 
 
     </head>
@@ -61,28 +99,26 @@ function navbar($title,$str= '../',$metaProperties = []){
             <div class="container-fluid d-flex justify-content-between p-0  ">
                 <div class="d-flex align-items-center w-100 col  logo-brand">
                     <a class="navbar-brand  " href="<?= $str ?>">
-                        <img src="<?= $str ?>assets/images/scfa_logo.png" alt>
+                        <img src="<?= $str ?>assets/images/scfa_logo.png" alt="scfa logo">
                     </a>
                 </div>
                 <div class="d-flex justify-content-end allMenu">
                     <div class="newLayout <?php echo $_SESSION['page'] == 10 ? 'active' :'' ?>">
-                      <a class="nav-link" href="<?= $str ?>donation">Κάνε Δωρεά</a>
+                      <a class="nav-link" href="<?= $str ?>donation"> <?= $makeDonation ?></a>
                     </div>
 
                     <div class="newLayout <?php echo $_SESSION['page'] == 11 ? 'active' :'' ?>">
-                        <a class="nav-link" href="<?= $str ?>volunteer">Γίνε Εθελοντής</a>
+                        <a class="nav-link" href="<?= $str ?>volunteer"><?= $becomeVolunteer ?></a>
                     </div>
 
                     <div class="newLayout <?php echo $_SESSION['page'] == 12 ? 'active' :'' ?>">
-                        <a class="nav-link" href="<?= $str ?>adoption">Υιοθεσία/Αναδοχή</a>
+                        <a class="nav-link" href="<?= $str ?>adoption"><?= $adoption ?></a>
                     </div>
 
                     <div class="newLayout hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvasMenu" aria-controls="offCanvasMenu">
                         <a class="nav-link" >Menu </a>
                         <i class="fa-solid fa-bars "></i>
                     </div>
-
-
 
                 </div>
             </div>
@@ -97,14 +133,28 @@ function navbar($title,$str= '../',$metaProperties = []){
         </div>
         <div class="offcanvas-body">
             <div class="offCanvasLinks">
-                <a class="<?php echo $_SESSION['page'] == 1 ? 'active' :'' ?>" href="<?= $str ?>">Αρχική</a>
-                <a class="<?php echo $_SESSION['page'] == 2 ? 'active' :'' ?>" href="<?= $str ?>actions">Δράσεις</a>
-                <a class="<?php echo $_SESSION['page'] == 3 ? 'active' :'' ?>" href="<?= $str ?>gallery">Gallery</a>
-                <a class="<?php echo $_SESSION['page'] == 4 ? 'active' :'' ?>" href="<?= $str ?>forum">Forum</a>
-                <a class="<?php echo $_SESSION['page'] == 5 ? 'active' :'' ?>" href="<?= $str ?>education">Εκπαιδευτικά Προγράμματα</a>
-                <a class="<?php echo $_SESSION['page'] == 6 ? 'active' :'' ?>" href="<?= $str ?>clinic">Το κτηνιατρείο μας</a>
-                <a class="<?php echo $_SESSION['page'] == 7 ? 'active' :'' ?>" href="<?= $str ?>hotel-restaurant">Cats Hotel & Restaurant</a>
-                <a class="<?php echo $_SESSION['page'] == 8 ? 'active' :'' ?>" href="<?= $str ?>contact">Επικοινωνία</a>
+                <a class="<?php echo $_SESSION['page'] == 1 ? 'active' :'' ?>" href="<?= $str ?>"><?= $home ?></a>
+                <a class="<?php echo $_SESSION['page'] == 2 ? 'active' :'' ?>" href="<?= $str ?>actions"><?= $actions ?></a>
+                <a class="<?php echo $_SESSION['page'] == 3 ? 'active' :'' ?>" href="<?= $str ?>gallery"><?= $gallery ?></a>
+                <a class="<?php echo $_SESSION['page'] == 4 ? 'active' :'' ?>" href="<?= $str ?>forum"><?= $forum ?></a>
+                <a class="<?php echo $_SESSION['page'] == 5 ? 'active' :'' ?>" href="<?= $str ?>education"><?= $education ?></a>
+                <a class="<?php echo $_SESSION['page'] == 6 ? 'active' :'' ?>" href="<?= $str ?>clinic"><?= $clinic ?></a>
+                <a class="<?php echo $_SESSION['page'] == 7 ? 'active' :'' ?>" href="<?= $str ?>hotel-restaurant"><?= $hotelRestaurant ?></a>
+                <a class="<?php echo $_SESSION['page'] == 8 ? 'active' :'' ?>" href="<?= $str ?>contact"><?= $contact ?></a>
+
+                <div class="d-flex justify-content-between languageBtn" data-bs-toggle="collapse" data-bs-target="#languageCollapse" aria-expanded="false" aria-controls="languageCollapse">
+                    <div>                    <?php if ($_SESSION["language"] == "greek") { ?>
+                            <span class="flag-icon flag-icon-grc"></span>
+                        <?php } else { ?>
+                            <span class="flag-icon flag-icon-usa"></span>
+                        <?php } ?></div>
+                    <div> <i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="collapse"  id="languageCollapse">
+                    <a class="" onclick="changeLanguage('greek', '<?=$str?>')" > <span class="flag-icon flag-icon-grc mx-1"></span> <?= $greekLanguage ?></a>
+                      <a class="" onclick="changeLanguage('english', '<?=$str?>')" > <span class="flag-icon flag-icon-usa mx-1"></span> <?= $englishLanguage ?></a>
+                </div>
+
             </div>
 
 
@@ -116,13 +166,26 @@ function navbar($title,$str= '../',$metaProperties = []){
 }
 
 function footer($str){
+
+
+    if ($_SESSION["language"] == 'greek') {
+        $contactWithUs = 'Επικοινωνήστε μαζί μας';
+        $contact1 = " Θέλετε να μας στείλετε μήνυμα;";
+        $contact2 = "Επικοινωνία";
+    }else{
+        $contactWithUs = 'Contact with us';
+        $contact1 = "Do you want to send us a message?";
+        $contact2 = "Contact";
+
+    }
+
     ?>
 
 
     <div class="custom-footer">
         <div class="row footerContainer">
             <div class="col-12">
-                <h5>Επικοινωνήστε μαζί μας</h5>
+                <h5><?=  $contactWithUs?></h5>
                 <div class="d-flex  justify-content-start align-items-center flex-wrap">
                     <div class="footerBox">
                         <div>
@@ -162,11 +225,11 @@ function footer($str){
                 </div>
                 <div class="d-flex justify-content-start align-items-center flex-wrap">
                     <div class="footerBox2">
-                        Θέλετε να μας στείλετε μήνυμα;
+                        <?=  $contact1?>
                     </div>
 
                     <div class="footerBox2">
-                        <a href="#" class="ctaContact">Επικοινωνία</a>
+                        <a href="<?= $str?>contact" class="ctaContact">   <?=  $contact2?></a>
                     </div>
 
                 </div>

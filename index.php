@@ -1,10 +1,52 @@
 <?php
 include_once 'commonParts.php';
 $str = '';
-$titlePage = "Αρχική";
-$_SESSION['page'] = 1;
-navbar($titlePage, $str);
 
+$_SESSION['page'] = 1;
+
+if ($_SESSION["language"] == 'greek') {
+    $titlePage = "Αρχική";
+    $heroTitle = 'Κάτι αλλάζει στο νησί...';
+    $heroText = 'Ζούμε στις Σπέτσες και πιστεύουμε ότι μπορούμε να γίνουμε ένα νησί παράδειγμα προς μίμηση στην αντιμετώπιση και προστασία των ζώων.';
+    $heroText2 = 'Γίνε συμμέτοχος σε αυτήν την αλλαγή!';
+    $aboutTitle = 'Σχετικά με εμάς';
+    $aboutText = 'Το κτηνιατρείο SCFA Α.Μ.Κ.Ε. (Αστική Μη Κερδοσκοπική Εταιρεία) είναι μία δομή που ιδρύθηκε 1/11/2021 στο νησί των Σπετσών, με την ευγενική χορηγία της οικογένειας του κ. Φωκίων Φίλων Ποταμιάνος.';
+    $aboutTitle2 = 'Σκοπός';
+    $aboutText2 = 'Ο σκοπός της δημιουργίας είναι να προσφέρει υπηρεσίες και παροχές υψηλού επιπέδου σε όλα τα ζώα του νησιού δεσποζόμενα και αδέσποτα. Τα έσοδα από τις υπηρεσίες μας διοχετεύονται στη στήριξη των αδέσποτων ζώων. Βασικός πυλώνας του έργου μας είναι η καταμέτρηση, η στείρωση και η φροντίδα των αδέσποτων γατών που υπάρχουν στο νησί των Σπετσών.';
+    $teamTitle = 'Η Ομάδα Μας';
+    $fokionName = 'Φωκίων Φίλων <br> Ποταμιανός';
+    $fokionTitle = 'Ιδρυτικό μέλος και χορηγός <br>  του SCFA Α.Μ.Κ.Ε.';
+    $katerinaName = 'Κατερίνα <br> Βογιατζή';
+    $katerinaTitle = 'Ιδρυτικό μέλος και υπεύθυνη του <br> κτηνιατρείου SCFA Α.Μ.Κ.Ε.';
+    $kostasName = 'Κουτσόπουλος <br> Κωνσταντίνος';
+    $kostasTitle = 'Κτηνίατρος <br> υγειονομικά υπεύθυνος.';
+    $mirantaName = 'Μιράντα <br> Γιάμμαλη';
+    $mirantaTitle = 'Βοηθός κτηνιάτρου';
+    $antonisName = 'Αντώνης <br> Τερζάκης';
+    $antonisTitle = 'Υπεύθυνος γραματείας';
+}else{
+    $titlePage = "Home";
+    $heroTitle = 'Something changes on the island...';
+    $heroText = 'We live in Spetses and believe that we can become an exemplary island in dealing with and protecting animals. Become a participant in this change! ';
+    $heroText2 = 'Become a participant in this change!';
+    $aboutTitle = 'About Us';
+    $aboutText = "The SCFA Veterinary Clinic, a Non-Profit Organization, was established on November 1, 2021, in Spetses, sponsored by Mr. Fokion Filon Potamianos' family.";
+    $aboutTitle2 = 'Mission';
+    $aboutText2 = 'Its mission is to offer high-quality services to all animals on the island, both domestic and stray. Revenue from these services supports stray animals. A primary focus is counting, neutering, and caring for stray cats in Spetses.';
+    $teamTitle = 'Our Team';
+    $fokionName = 'Fokion Filon <br> Potamianos';
+    $fokionTitle = 'Founding member and sponsor <br> of SCFA AMKE.';
+    $katerinaName = 'Katerina <br> Bogiatzi';
+    $katerinaTitle = 'Founding member and responsible <br> of the SCFA AMKE veterinary clinic.';
+    $kostasName = 'Kostas <br> Koutsopoulos';
+    $kostasTitle = 'Veterinarian <br> health responsible.';
+    $mirantaName = 'Miranta <br> Giammali';
+    $mirantaTitle = 'Veterinary assistant';
+    $antonisName = 'Antonis <br> Terzakis';
+    $antonisTitle = 'Office Manager';
+
+}
+navbar($titlePage, $str);
 
 ?>
     <main id="body-content">
@@ -24,18 +66,16 @@ navbar($titlePage, $str);
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 heroInformation slide-in-right ">
-                        <h3>Κάτι αλλάζει στο νησί...</h3>
-                        <p>Ζούμε στις Σπέτσες και πιστεύουμε ότι μπορούμε να γίνουμε ένα νησί παράδειγμα προς μίμηση
-                            στην
-                            αντιμετώπιση και προστασία των ζώων.</p>
+                        <h3><?=  $heroTitle?> </h3>
+                        <p><?=  $heroText?> </p>
 
-                        <p>Γίνε συμμέτοχος σε αυτήν την αλλαγή!</p>
+                        <p> <?=  $heroText2?></p>
                         <div class="text-end">
-                            <img class="img-fluid two-foots" src="assets/images/home/two-foots.png">
+                            <img class="img-fluid two-foots" src="assets/images/home/two-foots.png" alt="two foots image">
                         </div>
 
                         <div class="text-center">
-                            <a href="#about-section" class="learn-about">Σχετικά με εμάς <br> <i
+                            <a href="#about-section" class="learn-about"> <?=  $aboutTitle?> <br> <i
                                         class="fa-solid fa-chevron-down"></i></a>
                         </div>
 
@@ -69,28 +109,19 @@ navbar($titlePage, $str);
                 <div class="row aboutContainer">
                     <div class="col-lg-12  ">
                         <div class="d-flex justify-content-start align-items-center titleAbout">
-                            <div><img src="assets/images/home/footIcon.png"></div>
-                            <div><h5> Σχετικά με εμάς </h5></div>
+                            <div><img src="assets/images/home/footIcon.png" alt="foot List Icon 1"></div>
+                            <div><h5> <?=  $aboutTitle?> </h5></div>
                         </div>
-
-                        <p class="aboutPar">
-                            Το κτηνιατρείο SCFA Α.Μ.Κ.Ε. (Αστική Μη Κερδοσκοπική Εταιρεία) είναι μία δομή που ιδρύθηκε
-                            1/11/2021 στο νησί των Σπετσών, με την ευγενική χορηγία της οικογένειας του κ. Φωκίων Φίλων
-                            Ποταμιάνος.
-                        </p>
+                        <p class="aboutPar"><?=  $aboutText?>   </p>
 
                         <div class="d-flex justify-content-start align-items-center titleAbout">
-                            <div><img src="assets/images/home/footIcon.png"></div>
-                            <div><h5> Σκοπός</h5></div>
+                            <div><img src="assets/images/home/footIcon.png" alt="foot List Icon 2"></div>
+                            <div><h5>  <?=  $aboutTitle2?> </h5></div>
                         </div>
+                        <p class="aboutPar"> <?=  $aboutText2?> </p>
 
-                        <p class="aboutPar">
-                            Ο σκοπός της δημιουργίας είναι να προσφέρει υπηρεσίες και παροχές υψηλού επιπέδου σε όλα τα ζώα του νησιού δεσποζόμενα και αδέσποτα.
-                            Τα έσοδα από τις υπηρεσίες μας διοχετεύονται στη στήριξη των αδέσποτων ζώων.
-                            Βασικός πυλώνας του έργου μας είναι η καταμέτρηση, η στείρωση και η φροντίδα των αδέσποτων γατών που υπάρχουν στο νησί των Σπετσών.
-                        </p>
                     </div>
-
+`
                     <div class="col-12 mobileAbout">
                         <img class="img-fluid" alt="ksout kai oust photo" src="assets/images/home/aboutImg.png">
                     </div>
@@ -103,44 +134,44 @@ navbar($titlePage, $str);
             <div class="container">
                 <div class="row">
                     <div class="col-12 teamTitle">
-                        <h2>Η Ομάδα Μας</h2>
+                        <h2><?=  $teamTitle?></h2>
                     </div>
 
                     <div class="d-flex justify-content-between align-items-center flex-wrap">
 
                         <div class="teamCard">
                             <img src="assets/images/home/fokion-potamianos.png" alt="Ποταμιανός Φωκίων Φίλων">
-                            <h4>Φωκίων Φίλων<br> Ποταμιανός</h4>
-                            <p>Ιδρυτικό μέλος και χορηγός<br> του SCFA Α.Μ.Κ.Ε.</p>
+                            <h4><?=  $fokionName?></h4>
+                            <p><?=  $fokionTitle?></p>
                         </div>
 
 
                         <div class="teamCard">
                             <img src="assets/images/home/katerina-bogiatzi.png" alt="Κατερίνα Βογιατζή">
-                            <h4>Κατερίνα <br>Βογιατζή</h4>
-                            <p>Ιδρυτικό μέλος και υπεύθυνη του<br> κτηνιατρείου SCFA Α.Μ.Κ.Ε.</p>
+                            <h4><?=  $katerinaName?></h4>
+                            <p><?=  $katerinaTitle?></p>
                         </div>
                     </div>
 
                     <div class="d-flex justify-content-between align-items-center flex-wrap">
                         <div class="teamCard">
                             <img src="assets/images/home/kotsopoulos.png" alt="Κουτσόπουλος Κωνσταντίνος">
-                            <h4> Κουτσόπουλος<br> Κωνσταντίνος</h4>
-                            <p>Κτηνίατρος <br> υγειονομικά υπεύθυνος.</p>
+                            <h4><?=  $kostasName?></h4>
+                            <p><?=  $kostasTitle?></p>
                         </div>
 
 
                         <div class="teamCard">
                             <img src="assets/images/home/miranta-giammali.png" alt="Μιράντα Γιάμμαλη">
-                            <h4>Μιράντα<br> Γιάμμαλη </h4>
-                            <p>Βοηθός κτηνιάτρου</p>
+                            <h4><?=  $mirantaName?></h4>
+                            <p><?=  $mirantaTitle?></p>
                         </div>
 
 
                         <div class="teamCard">
                             <img src="assets/images/home/antonis-terzakis.png" alt="Αντώνης Τερζάκης">
-                            <h4>Αντώνης <br> Τερζάκης </h4>
-                            <p>Υπεύθυνος γραματείας</p>
+                            <h4><?=  $antonisName?></h4>
+                            <p><?=  $antonisTitle?></p>
                         </div>
 
                     </div>

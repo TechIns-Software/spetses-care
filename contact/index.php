@@ -1,8 +1,57 @@
 <?php
 include_once '../commonParts.php';
 $str = '../';
-$titlePage = "Επικοινωνία";
+
 $_SESSION['page'] = 8 ;
+
+if ($_SESSION["language"] == 'greek') {
+    $titlePage = "Επικοινωνία";
+    $contactTitle = "Επικοινωνία";
+    $sendMessageTitle = "Θέλω να στείλω μήνυμα!";
+    $sendMessageName = "Ονοματεπώνυμο";
+    $sendMessageEmail = "Email";
+    $sendMessagePhone = "Τηλέφωνο";
+    $sendMessageSubject = "Τίτλος";
+    $sendMessageMessage = "Μήνυμα...";
+    $sendMessageSubmit = "Υποβολή";
+    $sendMessageLoading = "Φόρτωση...";
+    $contactUsTitle = "Επικοινωνήστε μαζί μας";
+    $contactUsPhone = "Τηλέφωνο: 22980 72652";
+    $contactUsEmail = "E-mail: spetsescareforanimals@gmail.com";
+    $contactUsAddress = "Διεύθυνση: Πλατεία Ρολογιού, Σπέτσες";
+
+    $openHours1 = "ΔΕΥΤ-ΤΕΤ-ΠΑΡ:";
+    $openHours1Value = " 09:00-14:00 και 17:00-20:00";
+    $openHours2 = "ΤΡΙΤΗ-ΠΕΜ:";
+    $openHours2Value = " 09:00-17:00";
+    $openHoursTitle2 = "Θερινό Ωράριο Λειτουργίας: ";
+    $openHours3 = "ΔΕΥΤΕΡΑ ΕΩΣ ΠΑΡΑΣΚΕΥΗ:";
+    $openHours3Value = "09:00-14:00 και 18:00-21:00";
+}else{
+    $titlePage = "Contact";
+    $contactTitle = "Contact";
+    $sendMessageTitle = "I want to send a message!";
+    $sendMessageName = "Full Name";
+    $sendMessageEmail = "Email";
+    $sendMessagePhone = "Phone";
+    $sendMessageSubject = "Subject";
+    $sendMessageMessage = "Message...";
+    $sendMessageSubmit = "Submit";
+    $sendMessageLoading = "Loading...";
+    $contactUsTitle = "Contact Us";
+    $contactUsPhone = "Phone: 22980 72652";
+    $contactUsEmail = "E-mail:";
+    $contactUsAddress = "Address: Pl. Roloy, Spetses";
+
+    $openHoursTitle = "Winter Hours: ";
+    $openHours1 = "MON-WED-FRI:";
+    $openHours1Value = " 09:00-14:00 and 17:00-20:00";
+    $openHours2 = "TUE-THU:";
+    $openHours2Value = " 09:00-17:00";
+    $openHoursTitle2 = "Summer  Hours: ";
+    $openHours3 = "MONDAY TO FRIDAY:";
+    $openHours3Value = "09:00-14:00 and 18:00-21:00";
+}
 $metaArray['title'] = $titlePage.'| scfa.gr';
 $metaArray['description'] =  "Ανακαλύψτε πώς μπορούμε να βοηθήσουμε τα ζώα σας! Στη σελίδα επικοινωνίας μας, μπορείτε να μας στείλετε μηνύματα για εξειδικευμένη συμβουλή και υποστήριξη που αφορούν το καλό των αγαπημένων σας φίλων.";
 $metaArray['image'] = "https://scfa.gr/assets/images/scfa_logo.png";
@@ -15,7 +64,7 @@ navbar($titlePage,$str,$metaArray);
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <div class="bgTitle">ΕΠΙΚΟΙΝΩΝΙΑ</div>
+                        <div class="bgTitle"> <?= $contactTitle ?></div>
                     </div>
                 </div>
             </div>
@@ -26,23 +75,23 @@ navbar($titlePage,$str,$metaArray);
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h3 class="contactTitle">Θέλω να στείλω μήνυμα!</h3>
+                        <h3 class="contactTitle"> <?= $sendMessageTitle ?></h3>
                     </div>
 
                     <div class="col-lg-6 col-md-12 my-2">
                         <div class="volunteerForm">
-                            <input type="text" id="fullName" placeholder="Ονοματεπώνυμο">
-                            <input type="text" id="email" placeholder="Email">
-                            <input type="text" id="phone" placeholder="Τηλέφωνο">
+                            <input type="text" id="fullName" placeholder="<?= $sendMessageName ?>">
+                            <input type="text" id="email" placeholder="<?= $sendMessageEmail ?>">
+                            <input type="text" id="phone" placeholder="<?= $sendMessagePhone ?>">
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-md-12 my-2">
                         <div class="volunteerForm">
-                        <input type="text" id="subject" placeholder="Τίτλος">
-                        <textarea cols="5" rows="3" id="message">Μήνυμα...</textarea>
-                            <button onclick="contactForm(event)" class="submit-form-btn">Υποβολή <div id="spinner-border" class="spinner-border d-none text-light" role="status">
-                                    <span class="visually-hidden">Loading...</span>
+                        <input type="text" id="subject" placeholder="<?= $sendMessageSubject ?>">
+                        <textarea cols="5" rows="3" id="message"><?= $sendMessageMessage ?></textarea>
+                            <button onclick="contactForm(event)" class="submit-form-btn"><?= $sendMessageSubmit ?> <div id="spinner-border" class="spinner-border d-none text-light" role="status">
+                                    <span class="visually-hidden"> <?= $sendMessageLoading ?></span>
                                 </div>
                             </button>
                         </div>
@@ -53,23 +102,23 @@ navbar($titlePage,$str,$metaArray);
 
                 <div class="row">
                     <div class="col-12">
-                        <h3 class="contactTitle">Επικοινωνήστε μαζί μας</h3>
+                        <h3 class="contactTitle"> <?= $contactUsTitle ?></h3>
                     </div>
 
                     <div class="col-lg-6 col-md-12 my-2">
                         <div class="contactInfoBox">
                             <div><i class="fa-solid fa-phone"></i></div>
-                            <div class="contactValue">Τηλέφωνο: 22980 72652</div>
+                            <div class="contactValue"><?= $contactUsPhone ?></div>
                         </div>
 
                         <div class="contactInfoBox">
 
                             <div>     <i class="fa-regular fa-envelope"></i></div>
-                            <div class="contactValue">E-mail: spetsescareforanimals@gmail.com</div>
+                            <div class="contactValue"><?= $contactUsEmail ?></div>
                         </div>
                         <div class="contactInfoBox">
                             <div><i class="fa-solid fa-location-dot"></i></div>
-                            <div class="contactValue">Διεύθυνση: Πλατεία Ρολογιού, Σπέτσες</div>
+                            <div class="contactValue"><?= $contactUsAddress ?></div>
                         </div>
 
 
@@ -81,15 +130,15 @@ navbar($titlePage,$str,$metaArray);
                         </div>
                     </div>
 
-                    <div class="col-lg-6 col-md-12 my-2">
-                        <h4 class="openHoursTitle">Χειμερινό Ωράριο Λειτουργίας: </h4>
-                        <p class="openHours">ΔΕΥΤ-ΤΕΤ-ΠΑΡ: <span> 09:00-14:00 και 17:00-20:00 </span></p>
-                        <p class="openHours">  ΤΡΙΤΗ-ΠΕΜ:<span>  09:00-17:00 </span></p>
+                    <div class="col-lg-6 col-md-12 my-2  ">
+                        <h4 class="openHoursTitle"><?= $openHoursTitle ?> </h4>
+                        <p class="openHours"><?= $openHours1 ?> <span> <?= $openHours1Value ?></span></p>
+                        <p class="openHours">  <?= $openHours2 ?><span>  <?= $openHours2Value ?> </span></p>
                     </div>
 
-                    <div class="col-lg-6 col-md-12 my-2">
-                        <h4 class="openHoursTitle">Θερινό Ωράριο Λειτουργίας:  </h4>
-                        <p class="openHours">ΔΕΥΤΕΡΑ ΕΩΣ ΠΑΡΑΣΚΕΥΗ: <span> 09:00-14:00 και 18:00-21:00 </span>
+                    <div class="col-lg-6 col-md-12 my-2 ">
+                        <h4 class="openHoursTitle"><?= $openHoursTitle2 ?> </h4>
+                        <p class="openHours"><?= $openHours3 ?> <span> <?= $openHours3Value ?> </span>
                         </p>
                     </div>
 

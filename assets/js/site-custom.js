@@ -59,23 +59,23 @@ Custom Javascript
     var custom_js = {
 
         bootstrap_menu: function () {
-            if ($('.dropdown-menu a.dropdown-toggle-mob').length) {
-
-                // Dropdown Menu For Mobile
-                $('.dropdown-menu a.dropdown-toggle-mob').on('click', function (e) {
-                    if (!$(this).next().hasClass('show')) {
-                        $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
-                    }
-                    var $subMenu = $(this).next(".dropdown-menu");
-                    $subMenu.toggleClass('show');
-
-                    $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
-                        $('.dropdown-submenu .show').removeClass("show");
-                    });
-
-                    return false;
-                });
-            }
+            // if ($('.dropdown-menu a.dropdown-toggle-mob').length) {
+            //
+            //     // Dropdown Menu For Mobile
+            //     $('.dropdown-menu a.dropdown-toggle-mob').on('click', function (e) {
+            //         if (!$(this).next().hasClass('show')) {
+            //             $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+            //         }
+            //         var $subMenu = $(this).next(".dropdown-menu");
+            //         $subMenu.toggleClass('show');
+            //
+            //         $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+            //             $('.dropdown-submenu .show').removeClass("show");
+            //         });
+            //
+            //         return false;
+            //     });
+            // }
         },
 
         smooth_scroll: function () {
@@ -1219,5 +1219,20 @@ function donationFormBank(event){
 
         }
     });
+}
+
+const changeLanguage = (value, str='') => {
+    $.ajax({
+        type: "POST",
+        url: `${str}changeLanguage.php`,
+        data: {
+            language: value
+        },
+        success: function(data) {
+            console.log(data);
+            window.location.reload();
+        }
+    });
+    console.log(value);
 }
 

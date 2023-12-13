@@ -1,8 +1,58 @@
 <?php
 include_once '../commonParts.php';
 $str = '../';
-$titlePage = "Το Κτηνιατρείο Μας";
+
 $_SESSION['page'] = 6 ;
+if ($_SESSION["language"] == 'greek') {
+    $titlePage = "Το Κτηνιατρείο Μας";
+    $clinicTitle = "Το Κτηνιατρείο Μας";
+    $clinicText = "Το κτηνιατρείο SCFA Α.Μ.Κ.Ε. στεγάζεται σε ένα χώρο 97 τ.μ. σε κεντρικό σημείο του νησιού των Σπετσών.";
+    $clinicText2 = "Στις εγκαταστάσεις μας παρέχουμε τις ακόλουθες υπηρεσίες:";
+    $clinicList1 = "Ακτινολογικό Τμήμα";
+    $clinicList2 = "Αιματολογικό Βιοχημικό Τμήμα";
+    $clinicList3 = "Υπερηχογραφικό Τμήμα";
+    $clinicList4 = "Χειρουργικό Τμήμα";
+    $clinicList5 = "Οδοντιατρικό Τμήμα";
+    $clinicList6 = "Νοσηλεία";
+    $clinicList7 = "Φάρμακα / Κτηνιατρικά Προϊόντα";
+    $clinicList8 = "Pet Shop / Τροφές / Καλλωπισμός";
+
+    $morePhotos = "Περισσότερα στο Gallery";
+    $openHoursTitle = "Χειμερινό Ωράριο Λειτουργίας: ";
+    $openHours1 = "ΔΕΥΤ-ΤΕΤ-ΠΑΡ:";
+    $openHours1Value = " 09:00-14:00 και 17:00-20:00";
+    $openHours2 = "ΤΡΙΤΗ-ΠΕΜ:";
+    $openHours2Value = " 09:00-17:00";
+    $openHoursTitle2 = "Θερινό Ωράριο Λειτουργίας: ";
+    $openHours3 = "ΔΕΥΤΕΡΑ ΕΩΣ ΠΑΡΑΣΚΕΥΗ:";
+    $openHours3Value = "09:00-14:00 και 18:00-21:00";
+
+}else{
+    $titlePage = "Our Clinic";
+    $clinicTitle = "Our Clinic";
+    $clinicText = "The SCFA Veterinary Clinic N.P.O. is housed in a 97 sq.m. space at a central location in Spetses. The facility offers various services, including:";
+    $clinicText2 = "In our facilities we provide the following services:";
+    $clinicList1 = "Radiology Department";
+    $clinicList2 = "Hematological Biochemical Department";
+    $clinicList3 = "Ultrasound Department";
+    $clinicList4 = "Surgical Department";
+    $clinicList5 = "Dental Department";
+    $clinicList6 = "Hospitalization";
+    $clinicList7 = "Medicines / Veterinary Products";
+    $clinicList8 = "Pet Shop (including pet food and grooming)";
+
+    $morePhotos = "More in Gallery";
+    $openHoursTitle = "Winter Hours: ";
+    $openHours1 = "MON-WED-FRI:";
+    $openHours1Value = " 09:00-14:00 and 17:00-20:00";
+    $openHours2 = "TUE-THU:";
+    $openHours2Value = " 09:00-17:00";
+    $openHoursTitle2 = "Summer  Hours: ";
+    $openHours3 = "MONDAY TO FRIDAY:";
+    $openHours3Value = "09:00-14:00 and 18:00-21:00";
+
+
+}
 $metaArray['title'] = $titlePage.'| scfa.gr';
 $metaArray['description'] =  "Στο κτηνιατρείο μας, κατανοούμε τη σημασία της σωστής φροντίδας για τα ζώα. Με εξειδικευμένους κτηνιάτρους και φιλικό προσωπικό, παρέχουμε ολοκληρωμένες λύσεις για την υγεία και την ευεξία των κατοικίδιων σας.";
 $metaArray['image'] = "https://scfa.gr/assets/images/scfa_logo.png";
@@ -12,13 +62,7 @@ navbar($titlePage,$str,$metaArray);
 ?>
     <main id="body-content">
         <section id="actionsHeader" page="clinic">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
 
-                    </div>
-                </div>
-            </div>
         </section>
         <div class="sectionDivider"></div>
 
@@ -26,50 +70,48 @@ navbar($titlePage,$str,$metaArray);
             <div class="container">
                 <div class="row d-flex align-items-center">
                     <div class="col-lg-7 col-md-12">
-                        <h3 class="clinicHeader">Το Κτηνιατρείο Μας</h3>
-                        <p class="clinicPar"> Το κτηνιατρείο SCFA Α.Μ.Κ.Ε. στεγάζεται σε ένα χώρο 97 τ.μ. σε κεντρικό σημείο του νησιού
-                            των Σπετσών.
-                        </p>
-                        <p class="clinicPar"> Στις εγκαταστάσεις μας παρέχουμε τις ακόλουθες υπηρεσίες:</p>
+                        <h3 class="clinicHeader"><?= $clinicTitle ?></h3>
+                        <p class="clinicPar"><?= $clinicText ?> </p>
+                        <p class="clinicPar"> <?= $clinicText2 ?></p>
                         <div class="clinicList">
                             <div class="d-flex justify-content-start align-items-center clinicDot ">
-                                <div><img src="../assets/images/clinic/blue-foot.png"> </div>
-                                <div><h4>Ακτινολογικό Τμήμα</h4></div>
+                                <div><img src="../assets/images/clinic/blue-foot.png" alt="footprint Icon List"> </div>
+                                <div><h4><?= $clinicList1 ?></h4></div>
                             </div>
 
                             <div class="d-flex justify-content-start align-items-center clinicDot ">
-                                <div><img src="../assets/images/clinic/blue-foot.png"> </div>
-                                <div><h4>Αιματολογικό Βιοχημικό Τμήμα</h4></div>
+                                <div><img src="../assets/images/clinic/blue-foot.png" alt="footprint Icon List"> </div>
+                                <div><h4><?= $clinicList2 ?></h4></div>
                             </div>
 
                             <div class="d-flex justify-content-start align-items-center clinicDot ">
-                                <div><img src="../assets/images/clinic/blue-foot.png"> </div>
-                                <div><h4>Υπερηχογραφικό Τμήμα</h4></div>
+                                <div><img src="../assets/images/clinic/blue-foot.png" alt="footprint Icon List"> </div>
+                                <div><h4><?= $clinicList3 ?></h4></div>
                             </div>
 
                             <div class="d-flex justify-content-start align-items-center clinicDot ">
-                                <div><img src="../assets/images/clinic/blue-foot.png"> </div>
-                                <div><h4>Χειρουργικό Τμήμα</h4></div>
+                                <div><img src="../assets/images/clinic/blue-foot.png" alt="footprint Icon List"> </div>
+                                <div><h4> <?= $clinicList4 ?></h4></div>
                             </div>
 
                             <div class="d-flex justify-content-start align-items-center clinicDot ">
-                                <div><img src="../assets/images/clinic/blue-foot.png"> </div>
-                                <div><h4>Οδοντιατρικό Τμήμα</h4></div>
+                                <div><img src="../assets/images/clinic/blue-foot.png" alt="footprint Icon List"> </div>
+                                <div><h4> <?= $clinicList5 ?></h4></div>
                             </div>
 
                             <div class="d-flex justify-content-start align-items-center clinicDot ">
-                                <div><img src="../assets/images/clinic/blue-foot.png"> </div>
-                                <div><h4>Νοσηλεία</h4></div>
+                                <div><img src="../assets/images/clinic/blue-foot.png" alt="footprint Icon List"> </div>
+                                <div><h4><?= $clinicList6 ?></h4></div>
                             </div>
 
                             <div class="d-flex justify-content-start align-items-center clinicDot ">
-                                <div><img src="../assets/images/clinic/blue-foot.png"> </div>
-                                <div><h4>Φάρμακα / Κτηνιατρικά Προϊόντα</h4></div>
+                                <div><img src="../assets/images/clinic/blue-foot.png" alt="footprint Icon List"> </div>
+                                <div><h4> <?= $clinicList7 ?></h4></div>
                             </div>
 
                             <div class="d-flex justify-content-start align-items-center clinicDot ">
-                                <div><img src="../assets/images/clinic/blue-foot.png"> </div>
-                                <div><h4>Pet Shop/Τροφές/Καλλωπισμός</h4></div>
+                                <div><img src="../assets/images/clinic/blue-foot.png" alt="footprint Icon List"> </div>
+                                <div><h4><?= $clinicList8 ?></h4></div>
                             </div>
 
 
@@ -78,7 +120,7 @@ navbar($titlePage,$str,$metaArray);
                     </div>
 
                     <div class="col-lg-5 col-md-12">
-                        <img class="img-fluid " src="../assets/images/clinic/cat.png">
+                        <img class="img-fluid " src="../assets/images/clinic/cat.png" alt="cute cat">
                     </div>
 
                     <div class="col-12 text-center">
@@ -117,18 +159,18 @@ navbar($titlePage,$str,$metaArray);
                     </div>
 
                     <div class="col-12 text-center">
-                        <a href="../gallery" class="custom-hyperlink">Περισσότερα στο Gallery</a>
+                        <a href="../gallery" class="custom-hyperlink"> <?= $morePhotos ?></a>
                     </div>
 
                     <div class="col-lg-6 col-md-12 my-2  ">
-                        <h4 class="openHoursTitle">Χειμερινό Ωράριο Λειτουργίας: </h4>
-                        <p class="openHours">ΔΕΥΤ-ΤΕΤ-ΠΑΡ: <span> 09:00-14:00 και 17:00-20:00 </span></p>
-                        <p class="openHours">  ΤΡΙΤΗ-ΠΕΜ:<span>  09:00-17:00 </span></p>
+                        <h4 class="openHoursTitle"><?= $openHoursTitle ?> </h4>
+                        <p class="openHours"><?= $openHours1 ?> <span> <?= $openHours1Value ?></span></p>
+                        <p class="openHours">  <?= $openHours2 ?><span>  <?= $openHours2Value ?> </span></p>
                     </div>
 
                     <div class="col-lg-6 col-md-12 my-2 ">
-                        <h4 class="openHoursTitle">Θερινό Ωράριο Λειτουργίας:  </h4>
-                        <p class="openHours">ΔΕΥΤΕΡΑ ΕΩΣ ΠΑΡΑΣΚΕΥΗ: <span> 09:00-14:00 και 18:00-21:00 </span>
+                        <h4 class="openHoursTitle"><?= $openHoursTitle2 ?> </h4>
+                        <p class="openHours"><?= $openHours3 ?> <span> <?= $openHours3Value ?> </span>
                         </p>
                     </div>
 

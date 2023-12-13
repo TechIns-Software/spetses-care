@@ -1,8 +1,30 @@
 <?php
 include_once '../commonParts.php';
 $str = '../';
-$titlePage = "Gallery";
 $_SESSION['page'] = 3 ;
+if ($_SESSION["language"] == 'greek') {
+    $titlePage = "Gallery";
+    $clinic = "Το κτηνιατρείο μας";
+    $hotel = "Cats Hotel and Restaurant";
+    $education = "Εκπαιδευτικά Προγράμματα";
+    $adoption = "Υιοθεσία/Αναδοχή";
+    $adoptionText = "Κάποιες από τις υιοθεσίες...";
+    $volunteer = "Εθελοντές";
+    $volunteerText = "Κάποιοι από τους εθελοντές...";
+    $hourse = "Πρόγραμμα αλόγων";
+    $forum = "Forum";
+}else{
+    $titlePage = "Gallery";
+    $clinic = "Our Veterinary Clinic";
+    $hotel = "Cats Hotel and Restaurant";
+    $education = "Educational Programs";
+    $adoption = "Adoption";
+    $adoptionText = "Some of the adoptions...";
+    $volunteer = "Volunteers";
+    $volunteerText = "Some of the volunteers...";
+    $hourse = "Horse program";
+    $forum = "Forum";
+}
 $metaArray['title'] = $titlePage.'| scfa.gr';
 $metaArray['description'] =  "Η υιοθεσία αλλάζει ζωές! Στην ομάδα μας, συνδέουμε ανθρώπους με νέα μέλη της οικογένειάς τους, δίνοντας σε ζώα ένα δεύτερο και πιο αγαπημένο σπίτι. Ανακαλύψτε τη χαρά της υιοθεσίας σήμερα!";
 $metaArray['image'] = "https://scfa.gr/assets/images/scfa_logo.png";
@@ -27,12 +49,12 @@ navbar($titlePage,$str,$metaArray);
 
         <section id="educationPhotos">
             <div class="container">
-                <h3 class="donationTitle">Gallery</h3>
+                <h3 class="donationTitle"><?= $titlePage?></h3>
                 <div class="row my-2">
                     <div class="col-12 my-2 ">
                         <a href="../clinic" class="galleryTitleSection">
                             <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
-                            <div> <h3> Το κτηνιατρείο μας</h3></div>
+                            <div> <h3>  <?= $clinic?> </h3></div>
                         </a>
                     </div>
 
@@ -56,7 +78,7 @@ navbar($titlePage,$str,$metaArray);
                     <div class="col-12 my-2 ">
                         <a href="../hotel-restaurant" class="galleryTitleSection">
                             <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
-                            <div> <h3> Cats Hotel and Restaurant</h3></div>
+                            <div> <h3>  <?= $hotel?></h3></div>
                         </a>
                     </div>
                     <?php
@@ -79,7 +101,7 @@ navbar($titlePage,$str,$metaArray);
                     <div class="col-12 my-2 ">
                         <a href="../education" class="galleryTitleSection">
                         <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
-                            <div> <h3> Εκπαιδευτικά Προγράμματα </h3></div>
+                            <div> <h3> <?= $education?></h3></div>
                         </a>
                     </div>
                     <?php
@@ -102,7 +124,7 @@ navbar($titlePage,$str,$metaArray);
                     <div class="col-12 my-2 ">
                         <a href="../adoption" class="galleryTitleSection">
                             <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
-                            <div> <h3> Υιοθεσία/Αναδοχή</h3> <small>Κάποιες από τις υιοθεσίες...</small>
+                            <div> <h3> <?= $adoption ?></h3> <small><?= $adoptionText ?></small>
                             </div>
                         </a>
                     </div>
@@ -127,7 +149,7 @@ navbar($titlePage,$str,$metaArray);
                     <div class="col-12 my-2 ">
                         <a href="../volunteer" class="galleryTitleSection">
                             <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
-                            <div> <h3>  Εθελοντές</h3> <small>Κάποιοι από τους εθελοντές...</small></div>
+                            <div> <h3>  <?= $volunteer ?></h3> <small><?= $volunteerText ?></small></div>
                         </a>
                     </div>
 
@@ -151,7 +173,7 @@ navbar($titlePage,$str,$metaArray);
                     <div class="col-12 my-2 ">
                         <a class="galleryTitleSection">
                             <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
-                            <div> <h3>  Πρόγραμμα αλόγων</h3></div>
+                            <div> <h3>  <?= $hourse ?> </h3></div>
                         </a>
                     </div>
 
@@ -175,7 +197,7 @@ navbar($titlePage,$str,$metaArray);
                     <div class="col-12 my-2 ">
                         <a href="../forum" class="galleryTitleSection">
                             <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
-                            <div> <h3> Forum</h3></div>
+                            <div> <h3> <?= $forum ?></h3></div>
                         </a>
                     </div>
 

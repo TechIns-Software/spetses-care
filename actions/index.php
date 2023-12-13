@@ -1,12 +1,51 @@
 <?php
 include_once '../commonParts.php';
 $str = '../';
-$titlePage = "Δράσεις";
+
+
+if ($_SESSION["language"] == 'greek') {
+    $titlePage = "Actions";
+    $stiroseisTitle = "Στειρώσεις <br> Αδέσποτων Ζώων";
+    $stiroseisPar = "Έχουμε στειρώσει, αποπαρασιτώσει, εμβολιάσει και καταγράψει έως τώρα 800 αδέσποτες γάτες, με χορηγία του κτηνιατρείου μας, με προγράμματα του Δήμου Σπετσών, αλλά και με δωρεές ανθρώπων που μας στηρίζουν.";
+    $nosileiaTitle = "Νοσηλεία Και <br> Φροντίδα";
+    $nosileiaPar1 = "Έχουμε νοσηλεύσει, με χορηγία του κτηνιατρείου μας, με προγράμματα του Δήμου Σπετσών, αλλά και με δωρεές ανθρώπων που μας στηρίζουν, περισσότερα από 300 ζώα.";
+    $nosileiaPar2 = "Χορηγούμε διετές πρόγραμμα για τα 120 άλογα εργασίας του νησιού μας, το οποίο περιλαμβάνει τη καταγραφή και σήμανση του, τους εμβολιασμούς και τις αποπαρασιτώσεις, αλλά και την φαρμακευτική και κτηνιατρική υποστήριξη όταν και όπου χρειάζεται. Επίσης καταγράψαμε τισ συντεταγμένες όλων των στάβλων.";
+    $enimerosiTitle = "Εκπαιδευτικές Ενημερώσεις <br> Σε Μαθητές";
+    $enimerosiPar = "Έχουμε πραγματοποιήσει ενημερώσεις ομιλίες και δράσεις σχεδόν σε όλες τις σχολικές βαθμίδες του νησιού μας, με σκοπό να προβάλλουμε στα παιδιά την αλληλεπίδραση και το σεβασμό απέναντι σε όλα τα ζώα.";
+    $hotelTitle = "Cats Hotel & <br> Cats Restaurant";
+    $hotelPar = "Στην προσπάθειά μας να βελτιώσουμε τις συνθήκες διαβίωσης των αδέσποτων γατών του νησιού μας, έχουμε δημιουργήσει σταθμούς σίτισης και ξεκούρασης, τα γνωστά πλέον Cats Restaurants and Hotels.";
+    $learnMoreBtn = "Μάθε Περισσότερα";
+    $xorigiesTitle = "Χορηγίες SCFA Α.Μ.Κ.";
+    $xorigiesPar1 = "Νέα ρολόγια ύδρευσης για τους τρεις σταθμούς ξεκούρασης των αλόγων εργασίας.";
+    $xorigiesPar2 = "Συμμετήχαμε στην αγορά αθλητικής εμφάνισης της ομάδας μπάσκετ του Δημοτικού Σχολείου Σπετσών.";
+    $xorigiesPar3 = "Χρυσοί χορηγοί στο 1ο Φεστιβάλ παιδικού βιβλίου που διοργανώθηκε στις Σπέτσες.";
+
+}else{
+    $titlePage = "Actions";
+    $stiroseisTitle = "Neutering of  <br>  Stray Animals";
+    $stiroseisPar = "We have neutered, dewormed, vaccinated, and recorded up to now 800 stray cats, with the sponsorship of our veterinary clinic, programs of the Municipality of Spetses, and donations from people who support us.";
+    $nosileiaTitle = "Hospitalization And <br> Care";
+    $nosileiaPar1 = "We have cared for and treated, with the sponsorship of our veterinary clinic, programs of the Municipality of Spetses, and donations from our supporters, over 300 animals";
+    $nosileiaPar2 = "We provide a two-year program for the 120 working horses of our island, which includes their recording and tagging, vaccinations and deworming, as well as medical and veterinary support when and where needed. We also recorded the coordinates of all stables.";
+    $enimerosiTitle = "Educational Information  <br> To Students";
+    $enimerosiPar = "We have conducted informational talks and activities in almost all school levels on our island, aiming to promote interaction and respect for all animals among children.";
+    $hotelTitle = "Cats Hotel & <br> Cats Restaurant";
+    $hotelPar = "In our effort to improve the living conditions of the stray cats on our island, we have created feeding and resting stations, now known as Cats Restaurants and Hotels.";
+    $learnMoreBtn = "Learn More";
+    $xorigiesTitle = "SCFA Sponsorships";
+    $xorigiesPar1 = "New water clocks for the three resting stations of the working horses.";
+    $xorigiesPar2 = " We participated in the purchase of sports uniforms for the basketball team of the Spetses Municipal School. ";
+    $xorigiesPar3 = "Gold sponsors at the 1st Children's Book Festival organized in Spetses";
+
+
+
+}
 $_SESSION['page'] = 2 ;
 $metaArray['title'] = $titlePage.'| scfa.gr';
 $metaArray['description'] =  "Ανακαλύψτε τις καρδιές που χτυπούν για τα ζώα με τις δράσεις μας! Η ομάδα μας αφοσιώνεται στην προστασία και ευημερία των ζώων. Μάθετε περισσότερα για τις πρωτοβουλίες μας και ελάτε να συμμετέχετε σε αυτή την αγαπητική κοινότητα!";
 $metaArray['image'] = "https://scfa.gr/assets/images/scfa_logo.png";
 $metaArray['url'] =  "actions";
+
 navbar($titlePage,$str,$metaArray);
 
 ?>
@@ -15,7 +54,7 @@ navbar($titlePage,$str,$metaArray);
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="bgHead">Δράσεις</h1>
+                        <h1 class="bgHead"> <?= $titlePage?></h1>
                     </div>
                 </div>
             </div>
@@ -27,27 +66,27 @@ navbar($titlePage,$str,$metaArray);
                 <div class="row">
                     <div class="col-md-12">
                         <div id="mobileLayout" class="d-flex justify-content-between align-items-center">
-                            <div class=""> <img src="../assets/images/actions/dog.png"> </div>
+                            <div class=""> <img src="../assets/images/actions/dog.png" alt="dog Image"> </div>
                             <div>
                                 <div class="actionCard" onclick="window.location.href='#stiroseis'">
-                                    <div class="actionTitle">Στειρώσεις <br>Αδέσποτων Ζώων</div>
+                                    <div class="actionTitle"><?= $stiroseisTitle?></div>
                                     <div class="actionIcon"> <a href="#stiroseis"><i class="fa-solid fa-chevron-down"></i></a></div>
                                 </div>
 
                                 <div class="actionCard" onclick="window.location.href='#nosileia'">
-                                    <div class="actionTitle">Νοσηλεία Και  <br>Φροντίδα</div>
+                                    <div class="actionTitle"><?= $nosileiaTitle?></div>
                                     <div class="actionIcon"> <a href="#nosileia"><i class="fa-solid fa-chevron-down"></i></a></div>
                                 </div>
 
 
 
                                 <div class="actionCard" onclick="window.location.href='#enimerosi'">
-                                    <div class="actionTitle">Εκπαιδευτικές Ενημερώσεις <br>Σε Μαθητές </div>
+                                    <div class="actionTitle"><?= $enimerosiTitle?></div>
                                     <div class="actionIcon"> <a href="#enimerosi"><i class="fa-solid fa-chevron-down"></i></a></div>
                                 </div>
 
                                 <div class="actionCard" onclick="window.location.href='#hotel'">
-                                    <div class="actionTitle">Cats Hotel &  <br>Cats Restaurant</div>
+                                    <div class="actionTitle"><?= $hotelTitle?></div>
                                     <div class="actionIcon"> <a href="#hotel"><i class="fa-solid fa-chevron-down"></i></a></div>
                                 </div>
 
@@ -57,12 +96,12 @@ navbar($titlePage,$str,$metaArray);
                         <div id="desktopLayout" >
                             <div>
                                 <div class="actionCard" onclick="window.location.href='#stiroseis'" >
-                                    <div class="actionTitle">Στειρώσεις <br>Αδέσποτων Ζώων</div>
+                                    <div class="actionTitle"><?= $stiroseisTitle?></div>
                                     <div class="actionIcon"> <a href="#stiroseis"><i class="fa-solid fa-chevron-down"></i></a></div>
                                 </div>
 
                                 <div class="actionCard" onclick="window.location.href='#nosileia'">
-                                    <div class="actionTitle">Νοσηλεία Και  <br>Φροντίδα</div>
+                                    <div class="actionTitle"><?= $nosileiaTitle?></div>
                                     <div class="actionIcon"> <a href="#nosileia"><i class="fa-solid fa-chevron-down"></i></a></div>
                                 </div>
 
@@ -74,12 +113,12 @@ navbar($titlePage,$str,$metaArray);
 
 
                                 <div class="actionCard" onclick="window.location.href='#enimerosi'">
-                                    <div class="actionTitle">Εκπαιδευτικές <br> Ενημερώσεις Σε Μαθητές </div>
+                                    <div class="actionTitle"><?= $enimerosiTitle?> </div>
                                     <div class="actionIcon"> <a href="#enimerosi"><i class="fa-solid fa-chevron-down"></i></a></div>
                                 </div>
 
                                 <div class="actionCard" onclick="window.location.href='#hotel'">
-                                    <div class="actionTitle">Cats Hotel &  <br>Cats Restaurant</div>
+                                    <div class="actionTitle"><?= $hotelTitle?></div>
                                     <div class="actionIcon"> <a href="#hotel"><i class="fa-solid fa-chevron-down"></i></a></div>
                                 </div>
 
@@ -96,17 +135,17 @@ navbar($titlePage,$str,$metaArray);
             <div class="container-fluid" >
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="sponsorsTitle">Χορηγίες SCFA Α.Μ.Κ.</h3>
+                        <h3 class="sponsorsTitle"> <?= $xorigiesTitle ?> </h3>
                         <div class="sponsorsDetails">
-                            <h4>Νέα ρολόγια ύδρευσης για τους τρεις σταθμούς ξεκούρασης των αλόγων εργασίας.</h4>
+                            <h4><?= $xorigiesPar1 ?></h4>
                         </div>
 
                         <div class="sponsorsDetails">
-                            <h4>Συμμετήχαμε στην αγορά αθλητικής εμφάνισης της ομάδας μπάσκετ του Δημοτικού Σχολείου Σπετσών.</h4>
+                            <h4><?= $xorigiesPar2 ?></h4>
                         </div>
 
                         <div class="sponsorsDetails">
-                            <h4>Χρυσοί χορηγοί στο 1ο Φεστιβάλ παιδικού βιβλίου που διοργανώθηκε στις Σπέτσες.</h4>
+                            <h4><?= $xorigiesPar3 ?></h4>
                         </div>
 
                     </div>
@@ -118,14 +157,12 @@ navbar($titlePage,$str,$metaArray);
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 order-xl-1  order-lg-1 order-md-2 order-sm-2 order-2">
-                        <h4 class="actionDetailTitle">Στειρώσεις<br> Αδέσποτων Ζώων</h4>
-                        <p class="actionDetailPar">Έχουμε στειρώσει, αποπαρασιτώσει, εμβολιάσει και καταγράψει έως τώρα 800 αδέσποτες γάτες, με
-                            χορηγεία του κτηρνιατρείου μας, με πρoγράμματα του Δήμου Σπετσών, αλλά και με δωρεές
-                            ανθρώπων που μας στηρίζουν.</p>
+                        <h4 class="actionDetailTitle"> <?= $stiroseisTitle ?></h4>
+                        <p class="actionDetailPar"><?= $stiroseisPar ?></p>
                     </div>
 
                     <div class="col-lg-6 col-md-12 order-xl-2  order-lg-2 order-md-1 order-sm-1 order-1 ">
-                        <img class="img-fluid" src="../assets/images/actions/stiroseis.png">
+                        <img class="img-fluid" src="../assets/images/actions/stiroseis.png" alt="Φωτογραφία απο στειρώσεις">
                     </div>
 
                 </div>
@@ -135,20 +172,14 @@ navbar($titlePage,$str,$metaArray);
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12  ">
-                        <img class="img-fluid" src="../assets/images/actions/frontida.png">
+                        <img class="img-fluid" src="../assets/images/actions/frontida.png" alt="Φωτογραφία απο σκύλο ">
                     </div>
 
                     <div class="col-lg-6 col-md-12 ">
-                        <h4 class="actionDetailTitle">Νοσηλεία
-                            <br> Και Φροντίδα</h4>
-                        <p class="actionDetailPar">Έχουμε νοσηλεύσει, με χορηγεία του κτηρνιατρείου μας, με ποργράμματα
-                            του Δήμου Σπετσών, αλλά και με δωρεές ανθρώπων που μας στηρίζουν, περισσότερα από 300 ζώα.
-                        </p>
-                        <p class="actionDetailPar">
-                            Χορηγούμε διετές πρόγραμμα για τα 120 άλογα εργασίας του νησιού μας, το οποίο περιλαμβάνει
-                            τη καταγραφή και σήμανση του, τους εμβολιασμούς και τις αποπαρασιτώσεις, αλλά και την
-                            φαρμακευτική και κτηνιατρική υποστήριξη όταν και όπου χρειάζεται. Επίσης καταγράψαμε τισ
-                            συντεταγμένες όλων των στάβλων.</p>
+                        <h4 class="actionDetailTitle"> <?= $nosileiaTitle ?>  </h4>
+
+                        <p class="actionDetailPar"><?= $nosileiaPar1 ?>  </p>
+                        <p class="actionDetailPar"><?= $nosileiaPar2 ?>  </p>
                     </div>
 
                 </div>
@@ -159,13 +190,13 @@ navbar($titlePage,$str,$metaArray);
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 order-xl-1  order-lg-1 order-md-2 order-sm-2 order-2">
-                        <h4 class="actionDetailTitle"> Εκπαιδευτικές <br> Ενημερώσεις Σε Μαθητές</h4>
-                        <p class="actionDetailPar">Έχουμε πραγματοποιήσει ενημερώσεις ομιλίες και δράσεις σχεδόν σε όλες τις σχολικές βαθμίδες του νησιού μας, με σκοπό να προβάλλουμε στα παιδιά την αληλεπίδραση και το σεβασμό απέναντι σε όλα τα ζώα.</p>
-                        <a href="../education" class="actionCta">Μάθε Περισσότερα</a>
+                        <h4 class="actionDetailTitle"> <?= $enimerosiTitle ?> </h4>
+                        <p class="actionDetailPar"><?= $enimerosiPar ?></p>
+                        <a href="../education" class="actionCta"> <?= $learnMoreBtn ?></a>
                     </div>
 
                     <div class="col-lg-6 col-md-12 order-xl-2  order-lg-2 order-md-1 order-sm-1 order-1 ">
-                        <img class="img-fluid" src="../assets/images/actions/enimeroseis.png">
+                        <img class="img-fluid" src="../assets/images/actions/enimeroseis.png" alt="Φωτογραφία απο ενημερώσεις">
                     </div>
 
                 </div>
@@ -175,14 +206,14 @@ navbar($titlePage,$str,$metaArray);
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12  ">
-                        <img class="img-fluid" src="../assets/images/actions/hotels.png">
+                        <img class="img-fluid" src="../assets/images/actions/hotels.png" alt="Φωτογραφία απο Cats Hotel &  Cats Restaurant">
                     </div>
 
                     <div class="col-lg-6 col-md-12 text-start ">
-                        <h4 class="actionDetailTitle">Cats Hotel &  Cats Restaurant</h4>
+                        <h4 class="actionDetailTitle"> <?= $hotelTitle ?></h4>
 
-                        <p class="actionDetailPar">Στην προσπάθειά μας να βελτιώσουμε τις συνθήκες διαβίωσης των αδέσποτων γατών του νησιού μας, έχουμε δημιουργήσει σταθμούς σίτισης και ξεκούρασης, τα γνωστά πλέον Cats Restaurants and Hotels. </p>
-                        <a href="../hotel-restaurant" class="actionCta">Μάθε Περισσότερα</a>
+                        <p class="actionDetailPar"><?= $hotelPar ?> </p>
+                        <a href="../hotel-restaurant" class="actionCta">  <?= $learnMoreBtn ?> </a>
 
                     </div>
 

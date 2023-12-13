@@ -1,8 +1,62 @@
 <?php
 include_once '../commonParts.php';
 $str = '../';
-$titlePage = "Κάνε Δωρεά";
+
 $_SESSION['page'] = 10 ;
+if ($_SESSION["language"] == 'greek') {
+    $titlePage = "Κάνε Δωρεά";
+    $donationTitle ="Θέλω να κάνω μια δωρεά!";
+    $donationPar = "Διάλεξε τον τρόπο με τον οποίο θα ήθελες να βοηθήσεις!";
+    $donationFormTitle = "Επέλεξε κάτι “σημαντικό” το οποίο θα ήθελες να προσφέρεις στο SCFA Α.Μ.Κ.Ε. :";
+    $chooseItem = "Επιλογή αντικειμένου";
+    $electronicStethoscope = "Ηλεκτρονικό στηθοσκόπιο";
+    $nursingCage = "Κλουβί νοσηλείας εντατικής";
+    $oxygenConcentrator = "Συμπυκνωτής οξυγόνου";
+    $suctionDevice = "Συσκευή αναρρόφησης";
+    $headlamp = "Φακός κεφαλής";
+    $animalCarrier = "Φορείο ζώων";
+    $endoscope = "Ενδοσκόπιο";
+
+    $donationFormTitle2 = "Συμπλήρωσε τα στοιχεία σου και θα έρθουμε σε επαφή μαζί σου!";
+    $fullName = "Ονοματεπώνυμο";
+    $email = "Email";
+    $phone = "Τηλέφωνο";
+    $submit = "Υποβολή";
+    $loading = "Φόρτωση...";
+    $somethingChanges = "ΚΑΤΙ ΑΛΛΑΖΕΙ ΣΤΟ ΝΗΣΙ...";
+    $becomeParticipant = "Γίνε συμμέτοχος σε αυτήν την αλλαγή!";
+    $choosePayment = "Επέλεξε τον τρόπο δωρεάς:";
+    $bankAccount = "Τραπεζικός <br>  Λογαριασμός";
+    $bankAccount2 = "Τραπεζικός   Λογαριασμός";
+    $bankFormTitle = "Συμπλήρωσε το email σου για να λάβεις την απόδειξη πληρωμής:";
+
+}else{
+    $titlePage = "Donate";
+    $donationTitle ="I want to make a donation!";
+    $donationPar = "Choose the way you would like to help!";
+    $donationFormTitle = "Choose something 'significant' that you would like to offer to SCFA N.P.O";
+    $chooseItem = "Item Selection";
+    $electronicStethoscope = "Electronic stethoscope";
+    $nursingCage = "Nursing cage";
+    $oxygenConcentrator = "Oxygen concentrator";
+    $suctionDevice = "Suction device";
+    $headlamp = "Headlamp";
+    $animalCarrier = "Animal carrier";
+    $endoscope = "Endoscope";
+
+    $donationFormTitle2 = "Fill in your details and we will get in touch with you!";
+    $fullName = "Full Name";
+    $email = "Email";
+    $phone = "Phone";
+    $submit = "Submit";
+    $loading = "Loading...";
+    $somethingChanges = "SOMETHING CHANGES ON THE ISLAND...";
+    $becomeParticipant = "Become a participant in this change!";
+    $choosePayment = "Choose the donation method:";
+    $bankAccount = "Bank <br> Account";
+    $bankAccount2 = "Bank Account";
+    $bankFormTitle = "Fill in your email to receive your payment receipt:";
+}
 $metaArray['title'] = $titlePage.'| scfa.gr';
 $metaArray['description'] =  "Στηρίξτε την αγάπη μας για τα ζώα με μια δωρεά! Στη σελίδα μας, μπορείτε να επιλέξετε πώς θέλετε να στηρίξετε το έργο μας για την προστασία των ζώων. Κάντε την δωρεά σας σήμερα και γίνετε συνεργάτης στην αγώνα μας.";
 $metaArray['image'] = "https://scfa.gr/assets/images/scfa_logo.png";
@@ -12,13 +66,7 @@ navbar($titlePage,$str,$metaArray);
 ?>
     <main id="body-content">
         <section id="actionsHeader" page="donation">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 text-center">
 
-                    </div>
-                </div>
-            </div>
         </section>
         <div class="sectionDivider"></div>
 
@@ -26,81 +74,78 @@ navbar($titlePage,$str,$metaArray);
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h3 class="donationTitle">Θέλω να κάνω μια δωρεά!</h3>
-                        <p class="donationPar">Διάλεξε τον τρόπο με τον οποίο θα ήθελες να βοηθήσεις!</p>
+                        <h3 class="donationTitle"> <?= $donationTitle?> </h3>
+                        <p class="donationPar"> <?= $donationPar?> </p>
 
                         <div class="donationContainer">
                             <div class="donationBox donationForm">
-                                <h4>Επέλεξε κάτι “σημαντικό” το οποίο θα ήθελες να προσφέρεις στο SCFA Α.Μ.Κ.Ε. :</h4>
+                                <h4><?= $donationFormTitle?></h4>
                                 <div>
                                     <div class="custom-multiselect" data-bs-toggle="collapse" href="#multiselect"
                                          role="button" aria-expanded="false" aria-controls="multiselect">
-                                        <div class="currentValue" id="currentValue">Επιλογή αντικειμένου</div>
+                                        <div class="currentValue" id="currentValue"> <?= $chooseItem?> </div>
                                         <div><i class="fa-solid fa-chevron-down"></i></div>
                                     </div>
                                     <div class="collapse" id="multiselect">
                                         <div class="custom-checkbox" onclick="toggleCheckbox(this)">
-                                            <div class="labelContainer"><h4>Ηλεκτρονικό στηθοσκόπιο</h4></div>
+                                            <div class="labelContainer"><h4> <?= $electronicStethoscope?> </h4></div>
                                             <div class="boxContainer"></div>
                                         </div>
 
                                         <div class="custom-checkbox" onclick="toggleCheckbox(this)">
-                                            <div class="labelContainer"><h4>Κλουβί νοσηλείας εντατικής</h4></div>
+                                            <div class="labelContainer"><h4>  <?= $nursingCage?></h4></div>
                                             <div class="boxContainer"></div>
                                         </div>
 
                                         <div class="custom-checkbox" onclick="toggleCheckbox(this)">
-                                            <div class="labelContainer"><h4>Συμπυκνωτής οξυγόνου</h4></div>
+                                            <div class="labelContainer"><h4> <?= $oxygenConcentrator?></h4></div>
                                             <div class="boxContainer"></div>
                                         </div>
 
                                         <div class="custom-checkbox" onclick="toggleCheckbox(this)">
-                                            <div class="labelContainer"><h4>Συσκευή αναρρόφησης</h4></div>
+                                            <div class="labelContainer"><h4> <?= $suctionDevice?></h4></div>
                                             <div class="boxContainer"></div>
                                         </div>
 
                                         <div class="custom-checkbox" onclick="toggleCheckbox(this)">
-                                            <div class="labelContainer"><h4>Φακός κεφαλής</h4></div>
+                                            <div class="labelContainer"><h4> <?= $headlamp?></h4></div>
                                             <div class="boxContainer"></div>
                                         </div>
 
                                         <div class="custom-checkbox" onclick="toggleCheckbox(this)">
-                                            <div class="labelContainer"><h4>Φορείο ζώων</h4></div>
+                                            <div class="labelContainer"><h4> <?= $animalCarrier?></h4></div>
                                             <div class="boxContainer"></div>
                                         </div>
 
                                         <div class="custom-checkbox" onclick="toggleCheckbox(this)">
-                                            <div class="labelContainer"><h4>Ενδοσκόπιο</h4></div>
+                                            <div class="labelContainer"><h4> <?= $endoscope?></h4></div>
                                             <div class="boxContainer"></div>
                                         </div>
-
-
-
 
 
                                     </div>
                                 </div>
-                                <h4>Συμπλήρωσε τα στοιχεία σου και θα έρθουμε σε επαφή μαζί σου!</h4>
-                                <input type="text" id="fullName" placeholder="Ονοματεπώνυμο">
-                                <input type="text" id="email" placeholder="Email">
-                                <input type="text" id="phone" placeholder="Τηλέφωνο">
+                                <h4> <?= $donationFormTitle2?> </h4>
+                                <input type="text" id="fullName" placeholder="<?= $fullName?>">
+                                <input type="text" id="email" placeholder="<?= $email?>">
+                                <input type="text" id="phone" placeholder="<?= $phone?>">
 
-                                <button onclick="donationForm(event)" class="submit-form-btn">Υποβολή <div id="spinner-border" class="spinner-border d-none text-light" role="status">
-                                        <span class="visually-hidden">Loading...</span>
+                                <button onclick="donationForm(event)" class="submit-form-btn"><?= $submit?> <div id="spinner-border" class="spinner-border d-none text-light" role="status">
+                                        <span class="visually-hidden"> <?= $loading?></span>
                                     </div>
                                 </button>
                             </div>
 
                             <div class="donationBox">
-                                <h4>ΚΑΤΙ ΑΛΛΑΖΕΙ ΣΤΟ ΝΗΣΙ...</h4>
-                                <h4> Γίνε συμμέτοχος σε αυτήν την αλλαγή!</h4>
+                                <h4><?= $somethingChanges?></h4>
+                                <h4>  <?= $becomeParticipant?></h4>
 
-                                <p> Επέλεξε τον τρόπο πληρωμής:</p>
+                                <p>  <?= $choosePayment?></p>
 
                                 <div class="d-flex justify-content-center  flex-wrap">
                                     <a class="paymentBox" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                         <div class="donationImage"><img src="../assets/images/donation/bank.png"></div>
-                                        <div class="donationPayTitle">Τραπεζικός <br> Λογαριασμός</div>
+                                        <div class="donationPayTitle"><?= $bankAccount?></div>
                                     </a>
 
                                     <a target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=6ZM3HUGHGLDMU" class="paymentBox">
@@ -133,23 +178,21 @@ navbar($titlePage,$str,$metaArray);
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="bankModalTitle">Τραπεζικός Λογαριασμός</h1>
+                        <h1 class="modal-title fs-5" id="bankModalTitle"> <?= $bankAccount2?></h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body ">
                         <div class="bankInfos">
-                            <h3>ΚΑΤΙ ΑΛΛΑΖΕΙ ΣΤΟ ΝΗΣΙ...</h3>
-                            <h4> Γίνε συμμέτοχος σε αυτήν την αλλαγή! </h4>
                             <p>IBAN :  GR2201721400005140104314583</p>
                             <p>    BIC SWIFT: PIRBGRAA </p>
                         </div>
 
                         <div class="bankForm">
-                            <h3>Συμπλήρωσε το email σου για να λάβεις την απόδειξη πληρωμής:</h3>
-                            <input type="text" id="fullNameBank" placeholder="Ονοματεπώνυμο">
-                            <input type="text" id="emailBank" placeholder="Email">
-                            <button onclick="donationFormBank(event)" class="submit-form-btn">Υποβολή <div id="spinner-border2" class="spinner-border d-none text-light" role="status">
-                                    <span class="visually-hidden">Loading...</span>
+                            <h3> <?= $bankFormTitle?></h3>
+                            <input type="text" id="fullNameBank" placeholder="<?= $fullName?>">
+                            <input type="text" id="emailBank" placeholder="<?= $email?>">
+                            <button onclick="donationFormBank(event)" class="submit-form-btn"><?= $submit?> <div id="spinner-border2" class="spinner-border d-none text-light" role="status">
+                                    <span class="visually-hidden"><?= $loading?></span>
                                 </div>
                             </button>
                         </div>
