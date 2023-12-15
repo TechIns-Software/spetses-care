@@ -24,6 +24,8 @@ if ($_SESSION["language"] == 'greek') {
     $mirantaTitle = 'Βοηθός κτηνιάτρου';
     $antonisName = 'Αντώνης <br> Τερζάκης';
     $antonisTitle = 'Υπεύθυνος γραματείας';
+    $fotiniName = 'Φωτεινή  <br> Εμίρη';
+    $fotiniTitle = 'Ιππίατρος ';
 }else{
     $titlePage = "Home";
     $heroTitle = 'Something changes on the island...';
@@ -44,6 +46,8 @@ if ($_SESSION["language"] == 'greek') {
     $mirantaTitle = 'Veterinary assistant';
     $antonisName = 'Antonis <br> Terzakis';
     $antonisTitle = 'Office Manager';
+    $fotiniName = 'Fotini  <br> Emiri';
+    $fotiniTitle = 'Hourse Doctor ';
 
 }
 navbar($titlePage, $str);
@@ -168,10 +172,22 @@ navbar($titlePage, $str);
                         </div>
 
 
+
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+
+
                         <div class="teamCard">
                             <img src="assets/images/home/antonis-terzakis.png" alt="Αντώνης Τερζάκης">
                             <h4><?=  $antonisName?></h4>
                             <p><?=  $antonisTitle?></p>
+                        </div>
+
+                        <div class="teamCard">
+                            <img src="assets/images/home/fotini-emiri.png" alt="Φωτεινή Εμίρη">
+                            <h4><?=  $fotiniName?></h4>
+                            <p><?=  $fotiniTitle?></p>
                         </div>
 
                     </div>

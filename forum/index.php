@@ -82,7 +82,7 @@ navbar($titlePage,$str,$metaArray);
             <div class="container">
                 <div class="row my-2">
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/forum/forum1.webp" alt="Image from forum 1">
+                        <img class="img-fluid" src="../assets/images/forum/poster.webp" alt="Image from forum 1">
                     </div>
 
                     <div class="col-lg-4 col-md-12 my-2 ">
