@@ -8470,6 +8470,13 @@ color: var(--second-blue-color);
 }
 
 #galleryCarousel .carousel-item{
-    width: 593px;
-    height: 653px;
+    width: 593px!important;
+    height: 653px!important;
+}
+@media screen and (max-width: 600px) {
+    #gallery-single .product-image img{
+        height: 50vh!important;
+    }
+
+
 }
