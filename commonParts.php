@@ -134,12 +134,12 @@ function navbar($title,$str= '../',$metaProperties = []){
         <div class="offcanvas-body">
             <div class="offCanvasLinks">
                 <a class="<?php echo $_SESSION['page'] == 1 ? 'active' :'' ?>" href="<?= $str ?>"><?= $home ?></a>
-                <a class="<?php echo $_SESSION['page'] == 2 ? 'active' :'' ?>" href="<?= $str ?>actions"><?= $actions ?></a>
-                <a class="<?php echo $_SESSION['page'] == 3 ? 'active' :'' ?>" href="<?= $str ?>gallery"><?= $gallery ?></a>
-                <a class="<?php echo $_SESSION['page'] == 4 ? 'active' :'' ?>" href="<?= $str ?>forum"><?= $forum ?></a>
-                <a class="<?php echo $_SESSION['page'] == 5 ? 'active' :'' ?>" href="<?= $str ?>education"><?= $education ?></a>
                 <a class="<?php echo $_SESSION['page'] == 6 ? 'active' :'' ?>" href="<?= $str ?>clinic"><?= $clinic ?></a>
+                <a class="<?php echo $_SESSION['page'] == 2 ? 'active' :'' ?>" href="<?= $str ?>actions"><?= $actions ?></a>
+                <a class="<?php echo $_SESSION['page'] == 5 ? 'active' :'' ?>" href="<?= $str ?>education"><?= $education ?></a>
                 <a class="<?php echo $_SESSION['page'] == 7 ? 'active' :'' ?>" href="<?= $str ?>hotel-restaurant"><?= $hotelRestaurant ?></a>
+                <a class="<?php echo $_SESSION['page'] == 4 ? 'active' :'' ?>" href="<?= $str ?>forum"><?= $forum ?></a>
+                <a class="<?php echo $_SESSION['page'] == 3 ? 'active' :'' ?>" href="<?= $str ?>gallery"><?= $gallery ?></a>
                 <a class="<?php echo $_SESSION['page'] == 8 ? 'active' :'' ?>" href="<?= $str ?>contact"><?= $contact ?></a>
 
                 <div class="d-flex justify-content-between languageBtn" data-bs-toggle="collapse" data-bs-target="#languageCollapse" aria-expanded="false" aria-controls="languageCollapse">
@@ -251,7 +251,7 @@ function footer($str){
     <script src="<?= $str ?>assets/js/jquery.min.js"></script>
     <script src="<?= $str ?>assets/js/theme-plugins.min.js"></script>
 
-    <script src="<?= $str ?>assets/js/site-custom.js"></script>
+    <script src="<?= $str ?>assets/js/site-custom.js?v=2.3"></script>
 
     <script type="text/javascript" src="<?= $str ?>assets/revolution/js/jquery.themepunch.tools.min.js"></script>
     <script type="text/javascript" src="<?= $str ?>assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
