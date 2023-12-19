@@ -34,10 +34,36 @@ navbar($titlePage,$str,$metaArray);
 
 ?>
     <main id="body-content">
-        <section id="actionsHeader" page="donation">
+        <section id="actionsHeader" page="gallery">
             <div class="container-fluid">
-                <div class="row">
+                <div class="owl-carousel owl-theme owl-loaded owl-drag" id="gallery-single">
 
+                        <div class="item">
+                            <div class="product-grid">
+                                <div class="product-image">
+                                    <img class="pic-1" src="../assets/images/gallery/gallery-slider1.png"
+                                         alt="slider image 1">
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="item">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <img class="pic-1" src="../assets/images/gallery/gallery-slider2.png"
+                                     alt="slider image 1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <img class="pic-1" src="../assets/images/home/slider1.webp"
+                                     alt="slider image 1">
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -50,7 +76,7 @@ navbar($titlePage,$str,$metaArray);
         <section id="educationPhotos">
             <div class="container">
                 <h3 class="donationTitle"><?= $titlePage?></h3>
-                <div class="row my-2">
+                <div class="row gallerySection">
                     <div class="col-12 my-2 ">
                         <a href="../clinic" class="galleryTitleSection">
                             <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
@@ -74,7 +100,7 @@ navbar($titlePage,$str,$metaArray);
                     ?>
 
                 </div>
-                <div class="row my-2">
+                <div class="row gallerySection">
                     <div class="col-12 my-2 ">
                         <a href="../hotel-restaurant" class="galleryTitleSection">
                             <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
@@ -97,7 +123,7 @@ navbar($titlePage,$str,$metaArray);
                     ?>
 
                 </div>
-                <div class="row my-2">
+                <div class="row gallerySection">
                     <div class="col-12 my-2 ">
                         <a href="../education" class="galleryTitleSection">
                         <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
@@ -120,7 +146,7 @@ navbar($titlePage,$str,$metaArray);
                     ?>
 
                 </div>
-                <div class="row my-2">
+                <div class="row gallerySection">
                     <div class="col-12 my-2 ">
                         <a href="../adoption" class="galleryTitleSection">
                             <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
@@ -145,7 +171,7 @@ navbar($titlePage,$str,$metaArray);
                     ?>
 
                 </div>
-                <div class="row my-2">
+                <div class="row gallerySection">
                     <div class="col-12 my-2 ">
                         <a href="../volunteer" class="galleryTitleSection">
                             <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
@@ -169,7 +195,7 @@ navbar($titlePage,$str,$metaArray);
                     ?>
 
                 </div>
-                <div class="row my-2">
+                <div class="row gallerySection">
                     <div class="col-12 my-2 ">
                         <a class="galleryTitleSection">
                             <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>
@@ -193,7 +219,7 @@ navbar($titlePage,$str,$metaArray);
                     ?>
 
                 </div>
-                <div class="row my-2">
+                <div class="row gallerySection">
                     <div class="col-12 my-2 ">
                         <a href="../forum" class="galleryTitleSection">
                             <div><img alt="foot for title" src="../assets/images/gallery/foot.png"> </div>

@@ -865,15 +865,34 @@ Custom Javascript
             if ($('#gallery-single').length) {
 
                 $("#gallery-single").owlCarousel({
-                    items: 1,
+                    items: 3,
                     margin: 30,
-                    loop: true,
+                    loop: false,
                     nav: false,
-                    slideBy: 1,
+                    slideBy: 3,
                     dots: true,
                     center: false,
                     autoplay: true,
                     autoheight: true,
+                    responsive: {
+                        320: {
+                            items: 1,
+                        },
+                        600: {
+                            items: 2,
+                        },
+                        767: {
+                            items: 2,
+                        },
+                        1000: {
+                            items: 3,
+                            loop: true,
+                        },
+                        1200: {
+                            items: 3,
+                            loop: true,
+                        }
+                    }
                 });
             }
 
