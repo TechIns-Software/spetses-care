@@ -10,7 +10,7 @@ if ($_SESSION["language"] == 'greek') {
     $nosileiaTitle = "Νοσηλεία Και <br> Φροντίδα";
     $nosileiaPar1 = "Έχουμε νοσηλεύσει, με χορηγία του κτηνιατρείου μας, με προγράμματα του Δήμου Σπετσών, αλλά και με δωρεές ανθρώπων που μας στηρίζουν, περισσότερα από 300 ζώα.";
     $nosileiaPar2 = "Χορηγούμε διετές πρόγραμμα για τα 120 άλογα εργασίας του νησιού μας, το οποίο περιλαμβάνει τη καταγραφή και σήμανση του, τους εμβολιασμούς και τις αποπαρασιτώσεις, αλλά και την φαρμακευτική και κτηνιατρική υποστήριξη όταν και όπου χρειάζεται. Επίσης καταγράψαμε τισ συντεταγμένες όλων των στάβλων.";
-    $enimerosiTitle = "Εκπαιδευτικές <br> Ενημερώσεις  Σε Μαθητές";
+    $enimerosiTitle = "Εκπαιδευτικές Ενημερώσεις <br> Σε Μαθητές";
     $enimerosiPar = "Έχουμε πραγματοποιήσει ενημερώσεις ομιλίες και δράσεις σχεδόν σε όλες τις σχολικές βαθμίδες του νησιού μας, με σκοπό να προβάλλουμε στα παιδιά την αλληλεπίδραση και το σεβασμό απέναντι σε όλα τα ζώα.";
     $hotelTitle = "Cats Hotel & <br> Cats Restaurant";
     $hotelPar = "Στην προσπάθειά μας να βελτιώσουμε τις συνθήκες διαβίωσης των αδέσποτων γατών του νησιού μας, έχουμε δημιουργήσει σταθμούς σίτισης και ξεκούρασης, τα γνωστά πλέον Cats Restaurants and Hotels.";
@@ -27,7 +27,7 @@ if ($_SESSION["language"] == 'greek') {
     $nosileiaTitle = "Hospitalization And <br> Care";
     $nosileiaPar1 = "We have cared for and treated, with the sponsorship of our veterinary clinic, programs of the Municipality of Spetses, and donations from our supporters, over 300 animals";
     $nosileiaPar2 = "We provide a two-year program for the 120 working horses of our island, which includes their recording and tagging, vaccinations and deworming, as well as medical and veterinary support when and where needed. We also recorded the coordinates of all stables.";
-    $enimerosiTitle = "Educational <br> Information   To Students";
+    $enimerosiTitle = "Educational Information  <br> To Students";
     $enimerosiPar = "We have conducted informational talks and activities in almost all school levels on our island, aiming to promote interaction and respect for all animals among children.";
     $hotelTitle = "Cats Hotel & <br> Cats Restaurant";
     $hotelPar = "In our effort to improve the living conditions of the stray cats on our island, we have created feeding and resting stations, now known as Cats Restaurants and Hotels.";
@@ -51,7 +51,13 @@ navbar($titlePage,$str,$metaArray);
 ?>
     <main id="body-content">
         <section id="actionsHeader" page="actions" >
-
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="bgHead"> <?= $titlePage?></h1>
+                    </div>
+                </div>
+            </div>
         </section>
         <div class="sectionDivider"></div>
 
