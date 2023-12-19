@@ -869,11 +869,12 @@ Custom Javascript
                     margin: 30,
                     loop: true,
                     nav: false,
-                    slideBy: 3,
+                    slideBy: 2,
                     dots: true,
                     center: false,
                     autoplay: true,
-                    autoheight: true,
+                    autoWidth:false,
+                    autoheight: false,
                     responsive: {
                         320: {
                             items: 1,
@@ -885,7 +886,7 @@ Custom Javascript
                             items: 2,
                         },
                         1000: {
-                            items: 3,
+                            items: 2,
                         },
                         1200: {
                             items: 3,

@@ -5700,7 +5700,7 @@ label.error {
     overflow: hidden;
 }
 #gallery-single .product-image img{
-    height: 80vh!important;
+    height: 453px!important;
 }
 /* Gallery Pages  */
 
@@ -7677,8 +7677,8 @@ color: var(--main-blue-color);
 #educationPhotos img{
 
     display: block;
-    height: 300px;
-    margin: auto;
+    height: 350px;
+    margin: 0;
     aspect-ratio: 1/1;
 }
 

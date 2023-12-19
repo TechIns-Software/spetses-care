@@ -162,13 +162,13 @@ navbar($titlePage,$str,$metaArray);
                         <a href="../gallery" class="custom-hyperlink"> <?= $morePhotos ?></a>
                     </div>
 
-                    <div class="col-lg-6 col-md-12 my-2  ">
+                    <div class="col-lg-6 col-md-12 my-4  ">
                         <h4 class="openHoursTitle"><?= $openHoursTitle ?> </h4>
                         <p class="openHours"><?= $openHours1 ?> <span> <?= $openHours1Value ?></span></p>
                         <p class="openHours">  <?= $openHours2 ?><span>  <?= $openHours2Value ?> </span></p>
                     </div>
 
-                    <div class="col-lg-6 col-md-12 my-2 ">
+                    <div class="col-lg-6 col-md-12 my-4 ">
                         <h4 class="openHoursTitle"><?= $openHoursTitle2 ?> </h4>
                         <p class="openHours"><?= $openHours3 ?> <span> <?= $openHours3Value ?> </span>
                         </p>
