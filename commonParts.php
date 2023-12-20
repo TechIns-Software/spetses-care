@@ -1,5 +1,8 @@
 <?php
 session_start();
+if (!isset($_SESSION["language"])) {
+    $_SESSION['language'] = 'greek';
+}
 function navbar($title,$str= '../',$metaProperties = []){
     if (!isset($metaProperties)) {
     $metaArray['title'] = $metaArray['title'] ?? 'Spetses Care For Animals | scfa.gr';
@@ -8,9 +11,7 @@ function navbar($title,$str= '../',$metaProperties = []){
     $metaArray['url'] = $metaArray['page'] ?? "index.php";
     }
 
-    if (!isset($_SESSION["language"])) {
-        $_SESSION['language'] = 'greek';
-    }
+
 
     if ($_SESSION["language"] == 'greek') {
         $makeDonation = 'Κάνε Δωρεά';
@@ -126,6 +127,20 @@ function navbar($title,$str= '../',$metaProperties = []){
 
     </header>
     <div class="headerMinHeight"></div>
+    <div id="language-container">
+        <div class="d-flex justify-content-between languageBtn " data-bs-toggle="collapse" data-bs-target="#languageCollapse" aria-expanded="false" aria-controls="languageCollapse">
+            <div>                    <?php if ($_SESSION["language"] == "greek") { ?>
+                    <span class="flag-icon flag-icon-grc"></span>
+                <?php } else { ?>
+                    <span class="flag-icon flag-icon-usa"></span>
+                <?php } ?></div>
+            <div> <i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="collapse"  id="languageCollapse">
+            <a class="" onclick="changeLanguage('greek', '<?=$str?>')" > <span class="flag-icon flag-icon-grc mx-1"></span> </a>
+            <a class="" onclick="changeLanguage('english', '<?=$str?>')" > <span class="flag-icon flag-icon-usa mx-1"></span> </a>
+        </div>
+    </div>
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offCanvasMenu" aria-labelledby="offCanvasMenuLabel">
         <div class="offcanvas-header">
@@ -142,18 +157,7 @@ function navbar($title,$str= '../',$metaProperties = []){
                 <a class="<?php echo $_SESSION['page'] == 3 ? 'active' :'' ?>" href="<?= $str ?>gallery"><?= $gallery ?></a>
                 <a class="<?php echo $_SESSION['page'] == 8 ? 'active' :'' ?>" href="<?= $str ?>contact"><?= $contact ?></a>
 
-                <div class="d-flex justify-content-between languageBtn" data-bs-toggle="collapse" data-bs-target="#languageCollapse" aria-expanded="false" aria-controls="languageCollapse">
-                    <div>                    <?php if ($_SESSION["language"] == "greek") { ?>
-                            <span class="flag-icon flag-icon-grc"></span>
-                        <?php } else { ?>
-                            <span class="flag-icon flag-icon-usa"></span>
-                        <?php } ?></div>
-                    <div> <i class="fa-solid fa-chevron-down"></i></div>
-                </div>
-                <div class="collapse"  id="languageCollapse">
-                    <a class="" onclick="changeLanguage('greek', '<?=$str?>')" > <span class="flag-icon flag-icon-grc mx-1"></span> <?= $greekLanguage ?></a>
-                      <a class="" onclick="changeLanguage('english', '<?=$str?>')" > <span class="flag-icon flag-icon-usa mx-1"></span> <?= $englishLanguage ?></a>
-                </div>
+
 
             </div>
 
@@ -192,7 +196,7 @@ function footer($str){
                             <i class="fa-solid fa-phone"></i>
                         </div>
 
-                        <div class="footerBoxSubtitle">(+30) 697 000 0000</div>
+                        <div class="footerBoxSubtitle">2298072652</div>
                     </div>
 
                     <div class="footerBox">
