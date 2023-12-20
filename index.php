@@ -19,7 +19,7 @@ if ($_SESSION["language"] == 'greek') {
     $katerinaName = 'Κατερίνα <br> Βογιατζή';
     $katerinaTitle = 'Ιδρυτικό μέλος και υπεύθυνη του <br> κτηνιατρείου SCFA Α.Μ.Κ.Ε.';
     $kostasName = 'Κουτσόπουλος <br> Κωνσταντίνος';
-    $kostasTitle = 'Κτηνίατρος <br> υγειονομικά υπεύθυνος.';
+    $kostasTitle = 'Κτηνίατρος <br> επιστημονικά υπεύθυνος';
     $mirantaName = 'Μιράντα <br> Γιάμμαλη';
     $mirantaTitle = 'Βοηθός κτηνιάτρου';
     $antonisName = 'Αντώνης <br> Τερζάκης';
@@ -41,7 +41,7 @@ if ($_SESSION["language"] == 'greek') {
     $katerinaName = 'Katerina <br> Bogiatzi';
     $katerinaTitle = 'Founding member and responsible <br> of the SCFA AMKE veterinary clinic.';
     $kostasName = 'Kostas <br> Koutsopoulos';
-    $kostasTitle = 'Veterinarian <br> health responsible.';
+    $kostasTitle = 'Veterinarian <br> Scientific Director';
     $mirantaName = 'Miranta <br> Giammali';
     $mirantaTitle = 'Veterinary assistant';
     $antonisName = 'Antonis <br> Terzakis';
