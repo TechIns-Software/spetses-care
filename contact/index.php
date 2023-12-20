@@ -61,13 +61,7 @@ navbar($titlePage,$str,$metaArray);
 ?>
     <main id="body-content">
         <section id="actionsHeader" page="clinic">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <div class="bgTitle"> <?= $contactTitle ?></div>
-                    </div>
-                </div>
-            </div>
+
         </section>
         <div class="sectionDivider"></div>
 
