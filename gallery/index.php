@@ -110,7 +110,7 @@ navbar($titlePage,$str,$metaArray);
                         </a>
                     </div>
                     <?php
-                    for ($i= 1; $i<9;$i++){
+                    for ($i= 1; $i<11;$i++){
                         ?>
                         <div class="col-lg-3 col-md-12 my-2 ">
                             <a href="../assets/images/gallery/hotel<?=$i?>.png" class="image-link" data-toggle="lightbox"  >
