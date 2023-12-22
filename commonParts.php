@@ -4,7 +4,7 @@ if (!isset($_SESSION["language"])) {
     $_SESSION['language'] = 'greek';
 }
 function navbar($title,$str= '../',$metaProperties = []){
-    if (!isset($metaProperties)) {
+    if (!count($metaProperties)) {
     $metaArray['title'] = $metaArray['title'] ?? 'Spetses Care For Animals | scfa.gr';
     $metaArray['description'] = $metaArray['description'] ?? "Το κτηνιατρείο SCFA Α.Μ.Κ.Ε. (Αστική Μη Κερδοσκοπική Εταιρεία) είναι μία δομή που ιδρύθηκε 1/11/2021 στο νησί των Σπετσών, με την ευγενική χορηγία της οικογένειας του κ. Φωκίων Φίλων Ποταμιάνος.";
     $metaArray['image'] = $metaArray['image'] ?? "https://scfa.gr/assets/images/scfa_logo.png";
