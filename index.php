@@ -153,11 +153,7 @@ navbar($titlePage, $str);
 
                     <div class="d-flex justify-content-between align-items-center flex-wrap">
 
-                        <div class="teamCard">
-                            <img src="assets/images/home/fokion-potamianos.png" alt="Ποταμιανός Φωκίων Φίλων">
-                            <h4><?=  $fokionName?></h4>
-                            <p><?=  $fokionTitle?></p>
-                        </div>
+
 
 
                         <div class="teamCard">
@@ -165,14 +161,16 @@ navbar($titlePage, $str);
                             <h4><?=  $katerinaName?></h4>
                             <p><?=  $katerinaTitle?></p>
                         </div>
-                    </div>
 
-                    <div class="d-flex justify-content-between align-items-center flex-wrap">
                         <div class="teamCard">
                             <img src="assets/images/home/kotsopoulos.png" alt="Κουτσόπουλος Κωνσταντίνος">
                             <h4><?=  $kostasName?></h4>
                             <p><?=  $kostasTitle?></p>
                         </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+
 
 
                         <div class="teamCard">
@@ -180,13 +178,6 @@ navbar($titlePage, $str);
                             <h4><?=  $mirantaName?></h4>
                             <p><?=  $mirantaTitle?></p>
                         </div>
-
-
-
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center flex-wrap">
-
 
                         <div class="teamCard">
                             <img src="assets/images/home/antonis-terzakis.png" alt="Αντώνης Τερζάκης">
@@ -198,6 +189,18 @@ navbar($titlePage, $str);
                             <img src="assets/images/home/fotini-emiri.png" alt="Φωτεινή Εμίρη">
                             <h4><?=  $fotiniName?></h4>
                             <p><?=  $fotiniTitle?></p>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center flex-wrap">
+
+
+
+                        <div class="teamCard">
+                            <img src="assets/images/home/fokion2.jpg" alt="Ποταμιανός Φωκίων Φίλων">
+                            <h4><?=  $fokionName?></h4>
+                            <p><?=  $fokionTitle?></p>
                         </div>
 
                     </div>

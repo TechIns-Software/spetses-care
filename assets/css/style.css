@@ -7090,6 +7090,9 @@ label.error {
 .teamCard img{
     margin: auto;
     height: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
 }
 .teamCard h4{
     color: var(--main-blue-color);
