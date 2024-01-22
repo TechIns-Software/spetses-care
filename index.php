@@ -10,7 +10,8 @@ if ($_SESSION["language"] == 'greek') {
     $heroText = 'Ζούμε στις Σπέτσες και πιστεύουμε ότι μπορούμε να γίνουμε ένα νησί παράδειγμα προς μίμηση στην αντιμετώπιση και προστασία των ζώων.';
     $heroText2 = 'Γίνε συμμέτοχος σε αυτήν την αλλαγή!';
     $aboutTitle = 'Σχετικά με εμάς';
-    $aboutText = 'Το κτηνιατρείο SCFA Α.Μ.Κ.Ε. (Αστική Μη Κερδοσκοπική Εταιρεία) είναι μία δομή που ιδρύθηκε 1/11/2021 στο νησί των Σπετσών, με την ευγενική χορηγία της οικογένειας του κ. Φωκίων Φίλων Ποταμιάνου.';
+    $aboutText = 'Το κτηνιατρείο SCFA Α.Μ.Κ.Ε. (Αστική Μη Κερδοσκοπική Εταιρεία) είναι μία δομή που ιδρύθηκε 1/11/2021 στο νησί των Σπετσών, με την ευγενική χορηγία της οικογένειας του κ. Φωκίων Φίλων Ποταμιάνου και την υπεύθυνη της
+     δομής S.C.F.A Κατερίνα Βογιάτζη ';
     $aboutTitle2 = 'Σκοπός';
     $aboutText2 = 'Ο σκοπός της δημιουργίας είναι να προσφέρει υπηρεσίες και παροχές υψηλού επιπέδου σε όλα τα ζώα του νησιού δεσποζόμενα και αδέσποτα. Τα έσοδα από τις υπηρεσίες μας διοχετεύονται στη στήριξη των αδέσποτων ζώων. Βασικός πυλώνας του έργου μας είναι η καταμέτρηση, η στείρωση και η φροντίδα των αδέσποτων γατών που υπάρχουν στο νησί των Σπετσών.';
     $foundersTitle = 'Ιδρυτικά Μέλη';
@@ -33,7 +34,8 @@ if ($_SESSION["language"] == 'greek') {
     $heroText = 'We live in Spetses and believe that we can become an exemplary island in dealing with and protecting animals. Become a participant in this change! ';
     $heroText2 = 'Become a participant in this change!';
     $aboutTitle = 'About Us';
-    $aboutText = "The SCFA Veterinary Clinic, a Non-Profit Organization, was established on November 1, 2021, in Spetses, sponsored by Mr. Fokion Filon Potamianos' family.";
+    $aboutText = "The SCFA Veterinary Clinic, a Non-Profit Organization, was established on November 1, 2021, in Spetses, sponsored by Mr. Fokion Filon Potamianos' family and the manager of
+     structure S.C.F.A Katerina Vogiatzi";
     $aboutTitle2 = 'Mission';
     $aboutText2 = 'Its mission is to offer high-quality services to all animals on the island, both domestic and stray. Revenue from these services supports stray animals. A primary focus is counting, neutering, and caring for stray cats in Spetses.';
     $foundersTitle = 'Founding Members';
