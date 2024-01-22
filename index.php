@@ -13,6 +13,7 @@ if ($_SESSION["language"] == 'greek') {
     $aboutText = 'Το κτηνιατρείο SCFA Α.Μ.Κ.Ε. (Αστική Μη Κερδοσκοπική Εταιρεία) είναι μία δομή που ιδρύθηκε 1/11/2021 στο νησί των Σπετσών, με την ευγενική χορηγία της οικογένειας του κ. Φωκίων Φίλων Ποταμιάνου.';
     $aboutTitle2 = 'Σκοπός';
     $aboutText2 = 'Ο σκοπός της δημιουργίας είναι να προσφέρει υπηρεσίες και παροχές υψηλού επιπέδου σε όλα τα ζώα του νησιού δεσποζόμενα και αδέσποτα. Τα έσοδα από τις υπηρεσίες μας διοχετεύονται στη στήριξη των αδέσποτων ζώων. Βασικός πυλώνας του έργου μας είναι η καταμέτρηση, η στείρωση και η φροντίδα των αδέσποτων γατών που υπάρχουν στο νησί των Σπετσών.';
+    $foundersTitle = 'Ιδρυτικά Μέλη';
     $teamTitle = 'Η Ομάδα Μας';
     $fokionName = 'Φωκίων Φίλων <br> Ποταμιανός';
     $fokionTitle = 'Ιδρυτικό μέλος και χορηγός <br>  του SCFA Α.Μ.Κ.Ε.';
@@ -35,6 +36,7 @@ if ($_SESSION["language"] == 'greek') {
     $aboutText = "The SCFA Veterinary Clinic, a Non-Profit Organization, was established on November 1, 2021, in Spetses, sponsored by Mr. Fokion Filon Potamianos' family.";
     $aboutTitle2 = 'Mission';
     $aboutText2 = 'Its mission is to offer high-quality services to all animals on the island, both domestic and stray. Revenue from these services supports stray animals. A primary focus is counting, neutering, and caring for stray cats in Spetses.';
+    $foundersTitle = 'Founding Members';
     $teamTitle = 'Our Team';
     $fokionName = 'Fokion Filon <br> Potamianos';
     $fokionTitle = 'Founding member and sponsor <br> of SCFA AMKE.';
@@ -148,7 +150,7 @@ navbar($titlePage, $str);
             <div class="container">
                 <div class="row">
                     <div class="col-12 teamTitle">
-                        <h2><?=  $teamTitle?></h2>
+                        <h2><?=  $foundersTitle?></h2>
                     </div>
 
                     <div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -169,6 +171,9 @@ navbar($titlePage, $str);
 
                     </div>
 
+                    <div class="col-12 teamTitle">
+                        <h2><?=  $teamTitle?></h2>
+                    </div>
                     <div class="d-flex justify-content-between align-items-center flex-wrap">
                         <div class="teamCard">
                             <img src="assets/images/home/kotsopoulos.png" alt="Κουτσόπουλος Κωνσταντίνος">

@@ -128,9 +128,17 @@ navbar($titlePage,$str,$metaArray);
                     </div>
                 </div>
             </div>
+            <div class="container ">
+
+                <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/f8Yjd5psvSU?si=jRHLyEj5d3CjzJMW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
         </section>
 
         <div class="sectionDivider"></div>
+
+
         <section id="educationPhotos">
             <div class="container">
                 <div class="row my-2">
