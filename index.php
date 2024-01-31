@@ -177,11 +177,7 @@ navbar($titlePage, $str);
                         <h2><?=  $teamTitle?></h2>
                     </div>
                     <div class="d-flex justify-content-between align-items-center flex-wrap">
-                        <div class="teamCard">
-                            <img src="assets/images/home/kotsopoulos.png" alt="Κουτσόπουλος Κωνσταντίνος">
-                            <h4><?=  $kostasName?></h4>
-                            <p><?=  $kostasTitle?></p>
-                        </div>
+
 
 
                         <div class="teamCard">
