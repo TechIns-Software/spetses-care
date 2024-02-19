@@ -181,7 +181,11 @@ navbar($titlePage, $str);
                         <h2><?=  $teamTitle?></h2>
                     </div>
                     <div class="d-flex justify-content-between align-items-center flex-wrap">
-
+                        <div class="teamCard">
+                            <img src="assets/images/home/thalia.jpg" alt="Θάλεια Λαζαρίδη.">
+                            <h4><?=  $thaleiaName?></h4>
+                            <p><?=  $thaleiaTitle?></p>
+                        </div>
 
 
                         <div class="teamCard">
@@ -191,17 +195,17 @@ navbar($titlePage, $str);
                         </div>
 
 
-                        <div class="teamCard">
-                            <img src="assets/images/home/antonis-terzakis.png" alt="Αντώνης Τερζάκης">
-                            <h4><?=  $antonisName?></h4>
-                            <p><?=  $antonisTitle?></p>
-                        </div>
 
 
                     </div>
 
                     <div class="d-flex justify-content-center align-items-center flex-wrap">
 
+                        <div class="teamCard">
+                            <img src="assets/images/home/antonis-terzakis.png" alt="Αντώνης Τερζάκης">
+                            <h4><?=  $antonisName?></h4>
+                            <p><?=  $antonisTitle?></p>
+                        </div>
 
                         <div class="teamCard">
                             <img src="assets/images/home/fotini-emiri.png" alt="Φωτεινή Εμίρη">
@@ -209,11 +213,7 @@ navbar($titlePage, $str);
                             <p><?=  $fotiniTitle?></p>
                         </div>
 
-                        <div class="teamCard">
-                            <img src="assets/images/home/thalia.jpg" alt="Θάλεια Λαζαρίδη.">
-                            <h4><?=  $thaleiaName?></h4>
-                            <p><?=  $thaleiaTitle?></p>
-                        </div>
+
 
 
 
