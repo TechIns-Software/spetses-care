@@ -28,6 +28,8 @@ if ($_SESSION["language"] == 'greek') {
     $antonisTitle = 'Υπεύθυνος γραματείας';
     $fotiniName = 'Φωτεινή  <br> Εμίρη';
     $fotiniTitle = 'Ιππίατρος ';
+    $thaleiaName = 'Θάλεια  <br> Λαζαρίδη';
+    $thaleiaTitle = 'Κτηνίατρος <br> επιστημονικά υπεύθυνη';
 }else{
     $titlePage = "Home";
     $heroTitle = 'Something changes on the island...';
@@ -52,6 +54,8 @@ if ($_SESSION["language"] == 'greek') {
     $antonisTitle = 'Office Manager';
     $fotiniName = 'Fotini  <br> Emiri';
     $fotiniTitle = 'Hourse Doctor ';
+    $thaleiaName = 'Thalia  <br> Lazaridi';
+    $thaleiaTitle = 'Veterinarian <br> Scientific Director';
 
 }
 navbar($titlePage, $str);
@@ -187,22 +191,28 @@ navbar($titlePage, $str);
                         </div>
 
 
-
-
-
-                    </div>
-
-                    <div class="d-flex justify-content-center align-items-center flex-wrap">
                         <div class="teamCard">
                             <img src="assets/images/home/antonis-terzakis.png" alt="Αντώνης Τερζάκης">
                             <h4><?=  $antonisName?></h4>
                             <p><?=  $antonisTitle?></p>
                         </div>
 
+
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center flex-wrap">
+
+
                         <div class="teamCard">
                             <img src="assets/images/home/fotini-emiri.png" alt="Φωτεινή Εμίρη">
                             <h4><?=  $fotiniName?></h4>
                             <p><?=  $fotiniTitle?></p>
+                        </div>
+
+                        <div class="teamCard">
+                            <img src="assets/images/home/thalia.jpg" alt="Θάλεια Λαζαρίδη.">
+                            <h4><?=  $thaleiaName?></h4>
+                            <p><?=  $thaleiaTitle?></p>
                         </div>
 
 
