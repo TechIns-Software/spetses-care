@@ -65,6 +65,8 @@ function navbar($title,$str= '../',$metaArray = []){
         <title> <?= $title ?> | Spetses Care For Animals </title>
 
 
+        <link rel="canonical" href="https://www.scfa.gr/<?= $metaArray['url'] ?>" />
+
         <link rel="shortcut icon" type="image/x-icon" href="<?= $str ?>assets/images/favicon.ico">
 
         <link href="<?= $str ?>assets/css/theme-plugins.min.css" rel="stylesheet">
