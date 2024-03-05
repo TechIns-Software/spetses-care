@@ -158,6 +158,13 @@ navbar($titlePage,$str,$metaArray);
                                         <div class="donationPayTitle">Stripe</div>
                                     </a>
 
+                                    <a target="_blank" href="https://www.every.org/spetses-care-for-animals-non-profit-organization?utm_campaign=donate-link#/donate" class="paymentBox">
+                                        <div class="donationImage"><img src="../assets/images/donation/every.png"></div>
+                                        <div class="donationPayTitle">Every Org</div>
+                                    </a>
+
+
+
                                 </div>
 
 
