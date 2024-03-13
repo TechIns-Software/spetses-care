@@ -9,54 +9,111 @@
 
 <url>
   <loc>https://scfa.gr/</loc>
-  <lastmod>2023-12-09T17:31:03+00:00</lastmod>
+  <lastmod>2024-03-13T17:31:03+00:00</lastmod>
   <priority>1.00</priority>
 </url>
+  <url>
+    <loc>https://scfa.gr/index.php</loc>
+    <lastmod>2024-03-13T17:31:03+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
 <url>
   <loc>https://scfa.gr/donation/</loc>
-  <lastmod>2023-12-09T17:31:03+00:00</lastmod>
+  <lastmod>2024-03-13T17:31:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
+  <url>
+    <loc>https://scfa.gr/donation/index.php</loc>
+    <lastmod>2024-03-13T17:31:03+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 <url>
   <loc>https://scfa.gr/volunteer/</loc>
-  <lastmod>2023-12-09T17:31:03+00:00</lastmod>
+  <lastmod>2024-03-13T17:31:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
+  <url>
+    <loc>https://scfa.gr/volunteer/index.php</loc>
+    <lastmod>2024-03-13T17:31:03+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 <url>
   <loc>https://scfa.gr/adoption/</loc>
-  <lastmod>2023-12-09T17:31:03+00:00</lastmod>
+  <lastmod>2024-03-13T17:31:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+  <url>
+    <loc>https://scfa.gr/adoption/index.php</loc>
+    <lastmod>2024-03-13T17:31:03+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 <url>
   <loc>https://scfa.gr/actions/</loc>
-  <lastmod>2023-12-09T17:31:03+00:00</lastmod>
+  <lastmod>2024-03-13T17:31:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+  <url>
+    <loc>https://scfa.gr/actions/index.php</loc>
+    <lastmod>2024-03-13T17:31:03+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 <url>
   <loc>https://scfa.gr/forum/</loc>
-  <lastmod>2023-12-09T17:31:03+00:00</lastmod>
+  <lastmod>2024-03-13T17:31:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
+  <url>
+    <loc>https://scfa.gr/forum/index.php</loc>
+    <lastmod>2024-03-13T17:31:03+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 <url>
   <loc>https://scfa.gr/education/</loc>
-  <lastmod>2023-12-09T17:31:03+00:00</lastmod>
+  <lastmod>2024-03-13T17:31:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+  <url>
+    <loc>https://scfa.gr/education/index.php</loc>
+    <lastmod>2024-03-13T17:31:03+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  
 <url>
   <loc>https://scfa.gr/clinic/</loc>
-  <lastmod>2023-12-09T17:31:03+00:00</lastmod>
+  <lastmod>2024-03-13T17:31:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
+  <url>
+    <loc>https://scfa.gr/clinic/index.php</loc>
+    <lastmod>2024-03-13T17:31:03+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 <url>
   <loc>https://scfa.gr/hotel-restaurant/</loc>
-  <lastmod>2023-12-09T17:31:03+00:00</lastmod>
+  <lastmod>2024-03-13T17:31:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
+  <url>
+    <loc>https://scfa.gr/hotel-restaurant/index.php</loc>
+    <lastmod>2024-03-13T17:31:03+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 <url>
   <loc>https://scfa.gr/contact/</loc>
-  <lastmod>2023-12-09T17:31:03+00:00</lastmod>
+  <lastmod>2024-03-13T17:31:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
+  <url>
+    <loc>https://scfa.gr/contact/index.php</loc>
+    <lastmod>2024-03-13T17:31:03+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 
 
 </urlset>
