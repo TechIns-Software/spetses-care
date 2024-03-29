@@ -226,7 +226,7 @@ navbar($titlePage, $str);
                     Your donation today can turn a ruff day into a purr-fect one.</p>
                 <p>Be the reason someone wags their tail today!</p>
 
-                <a href="#">Make a Donation</a>
+                <a target="_blank" href="https://www.every.org/spetses-care-for-animals-non-profit-organization?utm_campaign=donate-link#/donate">Make a Donation</a>
             </div>
             <div class=" bannerImages">
                 <img class="img-fluid" src="assets/images/bannerImg.png">
@@ -248,7 +248,7 @@ navbar($titlePage, $str);
                                 Your donation today can turn a ruff day into a purr-fect one.</p>
                             <p>Be the reason someone wags their tail today!</p>
 
-                            <a href="#">Make a Donation</a>
+                            <a target="_blank" href="https://www.every.org/spetses-care-for-animals-non-profit-organization?utm_campaign=donate-link#/donate">Make a Donation</a>
                         </div>
                         <div class="popUpImage">
 
