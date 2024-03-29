@@ -105,7 +105,6 @@ navbar($titlePage, $str);
                 </div>
             </div>
         </section>
-
         <section class="container  " id="custom-carousel">
             <div class="owl-carousel owl-theme owl-loaded owl-drag" id="home-shop-slider">
                 <?php
@@ -125,7 +124,6 @@ navbar($titlePage, $str);
 
             </div>
         </section>
-
         <section id="about-section">
             <div class="container">
                 <div class="row aboutContainer">
@@ -151,7 +149,6 @@ navbar($titlePage, $str);
                 </div>
             </div>
         </section>
-
         <section id="teamSection">
             <div class="container">
                 <div class="row">
@@ -222,6 +219,46 @@ navbar($titlePage, $str);
                 </div>
             </div>
         </section>
+        <section id="banner">
+            <div class=" bannerInfos">
+                <h5> Help the strays of Spetses </h5>
+                <p>Every wag and purr here is funded by kind hearts like yours.<br>
+                    Your donation today can turn a ruff day into a purr-fect one.</p>
+                <p>Be the reason someone wags their tail today!</p>
+
+                <a href="#">Make a Donation</a>
+            </div>
+            <div class=" bannerImages">
+                <img class="img-fluid" src="assets/images/bannerImg.png">
+            </div>
+
+        </section>
+
+        <div class="modal fade   " id="bannerModal" tabindex="-1"  aria-labelledby="bannerModalLabel" aria-hidden="false">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="popUpContainer">
+                        <div class="popUpInfos">
+                            <h5>Help the strays of Spetses</h5>
+                            <p>Every wag and purr here is funded by kind hearts like yours.<br>
+                                Your donation today can turn a ruff day into a purr-fect one.</p>
+                            <p>Be the reason someone wags their tail today!</p>
+
+                            <a href="#">Make a Donation</a>
+                        </div>
+                        <div class="popUpImage">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </main>
 
 

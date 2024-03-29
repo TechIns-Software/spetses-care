@@ -1253,4 +1253,27 @@ const changeLanguage = (value, str='') => {
     });
     console.log(value);
 }
+function checkLocalStorageVariable(variableName) {
+    if (typeof(Storage) !== "undefined") {
+        if (localStorage.getItem(variableName) !== null) {
+            return true;
+        } else {
+            return false;
+        }
+    } else {
+        console.error("localStorage is not supported in this browser.");
+        return false;
+    }
+}
+
+
+window.addEventListener('mouseout', function() {
+    var variableExists = checkLocalStorageVariable("popupActivated");
+    if (!variableExists) {
+        $('#bannerModal').modal('show');
+        localStorage.setItem('popupActivated', JSON.stringify(true));
+    }
+})
+
+
 

@@ -8506,3 +8506,146 @@ color: var(--second-blue-color);
 #language-selector {
     /*padding: 8px;*/
 }
+
+#banner{
+    background-color: var(--second-blue-color);
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+
+.bannerInfos{
+    width: 50%;
+    position: relative;
+    padding-left: 1em;
+    color: white;
+}
+
+.bannerInfos h5{
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+}
+.bannerInfos h5:before{
+    content: '';
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    background-image: url("../images/home/footIcon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotateZ(64deg);
+    z-index: 99;
+}
+.bannerInfos p{
+font-size: 20px;
+    margin:.5em 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+.bannerInfos a{
+    display: inline-block;
+    padding: .3em .5em;
+    margin: .5em 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: var(--main-blue-color);
+}
+
+.bannerImages{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.bannerImages img{
+    aspect-ratio: 1/1;
+    max-height: 250px;
+}
+@media screen and (max-width: 980px) {
+    #banner{
+        padding: 1em;
+    }
+    .bannerInfos{
+        width: 100%;
+        padding-left: 0;
+    }
+    .bannerImages{
+       display: none;
+    }
+}
+@media screen and (max-width: 770px) {
+    .bannerInfos h5{
+        font-size: 23px;
+    }
+    .bannerInfos p {
+        font-size: 17px;
+    }
+}
+
+#bannerModal .modal-content{
+    padding: 2em;
+    background-color: var(--second-blue-color);
+    color: white;
+    text-align: center;
+    min-height:40vh;
+}
+
+.popUpContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popUpInfos{
+    text-align: start;
+    width: 50%;
+    padding: 1em;
+    color: white;
+}
+.popUpInfos h5{
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.popUpInfos p{
+    font-size: 20px;
+    margin:.5em 0;
+    padding: 0;
+    font-weight: 700;
+}
+.popUpInfos a{
+    display: inline-block;
+    padding: .3em .5em;
+    margin: .5em 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: var(--main-blue-color);
+}
+
+.popUpImage{
+    width: 50%;
+    min-height: 250px;
+    aspect-ratio: 1/1;
+    background-image: url("../images/home/slider4.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 992px) {
+    .popUpInfos {
+        width: 95%;
+        margin: auto;
+    }
+    .popUpImage {
+        display: none;
+    }
+
+}
