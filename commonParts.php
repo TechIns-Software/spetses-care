@@ -96,6 +96,19 @@ function navbar($title,$str= '../',$metaArray = []){
         gtag('config', 'G-GC0MBHYEMZ');
     </script>
     <body>
+    <div class="smallDetails">
+         <div class="basicInfos">
+             <a target="_blank" href="https://maps.google.com/maps?ll=37.266036,23.15531&z=16&t=m&hl=el&gl=GR&mapclient=embed&cid=4460534829233288294">
+                 <i class="fa-solid fa-location-dot"></i>   Πλατεία Ρολογιού, Σπέτσες 180 50 </a>
+         </div>
+        <div class="social-icons-details">
+          <a  target="_blank" href="https://www.facebook.com/spetsecareforanimals"><i class="fa-brands fa-square-facebook"></i></a>
+          <a target="_blank" href="https://www.instagram.com/spetsescare4animals/"><i class="fa-brands fa-instagram"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/company/scfa-spetses-cares-for-animals/"><i class="fa-brands fa-linkedin"></i></a>
+          <a target="_blank" href="https://www.tiktok.com/@spetsescareforanimals"><i class="fa-brands fa-tiktok"></i></a>
+          <a target="_blank" href="https://www.youtube.com/channel/UCNFf00oJ0vM1bGYpPY7CJAQ"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </div>
 
     <header class="wow fadeInDown header-blue  header-anim  ">
         <nav class=" navbar-expand-lg ">

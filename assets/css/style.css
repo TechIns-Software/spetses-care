@@ -59,6 +59,35 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--main-blue-color);
 }
 
+.smallDetails{
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 20px;
+    background-color: var(--main-blue-color);
+}
+.basicInfos a{
+    color: white;
+    font-size: 12px;
+    padding: 0 .5em;
+}
+
+.social-icons-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-icons-details a{
+    color: white;
+    font-size: 18px;
+    padding: 0 .5em;
+}
+.social-icons-details a:hover,.basicInfos a:hover{
+    color: var(--second-blue-color);
+
+}
+
 body, html {
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
