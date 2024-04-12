@@ -8622,13 +8622,25 @@ font-size: 20px;
     background-color: var(--second-blue-color);
     color: white;
     text-align: center;
-    min-height:40vh;
+}
+
+#bannerModal .modal-content i{
+    color: black;
+    font-size:18px;
+    padding: .5em;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: whitesmoke;
 }
 
 .popUpContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /*background-color: red;*/
+    background-image: url("../images/popUp.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    aspect-ratio: 1/3!important;
 }
 .popUpInfos{
     text-align: start;

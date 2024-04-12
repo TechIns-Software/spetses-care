@@ -184,8 +184,6 @@ navbar($titlePage, $str);
                             <h4><?=  $katerinaName?></h4>
                             <p><?=  $katerinaTitle?></p>
                         </div>
-
-
                     </div>
 
                     <div class="col-12 teamTitle">
@@ -252,26 +250,14 @@ navbar($titlePage, $str);
         </section>
 
         <div class="modal fade   " id="bannerModal" tabindex="-1"  aria-labelledby="bannerModalLabel" aria-hidden="false">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-lg ">
                 <div class="modal-content">
                     <div class="d-flex justify-content-end">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <i class="fa-solid fa-xmark" data-bs-dismiss="modal" aria-label="Close"></i>
                     </div>
 
-                    <div class="popUpContainer">
-                        <div class="popUpInfos">
-                            <h5><?= $help_strays?></h5>
-                            <p><?= $help_strays_info1?><br>
-                                <?= $help_strays_info2?></p>
-                            <p><?= $help_strays_info3?></p>
+                    <div class="popUpContainer" >
 
-                            <a target="_blank" href="https://www.every.org/spetses-care-for-animals-non-profit-organization?utm_campaign=donate-link#/donate">
-                                <?= $help_strays_btn?>
-                            </a>
-                        </div>
-                        <div class="popUpImage">
-
-                        </div>
                     </div>
 
                 </div>

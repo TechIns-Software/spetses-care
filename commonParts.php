@@ -270,7 +270,7 @@ function footer($str){
     <script src="<?= $str ?>assets/js/jquery.min.js"></script>
     <script src="<?= $str ?>assets/js/theme-plugins.min.js"></script>
 
-    <script src="<?= $str ?>assets/js/site-custom.js?v=2.5"></script>
+    <script src="<?= $str ?>assets/js/site-custom.js?v=2.7"></script>
 
     <script type="text/javascript" src="<?= $str ?>assets/revolution/js/jquery.themepunch.tools.min.js"></script>
     <script type="text/javascript" src="<?= $str ?>assets/revolution/js/jquery.themepunch.revolution.min.js"></script>

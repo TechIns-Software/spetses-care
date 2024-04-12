@@ -1267,12 +1267,13 @@ function checkLocalStorageVariable(variableName) {
 }
 
 
-window.addEventListener('mouseout', function() {
+window.addEventListener('mouseover', function() {
     var variableExists = checkLocalStorageVariable("popupActivated");
     if (!variableExists) {
         $('#bannerModal').modal('show');
         localStorage.setItem('popupActivated', JSON.stringify(true));
     }
+
 })
 
 
