@@ -27,6 +27,16 @@ function navbar($title,$str= '../',$metaArray = []){
         $contact = 'Επικοινωνία';
         $greekLanguage = "Ελληνικά";
         $englishLanguage = "Αγγλικά";
+        $cookieSettings = "Ρυθμίσεις Cookies";
+        $cookiesExplained = "Χρησιμοποιούμε cookies για να σας παρέχουμε την καλύτερη δυνατή εμπειρία. Μας επιτρέπουν επίσης να αναλύουμε τη συμπεριφορά των χρηστών, προκειμένου να βελτιώνουμε συνεχώς τον ιστότοπο για εσάς.";
+        $acceptAll = "Αποδοχή Όλων";
+        $acceptSelection = "Αποδοχή Επιλογών";
+        $rejectAll = "Απόρριψη Όλων";
+        $necessary = "Απαραίτητα";
+        $analytics = "Analytics";
+        $preferences = "Προτιμήσεις";
+        $marketing = "Μάρκετινγκ";
+
 
     }else{
         $makeDonation = 'Make Donation';
@@ -42,6 +52,16 @@ function navbar($title,$str= '../',$metaArray = []){
         $contact = 'Contact';
         $greekLanguage = "Greek";
         $englishLanguage = "English";
+        $cookieSettings = "Cookie Settings";
+        $cookiesExplained = "We use cookies to provide you with the best possible experience. They also allow us to analyze user behavior in order to constantly improve the website for you.";
+        $acceptAll = "Accept All";
+        $acceptSelection = "Accept Selection";
+        $rejectAll = "Reject All";
+        $necessary = "Necessary";
+        $analytics = "Analytics";
+        $preferences = "Preferences";
+        $marketing = "Marketing";
+
 
     }
     ?>
@@ -83,19 +103,99 @@ function navbar($title,$str= '../',$metaArray = []){
         <link rel="stylesheet" type="text/css" href="<?= $str ?>assets/revolution/fonts/font-awesome/css/font-awesome.css">
         <link rel="stylesheet" type="text/css" href="<?= $str ?>assets/magnific-popup/magnific-popup.css">
         <link rel="stylesheet" type="text/css" href="<?= $str ?>assets/flags/css/flag-icon.css">
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
 
+            if(localStorage.getItem('consentMode') === null){
+                gtag('consent', 'default', {
+                    'ad_storage': 'denied',
+                    'analytics_storage': 'denied',
+                    'personalization_storage': 'denied',
+                    'functionality_storage': 'denied',
+                    'security_storage': 'denied',
+                });
+            } else {
+                gtag('consent', 'default', JSON.parse(localStorage.getItem('consentMode')));
+            }
+        </script>
+
+        <script>(function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'G-GC0MBHYEMZ');</script>
 
     </head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GC0MBHYEMZ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-GC0MBHYEMZ');
-    </script>
     <body>
+    <div id="cookie-consent-banner" class="cookie-consent-banner">
+        <h3><?= $cookieSettings?></h3>
+        <p><?= $cookiesExplained?></p>
+        <button id="btn-accept-all" class="cookie-consent-button btn-success"><?= $acceptAll?></button>
+        <button id="btn-accept-some" class="cookie-consent-button btn-outline"><?= $acceptSelection?></button>
+        <button id="btn-reject-all" class="cookie-consent-button btn-grayscale"><?= $rejectAll?></button>
+        <div class="cookie-consent-options">
+            <label><input id="consent-necessary" type="checkbox" value="Necessary" checked disabled> <?= $necessary?></label>
+            <label><input id="consent-analytics" type="checkbox" value="Analytics" checked> <?= $analytics?></label>
+            <label><input id="consent-preferences" type="checkbox" value="Preferences" checked> <?= $preferences?></label>
+            <label><input id="consent-marketing" type="checkbox" value="Marketing"> <?= $marketing?></label>
+        </div>
+    </div>
+    <script>
+
+        function hideBanner() {
+            document.getElementById('cookie-consent-banner').style.display = 'none';
+        }
+
+        if(localStorage.getItem('consentMode') === null) {
+            document.getElementById('btn-accept-all').addEventListener('click', function() {
+                setConsent({
+                    necessary: true,
+                    analytics: true,
+                    preferences: true,
+                    marketing: true
+                });
+                hideBanner();
+            });
+            document.getElementById('btn-accept-some').addEventListener('click', function() {
+                setConsent({
+                    necessary: true,
+                    analytics: document.getElementById('consent-analytics').checked,
+                    preferences: document.getElementById('consent-preferences').checked,
+                    marketing: document.getElementById('consent-marketing').checked
+                });
+                hideBanner();
+            });
+            document.getElementById('btn-reject-all').addEventListener('click', function() {
+                setConsent({
+                    necessary: false,
+                    analytics: false,
+                    preferences: false,
+                    marketing: false
+                });
+                hideBanner();
+            });
+            document.getElementById('cookie-consent-banner').style.display = 'block';
+        }else {
+            hideBanner();
+        }
+
+        function setConsent(consent) {
+            const consentMode = {
+                'functionality_storage': consent.necessary ? 'granted' : 'denied',
+                'security_storage': consent.necessary ? 'granted' : 'denied',
+                'ad_storage': consent.marketing ? 'granted' : 'denied',
+                'analytics_storage': consent.analytics ? 'granted' : 'denied',
+                'personalization': consent.preferences ? 'granted' : 'denied',
+            };
+            gtag('consent', 'update', consentMode);
+            localStorage.setItem('consentMode', JSON.stringify(consentMode));
+        }
+
+    </script>
     <div class="smallDetails">
          <div class="basicInfos">
              <a target="_blank" href="https://maps.google.com/maps?ll=37.266036,23.15531&z=16&t=m&hl=el&gl=GR&mapclient=embed&cid=4460534829233288294">

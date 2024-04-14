@@ -8690,3 +8690,20 @@ font-size: 20px;
     }
 
 }
+#cookie-consent-banner{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--second-blue-color);
+    color: white;
+    padding: 1em;
+    text-align: center;
+    z-index: 1000;
+}
+#cookie-consent-banner button{
+    background-color: white;
+    border-radius: .2em;
+    border: none;
+
+}
