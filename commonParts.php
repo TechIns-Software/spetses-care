@@ -64,6 +64,8 @@ function navbar($title,$str= '../',$metaArray = []){
 
 
     }
+    $currentURL = "https://". $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
+
     ?>
 
 
@@ -79,13 +81,13 @@ function navbar($title,$str= '../',$metaArray = []){
         <meta property="og:image" content="<?= $metaArray['image'] ?>" />
         <meta property="og:title" content="<?= $metaArray['title'] ?>" />
         <meta property="og:description" content="<?= $metaArray['description'] ?>" />
-        <meta property="og:url" content="https://www.scfa.gr/<?= $metaArray['url'] ?>" />
+        <meta property="og:url" content="<?=$currentURL?>" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
         <title> <?= $title ?> | Spetses Care For Animals </title>
 
 
-        <link rel="canonical" href="https://www.scfa.gr/<?= $metaArray['url'] ?>" />
+        <link rel="canonical" href="<?=$currentURL?>" />
 
         <link rel="shortcut icon" type="image/x-icon" href="<?= $str ?>assets/images/favicon.ico">
 
