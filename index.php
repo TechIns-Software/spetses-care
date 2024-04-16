@@ -32,9 +32,8 @@ if ($_SESSION["language"] == 'greek') {
     $thaleiaTitle = 'Κτηνίατρος <br> επιστημονικά υπεύθυνη';
 
     $help_strays = "Βοηθήστε τα αδέσποτα των Σπετσών";
-    $help_strays_info1 = "Κάθε γαβγισμα εδώ χρηματοδοτείται από καλές καρδιές όπως η δική σου.";
-    $help_strays_info2 = "Η δωρεά σου σήμερα μπορεί να μετατρέψει μια δύσκολη μέρα σε μια τέλεια ημέρα.";
-    $help_strays_info3 = "Γίνε ο λόγος που τα ζωάκια θα κουνάνε την ουρά τους! ";
+    $help_strays_info1 = "Η δωρεά σου σήμερα μπορεί να μετατρέψει μια δύσκολη μέρα σε μια τέλεια ημέρα. Στήριξε τις αδέσποτες γάτες των Σπετσών.";
+
     $help_strays_btn = "Κάνε Δωρεά";
 
 
@@ -66,9 +65,7 @@ if ($_SESSION["language"] == 'greek') {
     $thaleiaTitle = 'Veterinarian <br> Scientific Director';
 
     $help_strays = "Help the strays of Spetses";
-    $help_strays_info1 = "Every wag and purr here is funded by kind hearts like yours.";
-    $help_strays_info2 = " Your donation today can turn a ruff day into a purr-fect one.";
-    $help_strays_info3 = " Be the reason someone wags their tail today!";
+    $help_strays_info1 = "Your donation today can turn a bad day into a perfect day. Support the stray cats of Spetses.";
     $help_strays_btn = "Make a Donation";
 
 }
@@ -234,10 +231,8 @@ navbar($titlePage, $str);
         <section id="banner">
             <div class=" bannerInfos">
                 <h5> <?= $help_strays?> </h5>
-                <p><?= $help_strays_info1?><br>
-                    <?= $help_strays_info2?></p>
-                <p><?= $help_strays_info3?></p>
-
+                <p><?= $help_strays_info1?></p>
+                
                 <a target="_blank" href="https://www.every.org/spetses-care-for-animals-non-profit-organization?utm_campaign=donate-link#/donate">
 
                     <?= $help_strays_btn?>
@@ -259,6 +254,8 @@ navbar($titlePage, $str);
                     <div class="popUpContainer" >
 
                     </div>
+
+                    <a class="btn" target="_blank" href="https://www.every.org/spetses-care-for-animals-non-profit-organization?utm_campaign=donate-link#/donate">  <?= $help_strays_btn?></a>
 
                 </div>
             </div>

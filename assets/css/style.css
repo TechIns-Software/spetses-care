@@ -8707,3 +8707,13 @@ font-size: 20px;
     border: none;
 
 }
+
+#bannerModal a{
+    display: inline-block;
+    padding: .3em .5em;
+    margin: .5em 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: var(--main-blue-color);
+}
