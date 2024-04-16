@@ -58,7 +58,7 @@ navbar($titlePage,$str,$metaArray);
         <div class="container my-3">
 
             <div class="ratio ratio-16x9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/b8f0j0cZSIY?si=gtk1tDTyk8g-hBRW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="200" src="https://www.youtube.com/embed/UzBwEoJtPYI?si=VCchUlUYhH4Wbe42" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
         <section id="forumTalk">

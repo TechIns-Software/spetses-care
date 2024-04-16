@@ -16,6 +16,7 @@ if ($_SESSION["language"] == 'greek') {
     $clinicList6 = "Νοσηλεία";
     $clinicList7 = "Φάρμακα / Κτηνιατρικά Προϊόντα";
     $clinicList8 = "Pet Shop / Τροφές / Καλλωπισμός";
+    $katerinaTalk = "Ομιλία Κατερίνας Βογιατζή στο πρώτο Forum της SCFA";
 
     $morePhotos = "Περισσότερα στο Gallery";
     $openHoursTitle = "Χειμερινό Ωράριο Λειτουργίας: ";
@@ -40,6 +41,7 @@ if ($_SESSION["language"] == 'greek') {
     $clinicList6 = "Hospitalization";
     $clinicList7 = "Medicines / Veterinary Products";
     $clinicList8 = "Pet Shop (including pet food and grooming)";
+    $katerinaTalk = "Katerina Vogiatzis Speech at the first SCFA Forum";
 
     $morePhotos = "More in Gallery";
     $openHoursTitle = "Winter Hours: ";
@@ -129,10 +131,21 @@ navbar($titlePage,$str,$metaArray);
                 </div>
             </div>
             <div class="container ">
-
-                <div class="ratio ratio-16x9">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1R2ji3t2EWs?si=Ic0hzdNXuikOg89I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="col-12 my-3">
+                    <h3 class="donationTitle"><?= $clinicTitle ?> </h3>
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="215" src="https://www.youtube.com/embed/1R2ji3t2EWs?si=Ic0hzdNXuikOg89I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
                 </div>
+
+                <div class="col-12 my-3">
+                    <h3 class="donationTitle"><?= $katerinaTalk ?> </h3>
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="215" src="https://www.youtube.com/embed/6rDmCvtnVWY?si=QkMyvIXDIhzVj-gn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+
             </div>
         </section>
 
