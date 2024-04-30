@@ -20,6 +20,7 @@ if ($_SESSION["language"] == 'greek') {
     $contactUsEmail = "E-mail: spetsescareforanimals@gmail.com";
     $contactUsAddress = "Διεύθυνση: Πλατεία Ρολογιού, Σπέτσες";
 
+    $openHoursTitle = "Χειμερινό  Ωράριο Λειτουργίας: ";
     $openHours1 = "ΔΕΥΤ-ΤΕΤ-ΠΑΡ:";
     $openHours1Value = " 09:00-14:00 και 17:00-20:00";
     $openHours2 = "ΤΡΙΤΗ-ΠΕΜ:";
@@ -132,7 +133,8 @@ navbar($titlePage,$str,$metaArray);
 
                     <div class="col-lg-6 col-md-12 my-2 ">
                         <h4 class="openHoursTitle"><?= $openHoursTitle2 ?> </h4>
-                        <p class="openHours"><?= $openHours3 ?> <span> <?= $openHours3Value ?> </span>
+                        <p class="openHours"><?= $openHours1 ?> <span> <?= $openHours3Value ?> </span>
+                        <p class="openHours"><?= $openHours2 ?> <span> <?= $openHours2Value ?> </span>
                         </p>
                     </div>
 
