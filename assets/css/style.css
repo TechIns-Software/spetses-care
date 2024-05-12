@@ -7707,9 +7707,8 @@ color: var(--main-blue-color);
 }
 
 #educationPhotos img{
-
     display: block;
-    height: 350px;
+    height: 300px;
     margin: 0;
     aspect-ratio: 1/1;
 }
@@ -8420,6 +8419,38 @@ color: var(--second-blue-color);
     min-height: 60px;
     background-color:white ;
     box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.videoBox{
+    height: 300px;
+
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.17);
+}
+.videoBox a{
+        width: 60px;
+        aspect-ratio: 1/1;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: unset;
+}
+
+
+.podcastModal .modal-content{
+    background-color: #fafafa !important;
+    border-radius: 25px;
 }
 
 .galleryTitleSection img{

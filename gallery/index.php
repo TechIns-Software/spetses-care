@@ -71,10 +71,6 @@ navbar($titlePage,$str,$metaArray);
             </div>
         </section>
         <div class="sectionDivider"></div>
-
-
-
-
         <section id="educationPhotos">
             <div class="container">
                 <h3 class="donationTitle"><?= $titlePage?></h3>
@@ -204,6 +200,11 @@ navbar($titlePage,$str,$metaArray);
                             <div> <h3>  <?= $hourse ?> </h3></div>
                         </a>
                     </div>
+                    <div class="col-lg-3 col-md-12 my-2 ">
+                        <div class="videoBox" style="background-image: url('../assets/images/gallery/videoBg.jpg')">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#videoModal"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                    </div>
 
                     <?php
                     for ($i= 1; $i<7;$i++){
@@ -247,6 +248,25 @@ navbar($titlePage,$str,$metaArray);
                 </div>
             </div>
         </section>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoModal">
+            Launch demo modal
+        </button>
+
+
+        <div class="modal fade podcastModal" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9">
+                            <iframe  src="https://www.youtube.com/embed/gHKGvrzerr8?si=_rF56ykNR0CqLbMi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
     </main>
 <?php
