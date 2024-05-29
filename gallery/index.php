@@ -129,7 +129,7 @@ navbar($titlePage,$str,$metaArray);
                         </a>
                     </div>
                     <?php
-                    for ($i= 1; $i<15;$i++){
+                    for ($i= 1; $i<16;$i++){
                         ?>
                         <div class="col-lg-3 col-md-12 my-2 ">
                             <a href="../assets/images/gallery/education<?=$i?>.png" class="image-link" data-toggle="lightbox"  >
@@ -207,7 +207,7 @@ navbar($titlePage,$str,$metaArray);
                     </div>
 
                     <?php
-                    for ($i= 1; $i<7;$i++){
+                    for ($i= 1; $i<13;$i++){
                         ?>
                         <div class="col-lg-3 col-md-12 my-2 ">
                             <a href="../assets/images/gallery/hourse<?=$i?>.png" class="image-link" data-toggle="lightbox"  >
@@ -249,10 +249,6 @@ navbar($titlePage,$str,$metaArray);
             </div>
         </section>
 
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoModal">
-            Launch demo modal
-        </button>
 
 
         <div class="modal fade podcastModal" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">

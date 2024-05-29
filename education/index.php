@@ -185,11 +185,11 @@ navbar($titlePage,$str,$metaArray);
             <div class="container">
                 <div class="row my-2">
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/education/visit1.webp" alt="Image from education Image">
+                        <img class="img-fluid" src="../assets/images/gallery/education3.png" alt="Image from education Image">
                     </div>
 
                     <div class="col-lg-4 col-md-12 my-2 ">
-                        <img class="img-fluid" src="../assets/images/education/visit2.webp" alt="Image from education Image 2">
+                        <img class="img-fluid" src="../assets/images/gallery/education1.png" alt="Image from education Image 2">
                     </div>
 
                     <div class="col-lg-4 col-md-12 my-2 ">

@@ -7218,7 +7218,7 @@ label.error {
     background-attachment:  unset;
 }
 #actionsHeader[page="education"] {
-    background-image: url("../images/education/educationBg.png");
+    background-image: url("../images/education/educationBg.webp");
     min-height: 80vh;
     background-color: rgba(56, 56, 56, 0.22);
     background-attachment:  unset;
