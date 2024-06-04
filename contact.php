@@ -31,7 +31,7 @@ if ($_POST['whatForm'] == 'donationForm') {
     $subject .= " Δωρεά στον τραπεζικό λογαριασμό";
 }
 
-$to = "nspanos@techins.gr";
+$to = "spetsescareforanimals@gmail.com";
 $from= "autoinform@techins.gr";
 
 
