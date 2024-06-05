@@ -9,13 +9,16 @@ if ($_SESSION["language"] == 'greek') {
     $donationPar = "Διάλεξε τον τρόπο με τον οποίο θα ήθελες να βοηθήσεις!";
     $donationFormTitle = "Επέλεξε κάτι “σημαντικό” το οποίο θα ήθελες να προσφέρεις στο SCFA Α.Μ.Κ.Ε. :";
     $chooseItem = "Επιλογή αντικειμένου";
-    $electronicStethoscope = "Ηλεκτρονικό στηθοσκόπιο";
-    $nursingCage = "Κλουβί νοσηλείας εντατικής";
-    $oxygenConcentrator = "Συμπυκνωτής οξυγόνου";
-    $suctionDevice = "Συσκευή αναρρόφησης";
-    $headlamp = "Φακός κεφαλής";
-    $animalCarrier = "Φορείο ζώων";
-    $endoscope = "Ενδοσκόπιο";
+    $setSteiroseis = "Σετ στείρωσης εργαλείων για σκύλο (553,62 €)";
+    $oxygenConcentrator = "Συμπυκνωτής οξυγόνου (1329,90 €)";
+    $foreio ="Φορείο με τροχήλατη πλατφόρμα (726,33 €)";
+    $tonometro = "Οφθαλμολογικό τονόμετρο (3954,60 €)";
+    $endoscopeLed = "Ενδοσκόπιο LED  (11,03 €)";
+    $rinoskopisi = "Ρινοσκόπηση / Ωτοσκόπηση (3989,00 €)";
+    $antlia = "Αντλία τύπου σύριγγας (1269,00 €)";
+    $eickemeyer = "Eickemeyer διαθλασίμετρο (119,00 €)";
+
+
 
     $donationFormTitle2 = "Συμπλήρωσε τα στοιχεία σου και θα έρθουμε σε επαφή μαζί σου!";
     $fullName = "Ονοματεπώνυμο";
@@ -36,13 +39,17 @@ if ($_SESSION["language"] == 'greek') {
     $donationPar = "Choose the way you would like to help!";
     $donationFormTitle = "Choose something 'significant' that you would like to offer to SCFA N.P.O";
     $chooseItem = "Item Selection";
-    $electronicStethoscope = "Electronic stethoscope";
-    $nursingCage = "Nursing cage";
-    $oxygenConcentrator = "Oxygen concentrator";
-    $suctionDevice = "Suction device";
-    $headlamp = "Headlamp";
-    $animalCarrier = "Animal carrier";
-    $endoscope = "Endoscope";
+    $setSteiroseis = "Sterilization set of tools for dog (553.62 €)";
+    $oxygenConcentrator = "Oxygen concentrator (1329.90 €)";
+    $foreio = "Stretcher with wheeled platform (726.33 €)";
+    $tonometro = "Ophthalmic tonometer (3954.60 €)";
+    $endoscopeLed = "LED endoscope (11.03 €)";
+    $rinoskopisi = "Rhinoscopy / Otoscopy (3989.00 €)";
+    $antlia = "Syringe pump (1269.00 €)";
+    $eickemeyer = "Eickemeyer refractometer (119.00 €)";
+
+
+
 
     $donationFormTitle2 = "Fill in your details and we will get in touch with you!";
     $fullName = "Full Name";
@@ -88,37 +95,42 @@ navbar($titlePage,$str,$metaArray);
                                     </div>
                                     <div class="collapse" id="multiselect">
                                         <div class="custom-checkbox" onclick="toggleCheckbox(this)">
-                                            <div class="labelContainer"><h4> <?= $electronicStethoscope?> </h4></div>
+                                            <div class="labelContainer"><h4> <?= $setSteiroseis?> </h4></div>
                                             <div class="boxContainer"></div>
                                         </div>
 
                                         <div class="custom-checkbox" onclick="toggleCheckbox(this)">
-                                            <div class="labelContainer"><h4>  <?= $nursingCage?></h4></div>
+                                            <div class="labelContainer"><h4>  <?= $oxygenConcentrator?></h4></div>
                                             <div class="boxContainer"></div>
                                         </div>
 
                                         <div class="custom-checkbox" onclick="toggleCheckbox(this)">
-                                            <div class="labelContainer"><h4> <?= $oxygenConcentrator?></h4></div>
+                                            <div class="labelContainer"><h4> <?= $foreio?></h4></div>
                                             <div class="boxContainer"></div>
                                         </div>
 
                                         <div class="custom-checkbox" onclick="toggleCheckbox(this)">
-                                            <div class="labelContainer"><h4> <?= $suctionDevice?></h4></div>
+                                            <div class="labelContainer"><h4> <?= $tonometro?></h4></div>
                                             <div class="boxContainer"></div>
                                         </div>
 
                                         <div class="custom-checkbox" onclick="toggleCheckbox(this)">
-                                            <div class="labelContainer"><h4> <?= $headlamp?></h4></div>
+                                            <div class="labelContainer"><h4> <?= $endoscopeLed?></h4></div>
                                             <div class="boxContainer"></div>
                                         </div>
 
                                         <div class="custom-checkbox" onclick="toggleCheckbox(this)">
-                                            <div class="labelContainer"><h4> <?= $animalCarrier?></h4></div>
+                                            <div class="labelContainer"><h4> <?= $rinoskopisi?></h4></div>
                                             <div class="boxContainer"></div>
                                         </div>
 
                                         <div class="custom-checkbox" onclick="toggleCheckbox(this)">
-                                            <div class="labelContainer"><h4> <?= $endoscope?></h4></div>
+                                            <div class="labelContainer"><h4> <?= $antlia?></h4></div>
+                                            <div class="boxContainer"></div>
+                                        </div>
+
+                                        <div class="custom-checkbox" onclick="toggleCheckbox(this)">
+                                            <div class="labelContainer"><h4> <?= $eickemeyer?></h4></div>
                                             <div class="boxContainer"></div>
                                         </div>
 
