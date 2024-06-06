@@ -13,7 +13,7 @@ if ($_SESSION["language"] == 'greek') {
     $oxygenConcentrator = "Συμπυκνωτής οξυγόνου (1329,90 €)";
     $foreio ="Φορείο με τροχήλατη πλατφόρμα (726,33 €)";
     $tonometro = "Οφθαλμολογικό τονόμετρο (3954,60 €)";
-    $endoscopeLed = "Ενδοσκόπιο LED  (11,03 €)";
+    $endoscopeLed = "Ενδοσκόπιο LED  (11036,00 €)";
     $rinoskopisi = "Ρινοσκόπηση / Ωτοσκόπηση (3989,00 €)";
     $antlia = "Αντλία τύπου σύριγγας (1269,00 €)";
     $eickemeyer = "Eickemeyer διαθλασίμετρο (119,00 €)";
@@ -39,14 +39,14 @@ if ($_SESSION["language"] == 'greek') {
     $donationPar = "Choose the way you would like to help!";
     $donationFormTitle = "Choose something 'significant' that you would like to offer to SCFA N.P.O";
     $chooseItem = "Item Selection";
-    $setSteiroseis = "Sterilization set of tools for dog (553.62 €)";
-    $oxygenConcentrator = "Oxygen concentrator (1329.90 €)";
-    $foreio = "Stretcher with wheeled platform (726.33 €)";
-    $tonometro = "Ophthalmic tonometer (3954.60 €)";
-    $endoscopeLed = "LED endoscope (11.03 €)";
-    $rinoskopisi = "Rhinoscopy / Otoscopy (3989.00 €)";
-    $antlia = "Syringe pump (1269.00 €)";
-    $eickemeyer = "Eickemeyer refractometer (119.00 €)";
+    $setSteiroseis = "Sterilization set of tools for dog (553,62 €)";
+    $oxygenConcentrator = "Oxygen concentrator (1329,90 €)";
+    $foreio = "Stretcher with wheeled platform (726,33 €)";
+    $tonometro = "Ophthalmic tonometer (3954,60 €)";
+    $endoscopeLed = "LED endoscope (11036,00 €)";
+    $rinoskopisi = "Rhinoscopy / Otoscopy (3989,00 €)";
+    $antlia = "Syringe pump (1269,00 €)";
+    $eickemeyer = "Eickemeyer refractometer (119,00 €)";
 
 
 
