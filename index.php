@@ -232,7 +232,7 @@ navbar($titlePage, $str);
             <div class=" bannerInfos">
                 <h5> <?= $help_strays?> </h5>
                 <p><?= $help_strays_info1?></p>
-                
+
                 <a target="_blank" href="https://www.every.org/spetses-care-for-animals-non-profit-organization?utm_campaign=donate-link#/donate">
 
                     <?= $help_strays_btn?>
@@ -255,7 +255,7 @@ navbar($titlePage, $str);
 
                     </div>
 
-                    <a class="btn" target="_blank" href="https://www.every.org/spetses-care-for-animals-non-profit-organization?utm_campaign=donate-link#/donate">  <?= $help_strays_btn?></a>
+                    <a class="btn" target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=6ZM3HUGHGLDMU">  <?= $help_strays_btn?></a>
 
                 </div>
             </div>
