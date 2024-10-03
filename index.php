@@ -255,7 +255,7 @@ navbar($titlePage, $str);
 
                     </div>
 
-                    <a class="btn" target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=6ZM3HUGHGLDMU">  <?= $help_strays_btn?></a>
+                    <a class="btn" target="_blank" href="./donation#donation">  <?= $help_strays_btn?></a>
 
                 </div>
             </div>
