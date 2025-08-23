@@ -233,8 +233,7 @@ navbar($titlePage, $str);
                 <h5> <?= $help_strays?> </h5>
                 <p><?= $help_strays_info1?></p>
 
-<!--                <a target="_blank" href="https://www.every.org/spetses-care-for-animals-non-profit-organization?utm_campaign=donate-link#/donate">-->
-                <a target="_blank" href="./donation/#donation">
+                <a target="_blank" href="https://www.every.org/spetses-care-for-animals-non-profit-organization?utm_campaign=donate-link#/donate">
 
                     <?= $help_strays_btn?>
                 </a>
