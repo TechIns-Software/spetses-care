@@ -15,6 +15,7 @@ function navbar($title,$str= '../',$metaArray = []){
 
     if ($_SESSION["language"] == 'greek') {
         $makeDonation = 'Κάνε Δωρεά';
+        $ourDonor = 'Κατηγορίες Δωρητών';
         $becomeVolunteer = 'Γίνε Εθελοντής';
         $adoption = 'Υιοθεσία/Αναδοχή';
         $home = 'Αρχική';
@@ -40,6 +41,7 @@ function navbar($title,$str= '../',$metaArray = []){
 
     }else{
         $makeDonation = 'Make Donation';
+        $ourDonor = 'Donor Categories';
         $becomeVolunteer = 'Become Volunteer';
         $adoption = 'Adoption';
         $home = 'Home';
@@ -223,6 +225,8 @@ function navbar($title,$str= '../',$metaArray = []){
                 <div class="d-flex justify-content-end allMenu">
                     <div class="newLayout <?php echo $_SESSION['page'] == 10 ? 'active' :'' ?>">
                       <a class="nav-link" href="<?= $str ?>donation"> <?= $makeDonation ?></a>
+                    </div><div class="newLayout <?php echo $_SESSION['page'] == 13 ? 'active' :'' ?>">
+                      <a class="nav-link" href="<?= $str ?>ourDonor"> <?= $ourDonor ?></a>
                     </div>
 
                     <div class="newLayout <?php echo $_SESSION['page'] == 11 ? 'active' :'' ?>">
