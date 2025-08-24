@@ -1,4 +1,9 @@
 <?php
+if (strpos($_SERVER['PHP_SELF'], 'contact') !== false || strpos($_SERVER['PHP_SELF'], 'under_construction') !== false) {
+} else {
+    header("Location: ../under_construction");
+
+}
 session_start();
 if (!isset($_SESSION["language"])) {
     $_SESSION['language'] = 'greek';
@@ -222,27 +227,27 @@ function navbar($title,$str= '../',$metaArray = []){
                         <img src="<?= $str ?>assets/images/scfa_logo.png" alt="scfa logo">
                     </a>
                 </div>
-                <div class="d-flex justify-content-end allMenu">
-                    <div class="newLayout <?php echo $_SESSION['page'] == 10 ? 'active' :'' ?>">
-                      <a class="nav-link" href="<?= $str ?>donation"> <?= $makeDonation ?></a>
-                    </div><div class="newLayout <?php echo $_SESSION['page'] == 13 ? 'active' :'' ?>">
-                      <a class="nav-link" href="<?= $str ?>ourDonor"> <?= $ourDonor ?></a>
-                    </div>
-
-                    <div class="newLayout <?php echo $_SESSION['page'] == 11 ? 'active' :'' ?>">
-                        <a class="nav-link" href="<?= $str ?>volunteer"><?= $becomeVolunteer ?></a>
-                    </div>
-
-                    <div class="newLayout <?php echo $_SESSION['page'] == 12 ? 'active' :'' ?>">
-                        <a class="nav-link" href="<?= $str ?>adoption"><?= $adoption ?></a>
-                    </div>
-
-                    <div class="newLayout hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvasMenu" aria-controls="offCanvasMenu">
-                        <a class="nav-link" >Menu </a>
-                        <i class="fa-solid fa-bars "></i>
-                    </div>
-
-                </div>
+<!--                <div class="d-flex justify-content-end allMenu">-->
+<!--                    <div class="newLayout --><?php //echo $_SESSION['page'] == 10 ? 'active' :'' ?><!--">-->
+<!--                      <a class="nav-link" href="--><?php //= $str ?><!--donation"> --><?php //= $makeDonation ?><!--</a>-->
+<!--                    </div><div class="newLayout --><?php //echo $_SESSION['page'] == 13 ? 'active' :'' ?><!--">-->
+<!--                      <a class="nav-link" href="--><?php //= $str ?><!--ourDonor"> --><?php //= $ourDonor ?><!--</a>-->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="newLayout --><?php //echo $_SESSION['page'] == 11 ? 'active' :'' ?><!--">-->
+<!--                        <a class="nav-link" href="--><?php //= $str ?><!--volunteer">--><?php //= $becomeVolunteer ?><!--</a>-->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="newLayout --><?php //echo $_SESSION['page'] == 12 ? 'active' :'' ?><!--">-->
+<!--                        <a class="nav-link" href="--><?php //= $str ?><!--adoption">--><?php //= $adoption ?><!--</a>-->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="newLayout hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvasMenu" aria-controls="offCanvasMenu">-->
+<!--                        <a class="nav-link" >Menu </a>-->
+<!--                        <i class="fa-solid fa-bars "></i>-->
+<!--                    </div>-->
+<!---->
+<!--                </div>-->
             </div>
         </nav>
 
@@ -263,28 +268,28 @@ function navbar($title,$str= '../',$metaArray = []){
         </div>
     </div>
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offCanvasMenu" aria-labelledby="offCanvasMenuLabel">
-        <div class="offcanvas-header">
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div class="offCanvasLinks">
-                <a class="<?php echo $_SESSION['page'] == 1 ? 'active' :'' ?>" href="<?= $str ?>"><?= $home ?></a>
-                <a class="<?php echo $_SESSION['page'] == 6 ? 'active' :'' ?>" href="<?= $str ?>clinic"><?= $clinic ?></a>
-                <a class="<?php echo $_SESSION['page'] == 2 ? 'active' :'' ?>" href="<?= $str ?>actions"><?= $actions ?></a>
-                <a class="<?php echo $_SESSION['page'] == 5 ? 'active' :'' ?>" href="<?= $str ?>education"><?= $education ?></a>
-                <a class="<?php echo $_SESSION['page'] == 7 ? 'active' :'' ?>" href="<?= $str ?>hotel-restaurant"><?= $hotelRestaurant ?></a>
-                <a class="<?php echo $_SESSION['page'] == 4 ? 'active' :'' ?>" href="<?= $str ?>forum"><?= $forum ?></a>
-                <a class="<?php echo $_SESSION['page'] == 3 ? 'active' :'' ?>" href="<?= $str ?>gallery"><?= $gallery ?></a>
-                <a class="<?php echo $_SESSION['page'] == 8 ? 'active' :'' ?>" href="<?= $str ?>contact"><?= $contact ?></a>
-
-
-
-            </div>
-
-
-        </div>
-    </div>
+<!--    <div class="offcanvas offcanvas-end" tabindex="-1" id="offCanvasMenu" aria-labelledby="offCanvasMenuLabel">-->
+<!--        <div class="offcanvas-header">-->
+<!--            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>-->
+<!--        </div>-->
+<!--        <div class="offcanvas-body">-->
+<!--            <div class="offCanvasLinks">-->
+<!--                <a class="--><?php //echo $_SESSION['page'] == 1 ? 'active' :'' ?><!--" href="--><?php //= $str ?><!--">--><?php //= $home ?><!--</a>-->
+<!--                <a class="--><?php //echo $_SESSION['page'] == 6 ? 'active' :'' ?><!--" href="--><?php //= $str ?><!--clinic">--><?php //= $clinic ?><!--</a>-->
+<!--                <a class="--><?php //echo $_SESSION['page'] == 2 ? 'active' :'' ?><!--" href="--><?php //= $str ?><!--actions">--><?php //= $actions ?><!--</a>-->
+<!--                <a class="--><?php //echo $_SESSION['page'] == 5 ? 'active' :'' ?><!--" href="--><?php //= $str ?><!--education">--><?php //= $education ?><!--</a>-->
+<!--                <a class="--><?php //echo $_SESSION['page'] == 7 ? 'active' :'' ?><!--" href="--><?php //= $str ?><!--hotel-restaurant">--><?php //= $hotelRestaurant ?><!--</a>-->
+<!--                <a class="--><?php //echo $_SESSION['page'] == 4 ? 'active' :'' ?><!--" href="--><?php //= $str ?><!--forum">--><?php //= $forum ?><!--</a>-->
+<!--                <a class="--><?php //echo $_SESSION['page'] == 3 ? 'active' :'' ?><!--" href="--><?php //= $str ?><!--gallery">--><?php //= $gallery ?><!--</a>-->
+<!--                <a class="--><?php //echo $_SESSION['page'] == 8 ? 'active' :'' ?><!--" href="--><?php //= $str ?><!--contact">--><?php //= $contact ?><!--</a>-->
+<!---->
+<!---->
+<!---->
+<!--            </div>-->
+<!---->
+<!---->
+<!--        </div>-->
+<!--    </div>-->
 
 
 <?php
